@@ -28,7 +28,7 @@ Partial Class pageHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(599, 454)
+        Me.ClientSize = New System.Drawing.Size(829, 593)
         Me.Name = "pageHome"
         Me.Text = "pageHome"
         Me.ResumeLayout(False)
