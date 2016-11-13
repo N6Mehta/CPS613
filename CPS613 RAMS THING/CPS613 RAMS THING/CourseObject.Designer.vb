@@ -25,12 +25,13 @@ Partial Class CourseObject
         Me.AddButton = New System.Windows.Forms.Button()
         Me.DropButton = New System.Windows.Forms.Button()
         Me.CourseName = New System.Windows.Forms.Label()
+        Me.CourseCode = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'AddButton
         '
         Me.AddButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddButton.Location = New System.Drawing.Point(164, 41)
+        Me.AddButton.Location = New System.Drawing.Point(140, 42)
         Me.AddButton.Name = "AddButton"
         Me.AddButton.Size = New System.Drawing.Size(30, 30)
         Me.AddButton.TabIndex = 0
@@ -40,7 +41,7 @@ Partial Class CourseObject
         'DropButton
         '
         Me.DropButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DropButton.Location = New System.Drawing.Point(17, 37)
+        Me.DropButton.Location = New System.Drawing.Point(0, 42)
         Me.DropButton.Name = "DropButton"
         Me.DropButton.Size = New System.Drawing.Size(30, 30)
         Me.DropButton.TabIndex = 1
@@ -50,21 +51,34 @@ Partial Class CourseObject
         'CourseName
         '
         Me.CourseName.AutoSize = True
-        Me.CourseName.Location = New System.Drawing.Point(81, 21)
+        Me.CourseName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CourseName.Location = New System.Drawing.Point(40, 42)
         Me.CourseName.Name = "CourseName"
-        Me.CourseName.Size = New System.Drawing.Size(68, 13)
+        Me.CourseName.Size = New System.Drawing.Size(94, 13)
         Me.CourseName.TabIndex = 2
-        Me.CourseName.Text = "CourseName"
+        Me.CourseName.Text = "Discrete Math I"
+        '
+        'CourseCode
+        '
+        Me.CourseCode.AutoSize = True
+        Me.CourseCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CourseCode.Location = New System.Drawing.Point(59, 18)
+        Me.CourseCode.Name = "CourseCode"
+        Me.CourseCode.Size = New System.Drawing.Size(59, 13)
+        Me.CourseCode.TabIndex = 3
+        Me.CourseCode.Text = "MTH 110"
         '
         'CourseObject
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.Controls.Add(Me.CourseCode)
         Me.Controls.Add(Me.CourseName)
         Me.Controls.Add(Me.DropButton)
         Me.Controls.Add(Me.AddButton)
         Me.Name = "CourseObject"
-        Me.Size = New System.Drawing.Size(230, 120)
+        Me.Size = New System.Drawing.Size(170, 75)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -73,4 +87,5 @@ Partial Class CourseObject
     Friend WithEvents AddButton As Button
     Friend WithEvents DropButton As Button
     Friend WithEvents CourseName As Label
+    Friend WithEvents CourseCode As Label
 End Class
