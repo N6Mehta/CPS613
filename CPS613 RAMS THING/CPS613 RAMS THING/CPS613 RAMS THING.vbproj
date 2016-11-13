@@ -85,6 +85,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CourseSearch.Designer.vb">
+      <DependentUpon>CourseSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,6 +110,9 @@
   <ItemGroup>
     <EmbeddedResource Include="CourseObject.resx">
       <DependentUpon>CourseObject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseSearch.resx">
+      <DependentUpon>CourseSearch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
