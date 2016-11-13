@@ -24,8 +24,8 @@ Partial Class MDI
     Private Sub InitializeComponent()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -49,6 +49,16 @@ Partial Class MDI
         Me.ToolStripButton1.Size = New System.Drawing.Size(94, 49)
         Me.ToolStripButton1.Text = "ToolStripButton1"
         '
+        'ToolStripLabel2
+        '
+        Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ToolStripLabel2.IsLink = True
+        Me.ToolStripLabel2.Name = "ToolStripLabel2"
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(82, 49)
+        Me.ToolStripLabel2.Text = "Sign Out"
+        '
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
@@ -60,22 +70,12 @@ Partial Class MDI
         Me.ToolStripLabel1.Size = New System.Drawing.Size(61, 49)
         Me.ToolStripLabel1.Text = "Home"
         '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripLabel2.IsLink = True
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(82, 49)
-        Me.ToolStripLabel2.Text = "Sign Out"
-        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 52)
         '
-        'Form1
+        'MDI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -83,9 +83,9 @@ Partial Class MDI
         Me.Controls.Add(Me.ToolStrip1)
         Me.IsMdiContainer = True
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "Form1"
+        Me.Name = "MDI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ryerson RAMS"
+        Me.Text = "Ryerson RAMSS"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
