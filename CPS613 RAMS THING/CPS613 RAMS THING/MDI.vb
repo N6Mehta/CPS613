@@ -17,4 +17,10 @@
         home.MdiParent = Me
         home.Show()
     End Sub
+
+    Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
+        Dim testVera As New Enrollment
+        testVera.MdiParent = Me
+        testVera.Show()
+    End Sub
 End Class
