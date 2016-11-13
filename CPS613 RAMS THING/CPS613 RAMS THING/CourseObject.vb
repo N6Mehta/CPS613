@@ -11,6 +11,7 @@
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.updateState("open")
         Me.grade = 0.0
+
     End Sub
     'Called my the main form class
     Public Sub initialize()
