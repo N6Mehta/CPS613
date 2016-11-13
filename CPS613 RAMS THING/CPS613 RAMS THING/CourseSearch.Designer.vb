@@ -24,9 +24,18 @@ Partial Class CourseSearch
     Private Sub InitializeComponent()
         Me.searchButton = New System.Windows.Forms.Button()
         Me.searchTextBox = New System.Windows.Forms.TextBox()
-        Me.searchListBox = New System.Windows.Forms.ListBox()
         Me.cancelButton = New System.Windows.Forms.Button()
         Me.doneButton = New System.Windows.Forms.Button()
+        Me.filterLabel = New System.Windows.Forms.Label()
+        Me.LLCheckBox = New System.Windows.Forms.CheckBox()
+        Me.ULCheckBox = New System.Windows.Forms.CheckBox()
+        Me.PRCheckBox = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.OECheckBox = New System.Windows.Forms.CheckBox()
+        Me.FTCheckBox = New System.Windows.Forms.CheckBox()
+        Me.WTCheckBox = New System.Windows.Forms.CheckBox()
+        Me.courseListView = New System.Windows.Forms.ListView()
+        Me.coursesLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'searchButton
@@ -46,15 +55,6 @@ Partial Class CourseSearch
         Me.searchTextBox.Name = "searchTextBox"
         Me.searchTextBox.Size = New System.Drawing.Size(682, 29)
         Me.searchTextBox.TabIndex = 1
-        '
-        'searchListBox
-        '
-        Me.searchListBox.FormattingEnabled = True
-        Me.searchListBox.Location = New System.Drawing.Point(27, 201)
-        Me.searchListBox.Name = "searchListBox"
-        Me.searchListBox.ScrollAlwaysVisible = True
-        Me.searchListBox.Size = New System.Drawing.Size(682, 303)
-        Me.searchListBox.TabIndex = 2
         '
         'cancelButton
         '
@@ -76,14 +76,130 @@ Partial Class CourseSearch
         Me.doneButton.Text = "Done"
         Me.doneButton.UseVisualStyleBackColor = True
         '
+        'filterLabel
+        '
+        Me.filterLabel.AutoSize = True
+        Me.filterLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.filterLabel.Location = New System.Drawing.Point(31, 91)
+        Me.filterLabel.Name = "filterLabel"
+        Me.filterLabel.Size = New System.Drawing.Size(56, 20)
+        Me.filterLabel.TabIndex = 5
+        Me.filterLabel.Text = "Filters:"
+        '
+        'LLCheckBox
+        '
+        Me.LLCheckBox.AutoSize = True
+        Me.LLCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LLCheckBox.Location = New System.Drawing.Point(55, 126)
+        Me.LLCheckBox.Name = "LLCheckBox"
+        Me.LLCheckBox.Size = New System.Drawing.Size(114, 20)
+        Me.LLCheckBox.TabIndex = 6
+        Me.LLCheckBox.Text = "Lower Liberals"
+        Me.LLCheckBox.UseVisualStyleBackColor = True
+        '
+        'ULCheckBox
+        '
+        Me.ULCheckBox.AutoSize = True
+        Me.ULCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ULCheckBox.Location = New System.Drawing.Point(55, 166)
+        Me.ULCheckBox.Name = "ULCheckBox"
+        Me.ULCheckBox.Size = New System.Drawing.Size(116, 20)
+        Me.ULCheckBox.TabIndex = 7
+        Me.ULCheckBox.Text = "Upper Liberals"
+        Me.ULCheckBox.UseVisualStyleBackColor = True
+        '
+        'PRCheckBox
+        '
+        Me.PRCheckBox.AutoSize = True
+        Me.PRCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PRCheckBox.Location = New System.Drawing.Point(220, 126)
+        Me.PRCheckBox.Name = "PRCheckBox"
+        Me.PRCheckBox.Size = New System.Drawing.Size(166, 20)
+        Me.PRCheckBox.TabIndex = 8
+        Me.PRCheckBox.Text = "Professionally Related "
+        Me.PRCheckBox.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox4.Location = New System.Drawing.Point(220, 166)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(91, 20)
+        Me.CheckBox4.TabIndex = 9
+        Me.CheckBox4.Text = "Mandatory"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'OECheckBox
+        '
+        Me.OECheckBox.AutoSize = True
+        Me.OECheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OECheckBox.Location = New System.Drawing.Point(408, 126)
+        Me.OECheckBox.Name = "OECheckBox"
+        Me.OECheckBox.Size = New System.Drawing.Size(111, 20)
+        Me.OECheckBox.TabIndex = 10
+        Me.OECheckBox.Text = "Open Elective"
+        Me.OECheckBox.UseVisualStyleBackColor = True
+        '
+        'FTCheckBox
+        '
+        Me.FTCheckBox.AutoSize = True
+        Me.FTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FTCheckBox.Location = New System.Drawing.Point(408, 166)
+        Me.FTCheckBox.Name = "FTCheckBox"
+        Me.FTCheckBox.Size = New System.Drawing.Size(84, 20)
+        Me.FTCheckBox.TabIndex = 11
+        Me.FTCheckBox.Text = "Fall Term"
+        Me.FTCheckBox.UseVisualStyleBackColor = True
+        '
+        'WTCheckBox
+        '
+        Me.WTCheckBox.AutoSize = True
+        Me.WTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.WTCheckBox.Location = New System.Drawing.Point(563, 126)
+        Me.WTCheckBox.Name = "WTCheckBox"
+        Me.WTCheckBox.Size = New System.Drawing.Size(100, 20)
+        Me.WTCheckBox.TabIndex = 12
+        Me.WTCheckBox.Text = "Winter Term"
+        Me.WTCheckBox.UseVisualStyleBackColor = True
+        '
+        'courseListView
+        '
+        Me.courseListView.Location = New System.Drawing.Point(27, 243)
+        Me.courseListView.Name = "courseListView"
+        Me.courseListView.Size = New System.Drawing.Size(682, 288)
+        Me.courseListView.TabIndex = 14
+        Me.courseListView.UseCompatibleStateImageBehavior = False
+        '
+        'coursesLabel
+        '
+        Me.coursesLabel.AutoSize = True
+        Me.coursesLabel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.coursesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.coursesLabel.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.coursesLabel.Location = New System.Drawing.Point(32, 204)
+        Me.coursesLabel.Name = "coursesLabel"
+        Me.coursesLabel.Size = New System.Drawing.Size(61, 16)
+        Me.coursesLabel.TabIndex = 13
+        Me.coursesLabel.Text = "Courses:"
+        '
         'CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 586)
+        Me.Controls.Add(Me.courseListView)
+        Me.Controls.Add(Me.coursesLabel)
+        Me.Controls.Add(Me.WTCheckBox)
+        Me.Controls.Add(Me.FTCheckBox)
+        Me.Controls.Add(Me.OECheckBox)
+        Me.Controls.Add(Me.CheckBox4)
+        Me.Controls.Add(Me.PRCheckBox)
+        Me.Controls.Add(Me.ULCheckBox)
+        Me.Controls.Add(Me.LLCheckBox)
+        Me.Controls.Add(Me.filterLabel)
         Me.Controls.Add(Me.doneButton)
         Me.Controls.Add(Me.cancelButton)
-        Me.Controls.Add(Me.searchListBox)
         Me.Controls.Add(Me.searchTextBox)
         Me.Controls.Add(Me.searchButton)
         Me.Name = "CourseSearch"
@@ -95,7 +211,16 @@ Partial Class CourseSearch
 
     Friend WithEvents searchButton As Button
     Friend WithEvents searchTextBox As TextBox
-    Friend WithEvents searchListBox As ListBox
     Friend WithEvents cancelButton As Button
     Friend WithEvents doneButton As Button
+    Friend WithEvents filterLabel As Label
+    Friend WithEvents LLCheckBox As CheckBox
+    Friend WithEvents ULCheckBox As CheckBox
+    Friend WithEvents PRCheckBox As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents OECheckBox As CheckBox
+    Friend WithEvents FTCheckBox As CheckBox
+    Friend WithEvents WTCheckBox As CheckBox
+    Friend WithEvents courseListView As ListView
+    Friend WithEvents coursesLabel As Label
 End Class
