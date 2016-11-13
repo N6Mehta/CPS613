@@ -36,6 +36,7 @@ Partial Class CourseSearch
         Me.WTCheckBox = New System.Windows.Forms.CheckBox()
         Me.courseListView = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MCheckBox = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'searchButton
@@ -174,17 +175,28 @@ Partial Class CourseSearch
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(139, 221)
+        Me.Label1.Location = New System.Drawing.Point(52, 298)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Label1"
+        '
+        'MCheckBox
+        '
+        Me.MCheckBox.AutoSize = True
+        Me.MCheckBox.Location = New System.Drawing.Point(55, 331)
+        Me.MCheckBox.Name = "MCheckBox"
+        Me.MCheckBox.Size = New System.Drawing.Size(68, 17)
+        Me.MCheckBox.TabIndex = 16
+        Me.MCheckBox.Text = "MTH110"
+        Me.MCheckBox.UseVisualStyleBackColor = True
         '
         'CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 586)
+        Me.Controls.Add(Me.MCheckBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.courseListView)
         Me.Controls.Add(Me.WTCheckBox)
@@ -220,4 +232,5 @@ Partial Class CourseSearch
     Friend WithEvents WTCheckBox As CheckBox
     Friend WithEvents courseListView As ListView
     Friend WithEvents Label1 As Label
+    Friend WithEvents MCheckBox As CheckBox
 End Class
