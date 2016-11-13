@@ -27,10 +27,11 @@ Partial Class Form1
         '
         'CourseObject1
         '
-        Me.CourseObject1.Location = New System.Drawing.Point(107, 36)
+        Me.CourseObject1.BackColor = System.Drawing.SystemColors.Control
+        Me.CourseObject1.Location = New System.Drawing.Point(99, 47)
         Me.CourseObject1.Name = "CourseObject1"
-        Me.CourseObject1.Size = New System.Drawing.Size(230, 120)
-        Me.CourseObject1.TabIndex = 1
+        Me.CourseObject1.Size = New System.Drawing.Size(170, 75)
+        Me.CourseObject1.TabIndex = 3
         '
         'Form1
         '
