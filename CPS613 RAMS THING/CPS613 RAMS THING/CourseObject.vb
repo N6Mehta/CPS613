@@ -6,31 +6,35 @@
 
     Shared selectedCourse As CourseObject
 
+    Private searchWindow As CourseSearch
     Private grade As Double
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.updateState("open")
         Me.grade = 0.0
-
+        searchWindow = New CourseSearch
     End Sub
     'Called my the main form class
     Public Sub initialize()
-        Me.updateState("openn")
+        Me.updateState("open")
         Me.grade = 0.0
         Me.openCourse = True
         Me.updateColor()
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
-
+        searchWindow.Show()
+        Me.CourseName.Text = searchWindow.courseSelected
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
-        Me.updateState("open")
-        Me.CourseName.Text = "Course Name"
-        Me.CourseCode.Text = "Course Code"
-        Me.grade = 0.0
-
+        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Me.CourseCode.Text + Me.CourseName.Text, "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        If msgResult = DialogResult.Yes Then
+            Me.updateState("open")
+            Me.CourseName.Text = "Course Name"
+            Me.CourseCode.Text = "Course Course"
+            Me.grade = 0.0
+        End If
     End Sub
 
     Private Sub CourseObject_Click(sender As Object, e As EventArgs) Handles Me.Click, CourseName.Click, CourseCode.Click
