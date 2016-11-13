@@ -4,11 +4,12 @@
     Private openCourse As Boolean
     Private closedCourse As Boolean
 
+    Shared selectedCourse As CourseObject
+
     Private grade As Double
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.updateState("open")
-        CourseName.Text = "FUCK"
         Me.grade = 0.0
     End Sub
     'Called my the main form class
@@ -24,6 +25,10 @@
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
+        Me.updateState("open")
+        Me.CourseName.Text = "Course Name"
+        Me.CourseCode.Text = "Course Code"
+        Me.grade = 0.0
 
     End Sub
 
