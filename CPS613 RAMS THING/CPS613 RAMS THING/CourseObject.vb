@@ -15,7 +15,7 @@
     End Sub
     'Called my the main form class
     Public Sub initialize()
-        Me.updateState("open")
+        Me.updateState("openn")
         Me.grade = 0.0
         Me.openCourse = True
         Me.updateColor()
