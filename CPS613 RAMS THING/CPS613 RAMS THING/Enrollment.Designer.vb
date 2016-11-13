@@ -54,9 +54,9 @@ Partial Class Enrollment
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(89, 185)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 37)
+        Me.Label2.Size = New System.Drawing.Size(94, 37)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Year 1"
+        Me.Label2.Text = "Year "
         '
         'Enrollment
         '
