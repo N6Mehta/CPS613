@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MDI
     Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click
         Me.Close()
     End Sub

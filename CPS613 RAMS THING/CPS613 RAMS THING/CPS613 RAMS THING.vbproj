@@ -84,11 +84,11 @@
     <Compile Include="Enrollment.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="MDI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="MDI.Designer.vb">
+      <DependentUpon>MDI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CourseSearch.Designer.vb">
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="Enrollment.resx">
       <DependentUpon>Enrollment.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
