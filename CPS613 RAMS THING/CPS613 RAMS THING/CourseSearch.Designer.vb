@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CourseSearch
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class CourseSearch
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.searchButton = New System.Windows.Forms.Button()
         Me.searchTextBox = New System.Windows.Forms.TextBox()
@@ -35,7 +35,6 @@ Partial Class CourseSearch
         Me.FTCheckBox = New System.Windows.Forms.CheckBox()
         Me.WTCheckBox = New System.Windows.Forms.CheckBox()
         Me.courseListView = New System.Windows.Forms.ListView()
-        Me.coursesLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'searchButton
@@ -171,25 +170,12 @@ Partial Class CourseSearch
         Me.courseListView.TabIndex = 14
         Me.courseListView.UseCompatibleStateImageBehavior = False
         '
-        'coursesLabel
-        '
-        Me.coursesLabel.AutoSize = True
-        Me.coursesLabel.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.coursesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.coursesLabel.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.coursesLabel.Location = New System.Drawing.Point(32, 204)
-        Me.coursesLabel.Name = "coursesLabel"
-        Me.coursesLabel.Size = New System.Drawing.Size(61, 16)
-        Me.coursesLabel.TabIndex = 13
-        Me.coursesLabel.Text = "Courses:"
-        '
         'CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 586)
         Me.Controls.Add(Me.courseListView)
-        Me.Controls.Add(Me.coursesLabel)
         Me.Controls.Add(Me.WTCheckBox)
         Me.Controls.Add(Me.FTCheckBox)
         Me.Controls.Add(Me.OECheckBox)
@@ -222,5 +208,4 @@ Partial Class CourseSearch
     Friend WithEvents FTCheckBox As CheckBox
     Friend WithEvents WTCheckBox As CheckBox
     Friend WithEvents courseListView As ListView
-    Friend WithEvents coursesLabel As Label
 End Class
