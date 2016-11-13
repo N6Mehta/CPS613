@@ -1,4 +1,5 @@
 ﻿Public Class CourseSearch
+    Public courseSelected As String = " "
     Public Sub New()
 
         ' This call is required by the designer.
@@ -17,5 +18,9 @@
 
     Private Sub searchListBox_SelectedIndexChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles MCheckBox.CheckedChanged
+        courseSelected = MCheckBox.Text
     End Sub
 End Class
