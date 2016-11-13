@@ -85,10 +85,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePage.Designer.vb">
-      <DependentUpon>HomePage.vb</DependentUpon>
+    <Compile Include="CourseSearch.Designer.vb">
+      <DependentUpon>CourseSearch.vb</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.vb">
+    <Compile Include="CourseSearch.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -111,17 +111,17 @@
     <EmbeddedResource Include="CourseObject.resx">
       <DependentUpon>CourseObject.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CourseSearch.resx">
+      <DependentUpon>CourseSearch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePage.resx">
-      <DependentUpon>HomePage.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -135,21 +135,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="My Project\Ryerson_uni_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="My Project\Ryerson_uni_logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="My Project\Ryerson_uni_logo %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="My Project\Ryerson_uni_logo %282%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="My Project\logo_lpp_white_new %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
