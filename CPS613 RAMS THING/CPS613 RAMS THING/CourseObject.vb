@@ -6,11 +6,9 @@
 
     Private grade As Double
 
-    Public course_Name As String
-    Public course_Code As String
-
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.updateState("open")
+        CourseName.Text = "FUCK"
         Me.grade = 0.0
     End Sub
     'Called my the main form class
