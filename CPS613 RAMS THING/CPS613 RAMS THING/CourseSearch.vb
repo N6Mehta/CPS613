@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub CourseSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        searchListBox.Text = " Courses:"
+        'searchListBox.Text = " Courses:"
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchTextBox.TextChanged
