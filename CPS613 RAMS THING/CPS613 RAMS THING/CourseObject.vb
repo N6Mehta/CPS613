@@ -12,7 +12,6 @@
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.updateState("open")
         Me.grade = 0.0
-        searchWindow = New CourseSearch
     End Sub
     'Called my the main form class
     Public Sub initialize()
@@ -23,6 +22,7 @@
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
+        searchWindow = New CourseSearch
         searchWindow.Show()
         Me.CourseName.Text = searchWindow.courseSelected
     End Sub
@@ -48,12 +48,18 @@
             failedCourse = False
             closedCourse = False
 
+            Me.AddButton.Enabled = True
+            Me.DropButton.Enabled = False
+
             Me.updateColor()
         ElseIf state.Equals("pass") Then
             passedCourse = True
             openCourse = False
             failedCourse = False
             closedCourse = False
+
+            Me.AddButton.Enabled = False
+            Me.DropButton.Enabled = False
 
             Me.updateColor()
 
@@ -63,6 +69,9 @@
             passedCourse = False
             closedCourse = False
 
+            Me.AddButton.Enabled = False
+            Me.DropButton.Enabled = False
+
             Me.updateColor()
 
         ElseIf state.Equals("close") Then
@@ -70,6 +79,9 @@
             openCourse = False
             passedCourse = False
             failedCourse = False
+
+            Me.AddButton.Enabled = False
+            Me.DropButton.Enabled = False
 
             Me.updateColor()
         Else
