@@ -34,9 +34,9 @@ Partial Class CourseSearch
         Me.OECheckBox = New System.Windows.Forms.CheckBox()
         Me.FTCheckBox = New System.Windows.Forms.CheckBox()
         Me.WTCheckBox = New System.Windows.Forms.CheckBox()
-        Me.courseListView = New System.Windows.Forms.ListView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.MCheckBox = New System.Windows.Forms.CheckBox()
+        Me.CourseListContainer = New System.Windows.Forms.TabControl()
+        Me.CourseList = New System.Windows.Forms.TabPage()
+        Me.CourseListContainer.SuspendLayout()
         Me.SuspendLayout()
         '
         'searchButton
@@ -164,41 +164,31 @@ Partial Class CourseSearch
         Me.WTCheckBox.Text = "Winter Term"
         Me.WTCheckBox.UseVisualStyleBackColor = True
         '
-        'courseListView
+        'CourseListContainer
         '
-        Me.courseListView.Location = New System.Drawing.Point(27, 243)
-        Me.courseListView.Name = "courseListView"
-        Me.courseListView.Size = New System.Drawing.Size(682, 288)
-        Me.courseListView.TabIndex = 14
-        Me.courseListView.UseCompatibleStateImageBehavior = False
+        Me.CourseListContainer.Controls.Add(Me.CourseList)
+        Me.CourseListContainer.Location = New System.Drawing.Point(27, 208)
+        Me.CourseListContainer.Name = "CourseListContainer"
+        Me.CourseListContainer.SelectedIndex = 0
+        Me.CourseListContainer.Size = New System.Drawing.Size(682, 309)
+        Me.CourseListContainer.TabIndex = 15
         '
-        'Label1
+        'CourseList
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(52, 298)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Label1"
-        '
-        'MCheckBox
-        '
-        Me.MCheckBox.AutoSize = True
-        Me.MCheckBox.Location = New System.Drawing.Point(55, 331)
-        Me.MCheckBox.Name = "MCheckBox"
-        Me.MCheckBox.Size = New System.Drawing.Size(68, 17)
-        Me.MCheckBox.TabIndex = 16
-        Me.MCheckBox.Text = "MTH110"
-        Me.MCheckBox.UseVisualStyleBackColor = True
+        Me.CourseList.Location = New System.Drawing.Point(4, 22)
+        Me.CourseList.Name = "CourseList"
+        Me.CourseList.Padding = New System.Windows.Forms.Padding(3)
+        Me.CourseList.Size = New System.Drawing.Size(674, 283)
+        Me.CourseList.TabIndex = 0
+        Me.CourseList.Text = "Page 1"
+        Me.CourseList.UseVisualStyleBackColor = True
         '
         'CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 586)
-        Me.Controls.Add(Me.MCheckBox)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.courseListView)
+        Me.Controls.Add(Me.CourseListContainer)
         Me.Controls.Add(Me.WTCheckBox)
         Me.Controls.Add(Me.FTCheckBox)
         Me.Controls.Add(Me.OECheckBox)
@@ -213,6 +203,7 @@ Partial Class CourseSearch
         Me.Controls.Add(Me.searchButton)
         Me.Name = "CourseSearch"
         Me.Text = "Search For Courses "
+        Me.CourseListContainer.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -230,7 +221,6 @@ Partial Class CourseSearch
     Friend WithEvents OECheckBox As CheckBox
     Friend WithEvents FTCheckBox As CheckBox
     Friend WithEvents WTCheckBox As CheckBox
-    Friend WithEvents courseListView As ListView
-    Friend WithEvents Label1 As Label
-    Friend WithEvents MCheckBox As CheckBox
+    Friend WithEvents CourseListContainer As TabControl
+    Friend WithEvents CourseList As TabPage
 End Class

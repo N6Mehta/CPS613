@@ -1,15 +1,10 @@
 ﻿Public Class CourseSearch
     Public courseSelected As String = " "
-    Public Sub New()
-
-        ' This call is required by the designer.
-        InitializeComponent()
-        ' Add any initialization after the InitializeComponent() call.
-
-    End Sub
+    Private course As CourseInfoObject
 
     Private Sub CourseSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'searchListBox.Text = " Courses:"
+        course = New CourseInfoObject
+        CourseList.Controls.Add(course)
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchTextBox.TextChanged
@@ -20,7 +15,20 @@
 
     End Sub
 
-    Private Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles MCheckBox.CheckedChanged
-        courseSelected = MCheckBox.Text
+    Private Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs)
+    End Sub
+
+    Private Sub courseListView_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+
+
+    Private Sub CourseList_Click(sender As Object, e As EventArgs) Handles CourseList.Click
+
+    End Sub
+
+    Private Sub CourseInfoObject1_Load(sender As Object, e As EventArgs) 
+
     End Sub
 End Class

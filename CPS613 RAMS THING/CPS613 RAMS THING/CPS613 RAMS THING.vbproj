@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CourseInfoObject.Designer.vb">
+      <DependentUpon>CourseInfoObject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseInfoObject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CourseObject.Designer.vb">
       <DependentUpon>CourseObject.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CourseInfoObject.resx">
+      <DependentUpon>CourseInfoObject.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CourseObject.resx">
       <DependentUpon>CourseObject.vb</DependentUpon>
     </EmbeddedResource>
