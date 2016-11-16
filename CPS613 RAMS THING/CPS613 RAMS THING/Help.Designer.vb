@@ -56,7 +56,7 @@ Partial Class Help
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(478, 37)
+        Me.Label2.Location = New System.Drawing.Point(529, 37)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(232, 51)
         Me.Label2.TabIndex = 7
