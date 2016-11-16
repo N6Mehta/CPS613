@@ -135,6 +135,9 @@
     <EmbeddedResource Include="Enrollment.resx">
       <DependentUpon>Enrollment.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +162,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_arrow16001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
