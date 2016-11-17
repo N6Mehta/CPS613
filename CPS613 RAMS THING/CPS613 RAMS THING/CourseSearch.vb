@@ -1,5 +1,6 @@
 ﻿Public Class CourseSearch
     Public courseSelected As String = " "
+    Public left As Boolean = False
     Public Sub New()
 
         ' This call is required by the designer.
@@ -10,6 +11,7 @@
 
     Private Sub CourseSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'searchListBox.Text = " Courses:"
+        left = False
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchTextBox.TextChanged
@@ -27,4 +29,10 @@
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
+
+    Private Sub CourseSearch_Leave(sender As Object, e As EventArgs) Handles Me.Leave
+        MsgBox("fuck")
+        left = True
+    End Sub
+
 End Class
