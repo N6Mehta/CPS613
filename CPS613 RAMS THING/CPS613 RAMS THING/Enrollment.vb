@@ -20,6 +20,12 @@
         Me.WindowState = FormWindowState.Maximized
         LoadFirstYear()
         LoadSecondYear()
+        'For i As Integer = 0 To (passedCourses.Length - 1)
+        'passedCourses(i).updateState("pass")
+        'Next
+        'For i As Integer = 1 To enrolledCourses.Length
+        'enrolledCourses(i).updateState("enrolled")
+        'Next
         Year2InitLoc = Y2BigPanel.Location
         Y3Y4InitLoc = Y3Y4Panel.Location
         closeYear1()
@@ -51,7 +57,7 @@
         LL1CO.CourseName.Text = ""
         PCS110CO.CourseCode.Text = "Physics"
 
-        MTH110CO.BackColor = failed
+        MTH110CO.updateState("fail")
         MTH207CO.BackColor = complete
         CPS109CO.BackColor = complete
         CPS209CO.BackColor = complete
@@ -91,12 +97,12 @@
         CMN300CO.BackColor = enrolled
         CPS305CO.BackColor = enrolled
         CPS393CO.BackColor = enrolled
-        CPS420CO.BackColor = unavailable
+        CPS420CO.updateState("close")
         CPS406CO.BackColor = enrolled
         CPS506CO.BackColor = enrolled
         CPS590CO.BackColor = enrolled
-        OE1CO.BackColor = open
-        OE2CO.BackColor = open
+        OE1CO.updateState("open")
+        OE2CO.updateState("open")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Year1OpenButton.Click

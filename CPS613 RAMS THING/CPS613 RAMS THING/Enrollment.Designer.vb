@@ -30,14 +30,14 @@ Partial Class Enrollment
         Me.Year2Label = New System.Windows.Forms.Label()
         Me.Year1Panel = New System.Windows.Forms.Panel()
         Me.Year2Panel = New System.Windows.Forms.Panel()
-        Me.Year1CloseButton = New System.Windows.Forms.Button()
-        Me.Year2OpenButton = New System.Windows.Forms.Button()
-        Me.Year1OpenButton = New System.Windows.Forms.Button()
-        Me.Year2CloseButton = New System.Windows.Forms.Button()
-        Me.Year4OpenButton = New System.Windows.Forms.Button()
-        Me.Year3OpenButton = New System.Windows.Forms.Button()
         Me.Y3Y4Panel = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Year3OpenButton = New System.Windows.Forms.Button()
         Me.Y2BigPanel = New System.Windows.Forms.Panel()
+        Me.Year2CloseButton = New System.Windows.Forms.Button()
+        Me.Year2OpenButton = New System.Windows.Forms.Button()
+        Me.Year1CloseButton = New System.Windows.Forms.Button()
+        Me.Year1OpenButton = New System.Windows.Forms.Button()
         Me.CPS209CO = New CPS613_RAMS_THING.CourseObject()
         Me.CPS109CO = New CPS613_RAMS_THING.CourseObject()
         Me.MTH207CO = New CPS613_RAMS_THING.CourseObject()
@@ -161,53 +161,62 @@ Partial Class Enrollment
         Me.Year2Panel.Size = New System.Drawing.Size(1990, 315)
         Me.Year2Panel.TabIndex = 12
         '
-        'Year1CloseButton
+        'Y3Y4Panel
         '
-        Me.Year1CloseButton.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Year1CloseButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.open_button
-        Me.Year1CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Year1CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year1CloseButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year1CloseButton.Location = New System.Drawing.Point(102, 84)
-        Me.Year1CloseButton.Margin = New System.Windows.Forms.Padding(0)
-        Me.Year1CloseButton.Name = "Year1CloseButton"
-        Me.Year1CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year1CloseButton.Size = New System.Drawing.Size(47, 36)
-        Me.Year1CloseButton.TabIndex = 15
-        Me.Year1CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Year1CloseButton.UseVisualStyleBackColor = False
+        Me.Y3Y4Panel.Controls.Add(Me.Button1)
+        Me.Y3Y4Panel.Controls.Add(Me.Year3OpenButton)
+        Me.Y3Y4Panel.Controls.Add(Me.Year3Label)
+        Me.Y3Y4Panel.Controls.Add(Me.Label3)
+        Me.Y3Y4Panel.Location = New System.Drawing.Point(102, 878)
+        Me.Y3Y4Panel.Name = "Y3Y4Panel"
+        Me.Y3Y4Panel.Size = New System.Drawing.Size(296, 131)
+        Me.Y3Y4Panel.TabIndex = 19
         '
-        'Year2OpenButton
+        'Button1
         '
-        Me.Year2OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Year2OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
-        Me.Year2OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Year2OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year2OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year2OpenButton.Location = New System.Drawing.Point(31, 13)
-        Me.Year2OpenButton.Margin = New System.Windows.Forms.Padding(0)
-        Me.Year2OpenButton.Name = "Year2OpenButton"
-        Me.Year2OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year2OpenButton.Size = New System.Drawing.Size(47, 39)
-        Me.Year2OpenButton.TabIndex = 14
-        Me.Year2OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Year2OpenButton.UseVisualStyleBackColor = False
+        Me.Button1.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Button1.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.inactive
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Enabled = False
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.DimGray
+        Me.Button1.Location = New System.Drawing.Point(0, 85)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Button1.Size = New System.Drawing.Size(47, 36)
+        Me.Button1.TabIndex = 19
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'Year1OpenButton
+        'Year3OpenButton
         '
-        Me.Year1OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Year1OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
-        Me.Year1OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Year1OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year1OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year1OpenButton.Location = New System.Drawing.Point(102, 84)
-        Me.Year1OpenButton.Margin = New System.Windows.Forms.Padding(0)
-        Me.Year1OpenButton.Name = "Year1OpenButton"
-        Me.Year1OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year1OpenButton.Size = New System.Drawing.Size(47, 36)
-        Me.Year1OpenButton.TabIndex = 13
-        Me.Year1OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Year1OpenButton.UseVisualStyleBackColor = False
+        Me.Year3OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Year3OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.inactive
+        Me.Year3OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Year3OpenButton.Enabled = False
+        Me.Year3OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year3OpenButton.ForeColor = System.Drawing.Color.DimGray
+        Me.Year3OpenButton.Location = New System.Drawing.Point(0, 19)
+        Me.Year3OpenButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.Year3OpenButton.Name = "Year3OpenButton"
+        Me.Year3OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Year3OpenButton.Size = New System.Drawing.Size(47, 36)
+        Me.Year3OpenButton.TabIndex = 18
+        Me.Year3OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Year3OpenButton.UseVisualStyleBackColor = False
+        '
+        'Y2BigPanel
+        '
+        Me.Y2BigPanel.BackColor = System.Drawing.SystemColors.Window
+        Me.Y2BigPanel.Controls.Add(Me.Year2CloseButton)
+        Me.Y2BigPanel.Controls.Add(Me.Year2OpenButton)
+        Me.Y2BigPanel.Controls.Add(Me.Year2Panel)
+        Me.Y2BigPanel.Controls.Add(Me.Year2Label)
+        Me.Y2BigPanel.Location = New System.Drawing.Point(71, 481)
+        Me.Y2BigPanel.Name = "Y2BigPanel"
+        Me.Y2BigPanel.Size = New System.Drawing.Size(2031, 391)
+        Me.Y2BigPanel.TabIndex = 21
         '
         'Year2CloseButton
         '
@@ -225,62 +234,53 @@ Partial Class Enrollment
         Me.Year2CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year2CloseButton.UseVisualStyleBackColor = False
         '
-        'Year4OpenButton
+        'Year2OpenButton
         '
-        Me.Year4OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Year4OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
-        Me.Year4OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Year4OpenButton.Enabled = False
-        Me.Year4OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year4OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year4OpenButton.Location = New System.Drawing.Point(0, 85)
-        Me.Year4OpenButton.Margin = New System.Windows.Forms.Padding(0)
-        Me.Year4OpenButton.Name = "Year4OpenButton"
-        Me.Year4OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year4OpenButton.Size = New System.Drawing.Size(47, 36)
-        Me.Year4OpenButton.TabIndex = 17
-        Me.Year4OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Year4OpenButton.UseVisualStyleBackColor = False
+        Me.Year2OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Year2OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
+        Me.Year2OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Year2OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year2OpenButton.ForeColor = System.Drawing.Color.DimGray
+        Me.Year2OpenButton.Location = New System.Drawing.Point(31, 13)
+        Me.Year2OpenButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.Year2OpenButton.Name = "Year2OpenButton"
+        Me.Year2OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Year2OpenButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year2OpenButton.TabIndex = 14
+        Me.Year2OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Year2OpenButton.UseVisualStyleBackColor = False
         '
-        'Year3OpenButton
+        'Year1CloseButton
         '
-        Me.Year3OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Year3OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
-        Me.Year3OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Year3OpenButton.Enabled = False
-        Me.Year3OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year3OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year3OpenButton.Location = New System.Drawing.Point(0, 19)
-        Me.Year3OpenButton.Margin = New System.Windows.Forms.Padding(0)
-        Me.Year3OpenButton.Name = "Year3OpenButton"
-        Me.Year3OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year3OpenButton.Size = New System.Drawing.Size(47, 36)
-        Me.Year3OpenButton.TabIndex = 18
-        Me.Year3OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Year3OpenButton.UseVisualStyleBackColor = False
+        Me.Year1CloseButton.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Year1CloseButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.open_button
+        Me.Year1CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Year1CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year1CloseButton.ForeColor = System.Drawing.Color.DimGray
+        Me.Year1CloseButton.Location = New System.Drawing.Point(102, 84)
+        Me.Year1CloseButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.Year1CloseButton.Name = "Year1CloseButton"
+        Me.Year1CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Year1CloseButton.Size = New System.Drawing.Size(47, 36)
+        Me.Year1CloseButton.TabIndex = 15
+        Me.Year1CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Year1CloseButton.UseVisualStyleBackColor = False
         '
-        'Y3Y4Panel
+        'Year1OpenButton
         '
-        Me.Y3Y4Panel.Controls.Add(Me.Year4OpenButton)
-        Me.Y3Y4Panel.Controls.Add(Me.Year3OpenButton)
-        Me.Y3Y4Panel.Controls.Add(Me.Year3Label)
-        Me.Y3Y4Panel.Controls.Add(Me.Label3)
-        Me.Y3Y4Panel.Location = New System.Drawing.Point(102, 878)
-        Me.Y3Y4Panel.Name = "Y3Y4Panel"
-        Me.Y3Y4Panel.Size = New System.Drawing.Size(296, 131)
-        Me.Y3Y4Panel.TabIndex = 19
-        '
-        'Y2BigPanel
-        '
-        Me.Y2BigPanel.BackColor = System.Drawing.SystemColors.Window
-        Me.Y2BigPanel.Controls.Add(Me.Year2CloseButton)
-        Me.Y2BigPanel.Controls.Add(Me.Year2OpenButton)
-        Me.Y2BigPanel.Controls.Add(Me.Year2Panel)
-        Me.Y2BigPanel.Controls.Add(Me.Year2Label)
-        Me.Y2BigPanel.Location = New System.Drawing.Point(71, 481)
-        Me.Y2BigPanel.Name = "Y2BigPanel"
-        Me.Y2BigPanel.Size = New System.Drawing.Size(2031, 391)
-        Me.Y2BigPanel.TabIndex = 21
+        Me.Year1OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Year1OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
+        Me.Year1OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Year1OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year1OpenButton.ForeColor = System.Drawing.Color.DimGray
+        Me.Year1OpenButton.Location = New System.Drawing.Point(102, 84)
+        Me.Year1OpenButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.Year1OpenButton.Name = "Year1OpenButton"
+        Me.Year1OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Year1OpenButton.Size = New System.Drawing.Size(47, 36)
+        Me.Year1OpenButton.TabIndex = 13
+        Me.Year1OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Year1OpenButton.UseVisualStyleBackColor = False
         '
         'CPS209CO
         '
@@ -520,8 +520,8 @@ Partial Class Enrollment
     Friend WithEvents Year2OpenButton As Button
     Friend WithEvents Year1CloseButton As Button
     Friend WithEvents Year2CloseButton As Button
-    Friend WithEvents Year4OpenButton As Button
     Friend WithEvents Year3OpenButton As Button
     Friend WithEvents Y3Y4Panel As Panel
     Friend WithEvents Y2BigPanel As Panel
+    Friend WithEvents Button1 As Button
 End Class

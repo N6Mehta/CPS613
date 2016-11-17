@@ -37,7 +37,7 @@
         MessageBox.Show("Course Name: " + Me.CourseCode.Text + " " + Me.CourseName.Text + vbNewLine + "Grade: " + Me.grade.ToString, "Course Info")
     End Sub
 
-    Private Sub updateState(state As String)
+    Public Sub updateState(state As String)
         If state.Equals("open") Then
             openCourse = True
             passedCourse = False
