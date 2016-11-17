@@ -3,6 +3,7 @@
     Private passedCourse As Boolean
     Private openCourse As Boolean
     Private closedCourse As Boolean
+    Private enrolledCourse As Boolean
 
     Shared selectedCourse As CourseObject
 
@@ -41,12 +42,14 @@
         MessageBox.Show("Course Name: " + Me.CourseCode.Text + " " + Me.CourseName.Text + vbNewLine + "Grade: " + Me.grade.ToString, "Course Info")
     End Sub
 
-    Private Sub updateState(state As String)
+    Public Sub updateState(state As String)
         If state.Equals("open") Then
             openCourse = True
             passedCourse = False
             failedCourse = False
             closedCourse = False
+            enrolledCourse = False
+
 
             Me.AddButton.Enabled = True
             Me.DropButton.Enabled = False
@@ -57,6 +60,8 @@
             openCourse = False
             failedCourse = False
             closedCourse = False
+            enrolledCourse = False
+
 
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
@@ -68,6 +73,8 @@
             openCourse = False
             passedCourse = False
             closedCourse = False
+            enrolledCourse = False
+
 
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
@@ -79,11 +86,25 @@
             openCourse = False
             passedCourse = False
             failedCourse = False
+            enrolledCourse = False
+
 
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
 
             Me.updateColor()
+        ElseIf state.Equals("enroll") Then
+            enrolledCourse = True
+            closedCourse = False
+            openCourse = False
+            passedCourse = False
+            failedCourse = False
+
+            Me.AddButton.Enabled = False
+            Me.DropButton.Enabled = False
+
+            Me.updateColor()
+
         Else
             MsgBox("Incorrect State")
         End If
@@ -94,9 +115,11 @@
         ElseIf failedCourse Then
             Me.BackColor = Color.IndianRed
         ElseIf openCourse Then
-            Me.BackColor = Color.LightGray
+            Me.BackColor = Color.SkyBlue
         ElseIf closedCourse Then
             Me.BackColor = Color.DarkGray
+        ElseIf enrolledCourse Then
+            Me.BackColor = Color.Gold
         Else
             Me.BackColor = Color.LightGray
         End If
