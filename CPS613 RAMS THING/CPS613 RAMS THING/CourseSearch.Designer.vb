@@ -37,6 +37,15 @@ Partial Class CourseSearch
         Me.courseListView = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MCheckBox = New System.Windows.Forms.CheckBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'searchButton
@@ -175,27 +184,81 @@ Partial Class CourseSearch
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(52, 298)
+        Me.Label1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(48, 259)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(61, 16)
         Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Courses:"
         '
         'MCheckBox
         '
         Me.MCheckBox.AutoSize = True
+        Me.MCheckBox.BackColor = System.Drawing.SystemColors.Window
+        Me.MCheckBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.MCheckBox.Location = New System.Drawing.Point(55, 331)
         Me.MCheckBox.Name = "MCheckBox"
         Me.MCheckBox.Size = New System.Drawing.Size(68, 17)
         Me.MCheckBox.TabIndex = 16
         Me.MCheckBox.Text = "MTH110"
-        Me.MCheckBox.UseVisualStyleBackColor = True
+        Me.MCheckBox.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(534, 257)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "Label2"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        Me.DataGridView1.Location = New System.Drawing.Point(51, 354)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(638, 150)
+        Me.DataGridView1.TabIndex = 18
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Column1"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Column2"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Column3"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Column4"
+        Me.Column4.Name = "Column4"
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Column5"
+        Me.Column5.Name = "Column5"
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Column6"
+        Me.Column6.Name = "Column6"
         '
         'CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 586)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.MCheckBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.courseListView)
@@ -212,7 +275,8 @@ Partial Class CourseSearch
         Me.Controls.Add(Me.searchTextBox)
         Me.Controls.Add(Me.searchButton)
         Me.Name = "CourseSearch"
-        Me.Text = "Search For Courses "
+        Me.Text = "Search"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -233,4 +297,12 @@ Partial Class CourseSearch
     Friend WithEvents courseListView As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents MCheckBox As CheckBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
 End Class
