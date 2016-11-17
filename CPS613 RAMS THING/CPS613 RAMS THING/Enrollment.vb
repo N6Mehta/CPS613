@@ -5,7 +5,7 @@
     Dim enrolled = Color.Yellow
     Dim unavailable = Color.DarkGray
 
-    'Dim passedCourses As CourseObject() = {PCS110CO, CPS109CO, CPS213CO, LL1CO, MTH207CO, CPS412CO, CPS209CO, CPS310CO, LL2CO}
+    Dim passedCourses As CourseObject() = {PCS110CO, CPS109CO, CPS213CO, LL1CO, MTH207CO, CPS412CO, CPS209CO, CPS310CO, LL2CO}
     'Dim enrolledCourses As CourseObject() = {MTH108CO, CMN300CO, CPS305CO, CPS393CO, CPS393CO, CPS406CO, CPS506CO, CPS590CO}
 
     Dim Year2InitLoc As Point
@@ -20,9 +20,9 @@
         Me.WindowState = FormWindowState.Maximized
         LoadFirstYear()
         LoadSecondYear()
-        'For i As Integer = 0 To (passedCourses.Length - 1)
-        'passedCourses(i).updateState("pass")
-        'Next
+        For i As Integer = 0 To (passedCourses.Length - 1)
+            passedCourses(i).updateState("pass")
+        Next
         'For i As Integer = 1 To enrolledCourses.Length
         'enrolledCourses(i).updateState("enrolled")
         'Next
@@ -82,7 +82,7 @@
         OE1CO.CourseCode.Text = "Open Elective 1"
         OE2CO.CourseCode.Text = "Open Elective 2"
 
-        MTH108CO.CourseName.Text = "Linear Algebra"
+        MTH108CO.CourseName.Text = "Linear Algebraa"
         CMN300CO.CourseName.Text = "Communications in" + vbCrLf + "Comp. Industry"
         CPS305CO.CourseName.Text = "Data Structures"
         CPS393CO.CourseName.Text = "C and UNIX"
