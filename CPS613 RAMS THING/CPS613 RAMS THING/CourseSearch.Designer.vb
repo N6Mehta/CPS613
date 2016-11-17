@@ -37,7 +37,6 @@ Partial Class CourseSearch
         Me.courseListView = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MCheckBox = New System.Windows.Forms.CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -204,15 +203,6 @@ Partial Class CourseSearch
         Me.MCheckBox.Text = "MTH110"
         Me.MCheckBox.UseVisualStyleBackColor = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(534, 257)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 17
-        Me.Label2.Text = "Label2"
-        '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -258,7 +248,6 @@ Partial Class CourseSearch
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 586)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.MCheckBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.courseListView)
@@ -297,7 +286,6 @@ Partial Class CourseSearch
     Friend WithEvents courseListView As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents MCheckBox As CheckBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn

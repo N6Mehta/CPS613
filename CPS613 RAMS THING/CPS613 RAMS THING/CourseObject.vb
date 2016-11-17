@@ -4,6 +4,7 @@
     Private openCourse As Boolean
     Private closedCourse As Boolean
 
+
     Private grade As Double
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
