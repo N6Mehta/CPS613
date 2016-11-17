@@ -27,7 +27,6 @@ Partial Class MDI
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CourseObject2 = New CPS613_RAMS_THING.CourseObject()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -37,7 +36,8 @@ Partial Class MDI
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripLabel2, Me.ToolStripLabel1, Me.ToolStripSeparator1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(676, 52)
+        Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 0, 2, 0)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1352, 52)
         Me.ToolStrip1.TabIndex = 3
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -57,7 +57,7 @@ Partial Class MDI
         Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ToolStripLabel2.IsLink = True
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(53, 49)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(109, 49)
         Me.ToolStripLabel2.Text = "Sign Out"
         '
         'ToolStripLabel1
@@ -68,7 +68,7 @@ Partial Class MDI
         Me.ToolStripLabel1.IsLink = True
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
         Me.ToolStripLabel1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(40, 49)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(80, 49)
         Me.ToolStripLabel1.Text = "Home"
         '
         'ToolStripSeparator1
@@ -76,22 +76,14 @@ Partial Class MDI
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 52)
         '
-        'CourseObject2
-        '
-        Me.CourseObject2.BackColor = System.Drawing.Color.LightGray
-        Me.CourseObject2.Location = New System.Drawing.Point(170, 138)
-        Me.CourseObject2.Name = "CourseObject2"
-        Me.CourseObject2.Size = New System.Drawing.Size(170, 75)
-        Me.CourseObject2.TabIndex = 5
-        '
         'MDI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(676, 426)
-        Me.Controls.Add(Me.CourseObject2)
+        Me.ClientSize = New System.Drawing.Size(1352, 819)
         Me.Controls.Add(Me.ToolStrip1)
         Me.IsMdiContainer = True
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "MDI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ryerson RAMSS"
@@ -108,5 +100,4 @@ Partial Class MDI
     Friend WithEvents ToolStripLabel2 As ToolStripLabel
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents CourseObject2 As CourseObject
 End Class
