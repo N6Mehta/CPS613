@@ -18,11 +18,14 @@
 
     Private Sub Enrollment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
+
+        'For i As Integer = 0 To (passedCourses.Length - 1)
+        '    passedCourses(i) = New CourseObject
+        '    passedCourses(i).initialize()
+        '    passedCourses(i).updateState("fail")
+        'Next
         LoadFirstYear()
         LoadSecondYear()
-        For i As Integer = 0 To (passedCourses.Length - 1)
-            passedCourses(i).updateState("pass")
-        Next
         'For i As Integer = 1 To enrolledCourses.Length
         'enrolledCourses(i).updateState("enrolled")
         'Next
@@ -58,15 +61,15 @@
         PCS110CO.CourseCode.Text = "Physics"
 
         MTH110CO.updateState("fail")
-        MTH207CO.BackColor = complete
-        CPS109CO.BackColor = complete
-        CPS209CO.BackColor = complete
-        CPS213CO.BackColor = complete
-        CPS310CO.BackColor = complete
-        CPS412CO.BackColor = complete
-        LL1CO.BackColor = complete
-        LL2CO.BackColor = complete
-        PCS110CO.BackColor = complete
+        MTH207CO.updateState("pass")
+        CPS109CO.updateState("pass")
+        CPS209CO.updateState("pass")
+        CPS213CO.updateState("pass")
+        CPS310CO.updateState("pass")
+        CPS412CO.updateState("pass")
+        LL1CO.updateState("pass")
+        LL2CO.updateState("pass")
+        PCS110CO.updateState("pass")
     End Sub
 
     Sub LoadSecondYear()
@@ -86,21 +89,21 @@
         CMN300CO.CourseName.Text = "Communications in" + vbCrLf + "Comp. Industry"
         CPS305CO.CourseName.Text = "Data Structures"
         CPS393CO.CourseName.Text = "C and UNIX"
-        CPS420CO.CourseName.Text = "Discrete Structures"
-        CPS406CO.CourseName.Text = "Software Engineering"
-        CPS506CO.CourseName.Text = "Comparative Prog" + vbCrLf + "Languages"
-        CPS590CO.CourseName.Text = "Operating Systems I"
+        CPS420CO.CourseName.Text = "Discrete" + vbCrLf + "Structures"
+        CPS406CO.CourseName.Text = "Software" + vbCrLf + "Engineering"
+        CPS506CO.CourseName.Text = "Comparative" + vbCrLf + "Prog Languages"
+        CPS590CO.CourseName.Text = "Operating" + vbCrLf + "Systems I"
         OE1CO.CourseName.Text = ""
         OE2CO.CourseName.Text = ""
 
-        MTH108CO.BackColor = enrolled
-        CMN300CO.BackColor = enrolled
-        CPS305CO.BackColor = enrolled
-        CPS393CO.BackColor = enrolled
+        MTH108CO.updateState("enroll")
+        CMN300CO.updateState("enroll")
+        CPS305CO.updateState("enroll")
+        CPS393CO.updateState("enroll")
         CPS420CO.updateState("close")
-        CPS406CO.BackColor = enrolled
-        CPS506CO.BackColor = enrolled
-        CPS590CO.BackColor = enrolled
+        CPS406CO.updateState("enroll")
+        CPS506CO.updateState("enroll")
+        CPS590CO.updateState("enroll")
         OE1CO.updateState("open")
         OE2CO.updateState("open")
     End Sub
