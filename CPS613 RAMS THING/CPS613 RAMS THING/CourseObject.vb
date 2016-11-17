@@ -101,7 +101,7 @@
             failedCourse = False
 
             Me.AddButton.Enabled = False
-            Me.DropButton.Enabled = False
+            Me.DropButton.Enabled = True
 
             Me.updateColor()
 
