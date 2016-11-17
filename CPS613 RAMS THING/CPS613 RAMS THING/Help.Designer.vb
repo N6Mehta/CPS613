@@ -22,10 +22,6 @@ Partial Class Help
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PassedPictureBox = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -33,51 +29,18 @@ Partial Class Help
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PassedPictureBox = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PassedPictureBox
-        '
-        Me.PassedPictureBox.BackColor = System.Drawing.Color.Green
-        Me.PassedPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PassedPictureBox.Location = New System.Drawing.Point(52, 213)
-        Me.PassedPictureBox.Name = "PassedPictureBox"
-        Me.PassedPictureBox.Size = New System.Drawing.Size(181, 87)
-        Me.PassedPictureBox.TabIndex = 2
-        Me.PassedPictureBox.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Location = New System.Drawing.Point(52, 597)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(181, 87)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.SkyBlue
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox2.Location = New System.Drawing.Point(52, 469)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(181, 87)
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Red
-        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox3.Location = New System.Drawing.Point(52, 341)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(181, 87)
-        Me.PictureBox3.TabIndex = 5
-        Me.PictureBox3.TabStop = False
         '
         'Label1
         '
@@ -93,7 +56,7 @@ Partial Class Help
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(478, 37)
+        Me.Label2.Location = New System.Drawing.Point(529, 37)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(232, 51)
         Me.Label2.TabIndex = 7
@@ -103,7 +66,7 @@ Partial Class Help
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(487, 213)
+        Me.Label3.Location = New System.Drawing.Point(287, 213)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(276, 74)
         Me.Label3.TabIndex = 8
@@ -113,7 +76,7 @@ Partial Class Help
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(480, 469)
+        Me.Label4.Location = New System.Drawing.Point(968, 213)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(200, 111)
         Me.Label4.TabIndex = 9
@@ -123,7 +86,7 @@ Partial Class Help
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(480, 597)
+        Me.Label5.Location = New System.Drawing.Point(968, 341)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(267, 74)
         Me.Label5.TabIndex = 10
@@ -133,7 +96,7 @@ Partial Class Help
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(480, 341)
+        Me.Label6.Location = New System.Drawing.Point(287, 341)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(205, 37)
         Me.Label6.TabIndex = 11
@@ -143,18 +106,80 @@ Partial Class Help
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(52, 758)
+        Me.Label7.Location = New System.Drawing.Point(45, 609)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(292, 111)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "+ Add/swap course" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Drop course"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(287, 468)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(134, 37)
+        Me.Label8.TabIndex = 14
+        Me.Label8.Text = "Enrolled"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Yellow
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox4.Location = New System.Drawing.Point(52, 468)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(181, 87)
+        Me.PictureBox4.TabIndex = 13
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.IndianRed
+        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox3.Location = New System.Drawing.Point(52, 341)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(181, 87)
+        Me.PictureBox3.TabIndex = 5
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.SkyBlue
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox2.Location = New System.Drawing.Point(724, 213)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(181, 87)
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DarkGray
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Location = New System.Drawing.Point(724, 341)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(181, 87)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'PassedPictureBox
+        '
+        Me.PassedPictureBox.BackColor = System.Drawing.Color.LimeGreen
+        Me.PassedPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PassedPictureBox.Location = New System.Drawing.Point(52, 213)
+        Me.PassedPictureBox.Name = "PassedPictureBox"
+        Me.PassedPictureBox.Size = New System.Drawing.Size(181, 87)
+        Me.PassedPictureBox.TabIndex = 2
+        Me.PassedPictureBox.TabStop = False
         '
         'Help
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1188, 962)
+        Me.ClientSize = New System.Drawing.Size(1291, 962)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -169,10 +194,11 @@ Partial Class Help
         Me.Name = "Help"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Help Page"
-        CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,4 +214,6 @@ Partial Class Help
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Label8 As Label
 End Class
