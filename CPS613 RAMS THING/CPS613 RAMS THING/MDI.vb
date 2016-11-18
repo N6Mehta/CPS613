@@ -25,7 +25,7 @@
         hombre.Show()
     End Sub
 
-    Private Sub CourseObject2_Load(sender As Object, e As EventArgs) Handles CourseObject2.Load
+    Private Sub CourseObject2_Load(sender As Object, e As EventArgs) 
 
     End Sub
 End Class
