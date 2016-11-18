@@ -27,4 +27,8 @@
         hombre.MdiParent = Me
         hombre.Show()
     End Sub
+
+    Private Sub CourseObject2_Load(sender As Object, e As EventArgs) 
+
+    End Sub
 End Class
