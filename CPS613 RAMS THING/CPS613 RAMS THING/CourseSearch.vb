@@ -9,30 +9,84 @@
     End Sub
 
     Private Sub CourseSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    End Sub
+        MCheckBox.Visible = False
+        MdesLabel.Visible = False
+        MtimeLabel.Visible = False
+        MroomLabel.Visible = False
+        MunitLabel.Visible = False
+        MPictureBox.Visible = False
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchTextBox.TextChanged
+        P2CheckBox.Visible = False
+        P2desLabel.Visible = False
+        P2timeLabel.Visible = False
+        P2roomLabel.Visible = False
+        P2unitLabel.Visible = False
+        P2PictureBox.Visible = False
 
-    End Sub
+        P4CheckBox.Visible = False
+        P4desLabel.Visible = False
+        P4timeLabel.Visible = False
+        P4roomLabel.Visible = False
+        P4unitLabel.Visible = False
+        P4PictureBox.Visible = False
 
-    Private Sub searchListBox_SelectedIndexChanged(sender As Object, e As EventArgs)
     End Sub
 
     Public Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles MCheckBox.CheckedChanged
         courseSelected = MCheckBox.Text
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
-    Private Sub CourseSearch_Leave(sender As Object, e As EventArgs) Handles Me.Leave
-        MsgBox("fuck")
     End Sub
 
     Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
         Me.Close()
     End Sub
 
+    Private Sub searchButton_Click(sender As Object, e As EventArgs) Handles searchButton.Click
+        If searchTextBox.Text = "MTH110" Then
+            MCheckBox.Visible = True
+            MdesLabel.Visible = True
+            MtimeLabel.Visible = True
+            MroomLabel.Visible = True
+            MunitLabel.Visible = True
+            MPictureBox.Visible = True
+        ElseIf searchTextBox.Text = "PSY202" Then
+            P2CheckBox.Visible = True
+            P2desLabel.Visible = True
+            P2timeLabel.Visible = True
+            P2roomLabel.Visible = True
+            P2unitLabel.Visible = True
+            P2PictureBox.Visible = True
+        ElseIf searchTextBox.Text = "PSY214" Then
+            P4CheckBox.Visible = True
+            P4desLabel.Visible = True
+            P4timeLabel.Visible = True
+            P4roomLabel.Visible = True
+            P4unitLabel.Visible = True
+            P4PictureBox.Visible = True
+        ElseIf searchTextBox.Text = "PSY" Then
+            P2CheckBox.Visible = True
+            P2desLabel.Visible = True
+            P2timeLabel.Visible = True
+            P2roomLabel.Visible = True
+            P2unitLabel.Visible = True
+            P2PictureBox.Visible = True
+            P4CheckBox.Visible = True
+            P4desLabel.Visible = True
+            P4timeLabel.Visible = True
+            P4roomLabel.Visible = True
+            P4unitLabel.Visible = True
+            P4PictureBox.Visible = True
+        End If
+    End Sub
+
+    Private Sub P2CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles P2CheckBox.CheckedChanged
+        courseSelected = P2CheckBox.Text
+    End Sub
+
+    Private Sub P4CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles P4CheckBox.CheckedChanged
+        courseSelected = P4CheckBox.Text
+    End Sub
+
+    Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles cancelButton.Click
+        Me.Close()
+    End Sub
 End Class

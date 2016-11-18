@@ -197,6 +197,27 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green circle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow circle1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
