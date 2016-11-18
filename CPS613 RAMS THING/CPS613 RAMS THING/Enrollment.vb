@@ -60,16 +60,28 @@
         LL1CO.CourseName.Text = ""
         PCS110CO.CourseCode.Text = "Physics"
 
-        MTH110CO.updateState("fail")
-        MTH207CO.updateState("pass")
-        CPS109CO.updateState("pass")
-        CPS209CO.updateState("pass")
-        CPS213CO.updateState("pass")
-        CPS310CO.updateState("pass")
-        CPS412CO.updateState("pass")
-        LL1CO.updateState("pass")
-        LL2CO.updateState("pass")
-        PCS110CO.updateState("pass")
+        'MTH110CO.updateState("fail")
+        'MTH207CO.updateState("pass")
+        'CPS109CO.updateState("pass")
+        'CPS209CO.updateState("pass")
+        'CPS213CO.updateState("pass")
+        'CPS310CO.updateState("pass")
+        'CPS412CO.updateState("pass")
+        'LL1CO.updateState("pass")
+        'LL2CO.updateState("pass")
+        'PCS110CO.updateState("pass")
+
+        MTH110CO.changeState(CourseObject.State.failed)
+        MTH207CO.changeState(CourseObject.State.passed)
+        CPS109CO.changeState(CourseObject.State.passed)
+        CPS209CO.changeState(CourseObject.State.passed)
+        CPS213CO.changeState(CourseObject.State.passed)
+        CPS310CO.changeState(CourseObject.State.passed)
+        CPS412CO.changeState(CourseObject.State.passed)
+        LL1CO.changeState(CourseObject.State.passed)
+        LL2CO.changeState(CourseObject.State.passed)
+        PCS110CO.changeState(CourseObject.State.passed)
+
     End Sub
 
     Sub LoadSecondYear()
@@ -85,6 +97,8 @@
         OE1CO.CourseCode.Text = "Open Elective 1"
         OE2CO.CourseCode.Text = "Open Elective 2"
 
+
+
         MTH108CO.CourseName.Text = "Linear Algebraa"
         CMN300CO.CourseName.Text = "Communications in" + vbCrLf + "Comp. Industry"
         CPS305CO.CourseName.Text = "Data Structures"
@@ -96,16 +110,28 @@
         OE1CO.CourseName.Text = ""
         OE2CO.CourseName.Text = ""
 
-        MTH108CO.updateState("enroll")
-        CMN300CO.updateState("enroll")
-        CPS305CO.updateState("enroll")
-        CPS393CO.updateState("enroll")
-        CPS420CO.updateState("close")
-        CPS406CO.updateState("enroll")
-        CPS506CO.updateState("enroll")
-        CPS590CO.updateState("enroll")
-        OE1CO.updateState("open")
-        OE2CO.updateState("open")
+
+        'MTH108CO.updateState("enroll")
+        'CMN300CO.updateState("enroll")
+        'CPS305CO.updateState("enroll")
+        'CPS393CO.updateState("enroll")
+        'CPS420CO.updateState("close")
+        'CPS406CO.updateState("enroll")
+        'CPS506CO.updateState("enroll")
+        'CPS590CO.updateState("enroll")
+        'OE1CO.updateState("open")
+        'OE2CO.updateState("open")
+
+        MTH108CO.changeState(CourseObject.State.enrolled)
+        CMN300CO.changeState(CourseObject.State.enrolled)
+        CPS305CO.changeState(CourseObject.State.enrolled)
+        CPS393CO.changeState(CourseObject.State.enrolled)
+        CPS420CO.changeState(CourseObject.State.closed)
+        CPS406CO.changeState(CourseObject.State.enrolled)
+        CPS506CO.changeState(CourseObject.State.enrolled)
+        CPS590CO.changeState(CourseObject.State.enrolled)
+        OE1CO.changeState(CourseObject.State.open)
+        OE2CO.changeState(CourseObject.State.open)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Year1OpenButton.Click
