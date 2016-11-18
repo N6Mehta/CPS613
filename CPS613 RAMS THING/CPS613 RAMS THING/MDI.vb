@@ -6,9 +6,9 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim login As New login
+        'Dim login As New login
         Me.WindowState = FormWindowState.Maximized
-        login.ShowDialog()
+        'login.ShowDialog()
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
