@@ -1,6 +1,5 @@
 ﻿Public Class CourseSearch
-    Public courseSelected As String = " "
-    Public left As Boolean = False
+    Public courseSelected As String
     Public Sub New()
 
         ' This call is required by the designer.
@@ -10,8 +9,6 @@
     End Sub
 
     Private Sub CourseSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'searchListBox.Text = " Courses:"
-        left = False
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchTextBox.TextChanged
@@ -22,8 +19,9 @@
 
     End Sub
 
-    Private Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles MCheckBox.CheckedChanged
+    Public Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles MCheckBox.CheckedChanged
         courseSelected = MCheckBox.Text
+
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
@@ -32,7 +30,10 @@
 
     Private Sub CourseSearch_Leave(sender As Object, e As EventArgs) Handles Me.Leave
         MsgBox("fuck")
-        left = True
+    End Sub
+
+    Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
+        Me.Close()
     End Sub
 
 End Class

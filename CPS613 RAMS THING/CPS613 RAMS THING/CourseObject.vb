@@ -25,7 +25,7 @@
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         searchWindow = New CourseSearch
         searchWindow.Show()
-        Me.CourseName.Text = searchWindow.courseSelected
+        CourseName.Text = searchWindow.courseSelected
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
