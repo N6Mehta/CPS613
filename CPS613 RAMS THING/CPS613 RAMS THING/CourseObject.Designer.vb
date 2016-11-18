@@ -52,21 +52,21 @@ Partial Class CourseObject
         '
         Me.CourseName.AutoSize = True
         Me.CourseName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CourseName.Location = New System.Drawing.Point(40, 42)
+        Me.CourseName.Location = New System.Drawing.Point(44, 42)
         Me.CourseName.Name = "CourseName"
-        Me.CourseName.Size = New System.Drawing.Size(94, 13)
+        Me.CourseName.Size = New System.Drawing.Size(82, 13)
         Me.CourseName.TabIndex = 2
-        Me.CourseName.Text = "Discrete Math I"
+        Me.CourseName.Text = "Course Name"
         '
         'CourseCode
         '
         Me.CourseCode.AutoSize = True
         Me.CourseCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CourseCode.Location = New System.Drawing.Point(59, 18)
+        Me.CourseCode.Location = New System.Drawing.Point(46, 18)
         Me.CourseCode.Name = "CourseCode"
-        Me.CourseCode.Size = New System.Drawing.Size(59, 13)
+        Me.CourseCode.Size = New System.Drawing.Size(79, 13)
         Me.CourseCode.TabIndex = 3
-        Me.CourseCode.Text = "MTH 110"
+        Me.CourseCode.Text = "Course Code"
         '
         'CourseObject
         '
