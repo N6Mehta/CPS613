@@ -124,7 +124,7 @@ Partial Class Help
         '
         'PictureBox4
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Yellow
+        Me.PictureBox4.BackColor = System.Drawing.Color.Gold
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox4.Location = New System.Drawing.Point(52, 468)
         Me.PictureBox4.Name = "PictureBox4"

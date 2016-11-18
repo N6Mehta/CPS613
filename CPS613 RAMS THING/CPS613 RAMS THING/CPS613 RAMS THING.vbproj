@@ -160,6 +160,9 @@
     <EmbeddedResource Include="Enrollment.resx">
       <DependentUpon>Enrollment.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
     </EmbeddedResource>
