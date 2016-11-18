@@ -24,12 +24,14 @@
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         searchWindow = New CourseSearch
+        searchWindow.connectCourse(Me)
         searchWindow.Show()
-        Me.CourseName.Text = searchWindow.courseSelected
+        Me.CourseName.Text = searchWindow.course.CourseName.Text
+        Me.updateState("enroll")
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
-        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Me.CourseCode.Text + Me.CourseName.Text, "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Me.CourseName.Text + "?", "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If msgResult = DialogResult.Yes Then
             Me.updateState("open")
             Me.CourseName.Text = "Course Name"
@@ -123,5 +125,9 @@
         Else
             Me.BackColor = Color.LightGray
         End If
+    End Sub
+
+    Public Sub connectSearch(search As CourseSearch)
+        Me.searchWindow = search
     End Sub
 End Class
