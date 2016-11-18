@@ -9,6 +9,9 @@
         'Dim login As New login
         Me.WindowState = FormWindowState.Maximized
         'login.ShowDialog()
+        Dim home As New pageHome
+        home.MdiParent = Me
+        home.Show()
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click

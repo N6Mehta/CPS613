@@ -51,10 +51,10 @@ Partial Class CourseSearch
         'searchButton
         '
         Me.searchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchButton.Location = New System.Drawing.Point(953, 54)
-        Me.searchButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.searchButton.Location = New System.Drawing.Point(1072, 68)
+        Me.searchButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.searchButton.Name = "searchButton"
-        Me.searchButton.Size = New System.Drawing.Size(99, 36)
+        Me.searchButton.Size = New System.Drawing.Size(111, 45)
         Me.searchButton.TabIndex = 0
         Me.searchButton.Text = "Search"
         Me.searchButton.UseVisualStyleBackColor = True
@@ -62,19 +62,19 @@ Partial Class CourseSearch
         'searchTextBox
         '
         Me.searchTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchTextBox.Location = New System.Drawing.Point(36, 54)
-        Me.searchTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.searchTextBox.Location = New System.Drawing.Point(40, 68)
+        Me.searchTextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.searchTextBox.Name = "searchTextBox"
-        Me.searchTextBox.Size = New System.Drawing.Size(908, 34)
+        Me.searchTextBox.Size = New System.Drawing.Size(1021, 40)
         Me.searchTextBox.TabIndex = 1
         '
         'cancelButton
         '
         Me.cancelButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cancelButton.Location = New System.Drawing.Point(544, 661)
-        Me.cancelButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.cancelButton.Location = New System.Drawing.Point(612, 826)
+        Me.cancelButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cancelButton.Name = "cancelButton"
-        Me.cancelButton.Size = New System.Drawing.Size(167, 46)
+        Me.cancelButton.Size = New System.Drawing.Size(188, 58)
         Me.cancelButton.TabIndex = 3
         Me.cancelButton.Text = "Cancel"
         Me.cancelButton.UseVisualStyleBackColor = True
@@ -82,10 +82,10 @@ Partial Class CourseSearch
         'doneButton
         '
         Me.doneButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.doneButton.Location = New System.Drawing.Point(325, 661)
-        Me.doneButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.doneButton.Location = New System.Drawing.Point(366, 826)
+        Me.doneButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.doneButton.Name = "doneButton"
-        Me.doneButton.Size = New System.Drawing.Size(164, 46)
+        Me.doneButton.Size = New System.Drawing.Size(184, 58)
         Me.doneButton.TabIndex = 4
         Me.doneButton.Text = "Done"
         Me.doneButton.UseVisualStyleBackColor = True
@@ -94,10 +94,10 @@ Partial Class CourseSearch
         '
         Me.filterLabel.AutoSize = True
         Me.filterLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.filterLabel.Location = New System.Drawing.Point(41, 112)
+        Me.filterLabel.Location = New System.Drawing.Point(46, 140)
         Me.filterLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.filterLabel.Name = "filterLabel"
-        Me.filterLabel.Size = New System.Drawing.Size(70, 25)
+        Me.filterLabel.Size = New System.Drawing.Size(86, 29)
         Me.filterLabel.TabIndex = 5
         Me.filterLabel.Text = "Filters:"
         '
@@ -105,10 +105,10 @@ Partial Class CourseSearch
         '
         Me.LLCheckBox.AutoSize = True
         Me.LLCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LLCheckBox.Location = New System.Drawing.Point(73, 155)
-        Me.LLCheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.LLCheckBox.Location = New System.Drawing.Point(82, 194)
+        Me.LLCheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.LLCheckBox.Name = "LLCheckBox"
-        Me.LLCheckBox.Size = New System.Drawing.Size(142, 24)
+        Me.LLCheckBox.Size = New System.Drawing.Size(164, 29)
         Me.LLCheckBox.TabIndex = 6
         Me.LLCheckBox.Text = "Lower Liberals"
         Me.LLCheckBox.UseVisualStyleBackColor = True
@@ -117,10 +117,10 @@ Partial Class CourseSearch
         '
         Me.ULCheckBox.AutoSize = True
         Me.ULCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ULCheckBox.Location = New System.Drawing.Point(73, 204)
-        Me.ULCheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.ULCheckBox.Location = New System.Drawing.Point(82, 255)
+        Me.ULCheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ULCheckBox.Name = "ULCheckBox"
-        Me.ULCheckBox.Size = New System.Drawing.Size(141, 24)
+        Me.ULCheckBox.Size = New System.Drawing.Size(164, 29)
         Me.ULCheckBox.TabIndex = 7
         Me.ULCheckBox.Text = "Upper Liberals"
         Me.ULCheckBox.UseVisualStyleBackColor = True
@@ -129,10 +129,10 @@ Partial Class CourseSearch
         '
         Me.PRCheckBox.AutoSize = True
         Me.PRCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PRCheckBox.Location = New System.Drawing.Point(293, 155)
-        Me.PRCheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PRCheckBox.Location = New System.Drawing.Point(330, 194)
+        Me.PRCheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PRCheckBox.Name = "PRCheckBox"
-        Me.PRCheckBox.Size = New System.Drawing.Size(203, 24)
+        Me.PRCheckBox.Size = New System.Drawing.Size(235, 29)
         Me.PRCheckBox.TabIndex = 8
         Me.PRCheckBox.Text = "Professionally Related "
         Me.PRCheckBox.UseVisualStyleBackColor = True
@@ -141,10 +141,10 @@ Partial Class CourseSearch
         '
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(293, 204)
-        Me.CheckBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckBox4.Location = New System.Drawing.Point(330, 255)
+        Me.CheckBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(109, 24)
+        Me.CheckBox4.Size = New System.Drawing.Size(131, 29)
         Me.CheckBox4.TabIndex = 9
         Me.CheckBox4.Text = "Mandatory"
         Me.CheckBox4.UseVisualStyleBackColor = True
@@ -153,10 +153,10 @@ Partial Class CourseSearch
         '
         Me.OECheckBox.AutoSize = True
         Me.OECheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OECheckBox.Location = New System.Drawing.Point(544, 155)
-        Me.OECheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.OECheckBox.Location = New System.Drawing.Point(612, 194)
+        Me.OECheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.OECheckBox.Name = "OECheckBox"
-        Me.OECheckBox.Size = New System.Drawing.Size(135, 24)
+        Me.OECheckBox.Size = New System.Drawing.Size(160, 29)
         Me.OECheckBox.TabIndex = 10
         Me.OECheckBox.Text = "Open Elective"
         Me.OECheckBox.UseVisualStyleBackColor = True
@@ -165,10 +165,10 @@ Partial Class CourseSearch
         '
         Me.FTCheckBox.AutoSize = True
         Me.FTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FTCheckBox.Location = New System.Drawing.Point(544, 204)
-        Me.FTCheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.FTCheckBox.Location = New System.Drawing.Point(612, 255)
+        Me.FTCheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FTCheckBox.Name = "FTCheckBox"
-        Me.FTCheckBox.Size = New System.Drawing.Size(102, 24)
+        Me.FTCheckBox.Size = New System.Drawing.Size(120, 29)
         Me.FTCheckBox.TabIndex = 11
         Me.FTCheckBox.Text = "Fall Term"
         Me.FTCheckBox.UseVisualStyleBackColor = True
@@ -177,20 +177,20 @@ Partial Class CourseSearch
         '
         Me.WTCheckBox.AutoSize = True
         Me.WTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.WTCheckBox.Location = New System.Drawing.Point(751, 155)
-        Me.WTCheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.WTCheckBox.Location = New System.Drawing.Point(845, 194)
+        Me.WTCheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.WTCheckBox.Name = "WTCheckBox"
-        Me.WTCheckBox.Size = New System.Drawing.Size(124, 24)
+        Me.WTCheckBox.Size = New System.Drawing.Size(146, 29)
         Me.WTCheckBox.TabIndex = 12
         Me.WTCheckBox.Text = "Winter Term"
         Me.WTCheckBox.UseVisualStyleBackColor = True
         '
         'courseListView
         '
-        Me.courseListView.Location = New System.Drawing.Point(36, 299)
-        Me.courseListView.Margin = New System.Windows.Forms.Padding(4)
+        Me.courseListView.Location = New System.Drawing.Point(40, 374)
+        Me.courseListView.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.courseListView.Name = "courseListView"
-        Me.courseListView.Size = New System.Drawing.Size(908, 354)
+        Me.courseListView.Size = New System.Drawing.Size(1021, 442)
         Me.courseListView.TabIndex = 14
         Me.courseListView.UseCompatibleStateImageBehavior = False
         '
@@ -199,10 +199,10 @@ Partial Class CourseSearch
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(64, 319)
+        Me.Label1.Location = New System.Drawing.Point(72, 399)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(77, 20)
+        Me.Label1.Size = New System.Drawing.Size(92, 25)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Courses:"
         '
@@ -211,10 +211,10 @@ Partial Class CourseSearch
         Me.MCheckBox.AutoSize = True
         Me.MCheckBox.BackColor = System.Drawing.SystemColors.Window
         Me.MCheckBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.MCheckBox.Location = New System.Drawing.Point(73, 407)
-        Me.MCheckBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.MCheckBox.Location = New System.Drawing.Point(82, 509)
+        Me.MCheckBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MCheckBox.Name = "MCheckBox"
-        Me.MCheckBox.Size = New System.Drawing.Size(84, 21)
+        Me.MCheckBox.Size = New System.Drawing.Size(96, 24)
         Me.MCheckBox.TabIndex = 16
         Me.MCheckBox.Text = "MTH110"
         Me.MCheckBox.UseVisualStyleBackColor = False
@@ -223,10 +223,10 @@ Partial Class CourseSearch
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        Me.DataGridView1.Location = New System.Drawing.Point(68, 436)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(76, 545)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(851, 185)
+        Me.DataGridView1.Size = New System.Drawing.Size(957, 231)
         Me.DataGridView1.TabIndex = 18
         '
         'Column1
@@ -262,18 +262,19 @@ Partial Class CourseSearch
         'PCheckBox
         '
         Me.PCheckBox.AutoSize = True
-        Me.PCheckBox.Location = New System.Drawing.Point(176, 407)
+        Me.PCheckBox.Location = New System.Drawing.Point(198, 509)
+        Me.PCheckBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PCheckBox.Name = "PCheckBox"
-        Me.PCheckBox.Size = New System.Drawing.Size(85, 21)
+        Me.PCheckBox.Size = New System.Drawing.Size(98, 24)
         Me.PCheckBox.TabIndex = 19
         Me.PCheckBox.Text = "PSY 102"
         Me.PCheckBox.UseVisualStyleBackColor = True
         '
         'CourseSearch
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1068, 721)
+        Me.ClientSize = New System.Drawing.Size(1202, 901)
         Me.Controls.Add(Me.PCheckBox)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MCheckBox)
@@ -291,8 +292,9 @@ Partial Class CourseSearch
         Me.Controls.Add(Me.cancelButton)
         Me.Controls.Add(Me.searchTextBox)
         Me.Controls.Add(Me.searchButton)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "CourseSearch"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Search"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
