@@ -274,7 +274,7 @@ Partial Class CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1202, 901)
+        Me.ClientSize = New System.Drawing.Size(1206, 913)
         Me.Controls.Add(Me.PCheckBox)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MCheckBox)
@@ -293,9 +293,12 @@ Partial Class CourseSearch
         Me.Controls.Add(Me.searchTextBox)
         Me.Controls.Add(Me.searchButton)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "CourseSearch"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Search"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
