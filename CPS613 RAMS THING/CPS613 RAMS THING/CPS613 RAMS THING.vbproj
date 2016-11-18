@@ -88,15 +88,15 @@
     <Compile Include="err.Designer.vb">
       <DependentUpon>err.vb</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="err.vb">
+    <Compile Include="err.vb">
       <SubType>Form</SubType>
-    </EmbeddedResource>
+    </Compile>
     <Compile Include="login.Designer.vb">
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="login.vb">
+    <Compile Include="login.vb">
       <SubType>Form</SubType>
-    </EmbeddedResource>
+    </Compile>
     <Compile Include="MDI.vb">
       <SubType>Form</SubType>
     </Compile>
