@@ -1,13 +1,4 @@
 ﻿Public Class Enrollment
-    Dim complete = Color.LimeGreen
-    Dim failed = Color.IndianRed
-    Dim open = Color.SkyBlue
-    Dim enrolled = Color.Yellow
-    Dim unavailable = Color.DarkGray
-
-    Dim passedCourses As CourseObject() = {PCS110CO, CPS109CO, CPS213CO, LL1CO, MTH207CO, CPS412CO, CPS209CO, CPS310CO, LL2CO}
-    'Dim enrolledCourses As CourseObject() = {MTH108CO, CMN300CO, CPS305CO, CPS393CO, CPS393CO, CPS406CO, CPS506CO, CPS590CO}
-
     Dim Year2InitLoc As Point
     Dim Y3Y4InitLoc As Point
     Dim break = 15
@@ -18,17 +9,8 @@
 
     Private Sub Enrollment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
-
-        'For i As Integer = 0 To (passedCourses.Length - 1)
-        '    passedCourses(i) = New CourseObject
-        '    passedCourses(i).initialize()
-        '    passedCourses(i).updateState("fail")
-        'Next
         LoadFirstYear()
         LoadSecondYear()
-        'For i As Integer = 1 To enrolledCourses.Length
-        'enrolledCourses(i).updateState("enrolled")
-        'Next
         Year2InitLoc = Y2BigPanel.Location
         Y3Y4InitLoc = Y3Y4Panel.Location
         closeYear1()
@@ -60,17 +42,6 @@
         LL1CO.CourseName.Text = ""
         PCS110CO.CourseCode.Text = "Physics"
 
-        'MTH110CO.updateState("fail")
-        'MTH207CO.updateState("pass")
-        'CPS109CO.updateState("pass")
-        'CPS209CO.updateState("pass")
-        'CPS213CO.updateState("pass")
-        'CPS310CO.updateState("pass")
-        'CPS412CO.updateState("pass")
-        'LL1CO.updateState("pass")
-        'LL2CO.updateState("pass")
-        'PCS110CO.updateState("pass")
-
         MTH110CO.changeState(CourseObject.State.failed)
         MTH207CO.changeState(CourseObject.State.passed)
         CPS109CO.changeState(CourseObject.State.passed)
@@ -82,6 +53,16 @@
         LL2CO.changeState(CourseObject.State.passed)
         PCS110CO.changeState(CourseObject.State.passed)
 
+        MTH207CO.grade = 3.27
+        CPS109CO.grade = 3.0
+        CPS209CO.grade = 2.67
+        CPS213CO.grade = 3.67
+        CPS310CO.grade = 3.27
+        CPS412CO.grade = 3.0
+        PCS110CO.grade = 3.27
+        LL1CO.grade = 2.27
+        LL2CO.grade = 3.33
+        MTH110CO.grade = 1.27
     End Sub
 
     Sub LoadSecondYear()
@@ -97,8 +78,6 @@
         OE1CO.CourseCode.Text = "Open Elective 1"
         OE2CO.CourseCode.Text = "Open Elective 2"
 
-
-
         MTH108CO.CourseName.Text = "Linear Algebraa"
         CMN300CO.CourseName.Text = "Communications in" + vbCrLf + "Comp. Industry"
         CPS305CO.CourseName.Text = "Data Structures"
@@ -109,18 +88,6 @@
         CPS590CO.CourseName.Text = "Operating" + vbCrLf + "Systems I"
         OE1CO.CourseName.Text = ""
         OE2CO.CourseName.Text = ""
-
-
-        'MTH108CO.updateState("enroll")
-        'CMN300CO.updateState("enroll")
-        'CPS305CO.updateState("enroll")
-        'CPS393CO.updateState("enroll")
-        'CPS420CO.updateState("close")
-        'CPS406CO.updateState("enroll")
-        'CPS506CO.updateState("enroll")
-        'CPS590CO.updateState("enroll")
-        'OE1CO.updateState("open")
-        'OE2CO.updateState("open")
 
         MTH108CO.changeState(CourseObject.State.enrolled)
         CMN300CO.changeState(CourseObject.State.enrolled)
