@@ -52,6 +52,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,6 +83,18 @@
       <DependentUpon>Enrollment.vb</DependentUpon>
     </Compile>
     <Compile Include="Enrollment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="err.Designer.vb">
+      <DependentUpon>err.vb</DependentUpon>
+    </Compile>
+    <Compile Include="err.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI.vb">
@@ -135,6 +148,12 @@
     <EmbeddedResource Include="Enrollment.resx">
       <DependentUpon>Enrollment.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="err.resx">
+      <DependentUpon>err.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
     </EmbeddedResource>
@@ -153,12 +172,23 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\CourseObject.datasource" />
+    <None Include="My Project\DataSources\CourseSearch.datasource" />
+    <None Include="My Project\DataSources\CPS613_RAMS_THING.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\CPS613_RAMS_THING.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\Enrollment.datasource" />
+    <None Include="My Project\DataSources\Help.datasource" />
+    <None Include="My Project\DataSources\MDI.datasource" />
+    <None Include="My Project\DataSources\pageHome.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
