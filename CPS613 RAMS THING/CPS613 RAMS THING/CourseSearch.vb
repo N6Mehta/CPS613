@@ -16,7 +16,6 @@
     End Sub
 
     Private Sub searchListBox_SelectedIndexChanged(sender As Object, e As EventArgs)
-
     End Sub
 
     Public Sub MCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles MCheckBox.CheckedChanged
