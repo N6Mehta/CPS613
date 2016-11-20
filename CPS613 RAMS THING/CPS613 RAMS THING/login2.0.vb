@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim err As New err
+        Dim err As New erro2
         Dim home As New pageHome
         If Masked1.Text = "" Then
             err.ShowDialog()

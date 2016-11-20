@@ -106,6 +106,12 @@
     <Compile Include="Enrollment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="erro2.Designer.vb">
+      <DependentUpon>erro2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="erro2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login2.0.Designer.vb">
       <DependentUpon>login2.0.vb</DependentUpon>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Enrollment.resx">
       <DependentUpon>Enrollment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="erro2.resx">
+      <DependentUpon>erro2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.vb</DependentUpon>
