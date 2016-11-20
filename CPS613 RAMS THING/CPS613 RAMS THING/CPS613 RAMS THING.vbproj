@@ -106,6 +106,12 @@
     <Compile Include="Enrollment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="login2.0.Designer.vb">
+      <DependentUpon>login2.0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login2.0.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MDI.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login2.0.resx">
+      <DependentUpon>login2.0.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
