@@ -1,5 +1,6 @@
 ﻿Public Class CourseObject
     Private prevName As String
+    Private pre_rec As String
 
     Shared selectedCourse As CourseObject
 
@@ -47,7 +48,7 @@
     End Sub
 
     Private Sub CourseObject_Click(sender As Object, e As EventArgs) Handles Me.Click, CourseName.Click, CourseCode.Click
-        MessageBox.Show("Course Name: " + Me.CourseCode.Text + " " + Me.CourseName.Text + vbNewLine + "Grade: " + Me.grade.ToString, "Course Info")
+        MessageBox.Show("Course Name: " + Course_Code + " " + Course_Name + vbNewLine + "Grade: " + Course_Grade.ToString + vbNewLine + "Pre-requisite: " + Pre_Requisite, "Course Info")
     End Sub
 
     Public Sub changeState(state As State)
@@ -76,6 +77,44 @@
             Me.BackColor = Color.DarkGray
         End If
     End Sub
+
+    Public Property Course_Name As String
+        Get
+            Return Me.CourseName.Text
+        End Get
+        Set(value As String)
+            Me.CourseName.Text = value
+        End Set
+    End Property
+
+    Public Property Course_Code As String
+        Get
+            Return Me.CourseCode.Text
+        End Get
+        Set(value As String)
+            Me.CourseCode.Text = value
+        End Set
+    End Property
+
+    Public Property Course_Grade As Double
+        Get
+            Return Me.grade
+        End Get
+        Set(value As Double)
+            Me.grade = value
+        End Set
+    End Property
+
+    Public Property Pre_Requisite As String
+        Get
+            Return pre_rec
+        End Get
+        Set(value As String)
+            pre_rec = value
+        End Set
+    End Property
+
+
 
     Public Sub connectSearch(search As CourseSearch)
         Me.searchWindow = search
