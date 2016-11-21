@@ -62,4 +62,8 @@
     Public Sub homeConnect(personal As Personal_Information)
         Me.person = personal
     End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+
+    End Sub
 End Class
