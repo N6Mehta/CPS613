@@ -36,21 +36,11 @@ Partial Class pageHome
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
-        Me.Mail = New System.Windows.Forms.Label()
-        Me.Mstreet = New System.Windows.Forms.Label()
-        Me.Mcity = New System.Windows.Forms.Label()
-        Me.Mprovince = New System.Windows.Forms.Label()
-        Me.Mcode = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Email = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Phone = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Address = New System.Windows.Forms.Label()
-        Me.Hstreet = New System.Windows.Forms.Label()
-        Me.Hcity = New System.Windows.Forms.Label()
-        Me.Hprovince = New System.Windows.Forms.Label()
-        Me.Hcode = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -66,6 +56,8 @@ Partial Class pageHome
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Address = New System.Windows.Forms.Label()
+        Me.mail = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -209,14 +201,14 @@ Partial Class pageHome
         Me.GroupBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox4.Controls.Add(Me.mail)
+        Me.GroupBox4.Controls.Add(Me.Address)
         Me.GroupBox4.Controls.Add(Me.LinkLabel4)
-        Me.GroupBox4.Controls.Add(Me.Mail)
         Me.GroupBox4.Controls.Add(Me.Label16)
         Me.GroupBox4.Controls.Add(Me.Email)
         Me.GroupBox4.Controls.Add(Me.Label14)
         Me.GroupBox4.Controls.Add(Me.Phone)
         Me.GroupBox4.Controls.Add(Me.Label15)
-        Me.GroupBox4.Controls.Add(Me.Address)
         Me.GroupBox4.Controls.Add(Me.Label1)
         Me.GroupBox4.Location = New System.Drawing.Point(182, 672)
         Me.GroupBox4.Name = "GroupBox4"
@@ -237,48 +229,6 @@ Partial Class pageHome
         Me.LinkLabel4.TabStop = True
         Me.LinkLabel4.Text = "Edit Information..."
         '
-        'Mail
-        '
-        Me.Mail.AutoSize = True
-        Me.Mail.Location = New System.Drawing.Point(381, 68)
-        Me.Mail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Mail.Name = "Mail"
-        Me.Mail.Size = New System.Drawing.Size(188, 40)
-        Me.Mail.TabIndex = 7
-        Me.Mail.Text = "100 Random Street" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Toronto Ontario M5V 123"
-        '
-        'Mstreet
-        '
-        Me.Mstreet.Location = New System.Drawing.Point(0, 0)
-        Me.Mstreet.Name = "Mstreet"
-        Me.Mstreet.Size = New System.Drawing.Size(100, 23)
-        Me.Mstreet.TabIndex = 0
-        Me.Mstreet.Text = "100 Random Street"
-        '
-        'Mcity
-        '
-        Me.Mcity.Location = New System.Drawing.Point(0, 0)
-        Me.Mcity.Name = "Mcity"
-        Me.Mcity.Size = New System.Drawing.Size(100, 23)
-        Me.Mcity.TabIndex = 0
-        Me.Mcity.Text = "Toronto"
-        '
-        'Mprovince
-        '
-        Me.Mprovince.Location = New System.Drawing.Point(0, 0)
-        Me.Mprovince.Name = "Mprovince"
-        Me.Mprovince.Size = New System.Drawing.Size(100, 23)
-        Me.Mprovince.TabIndex = 0
-        Me.Mprovince.Text = "Ontario"
-        '
-        'Mcode
-        '
-        Me.Mcode.Location = New System.Drawing.Point(0, 0)
-        Me.Mcode.Name = "Mcode"
-        Me.Mcode.Size = New System.Drawing.Size(100, 23)
-        Me.Mcode.TabIndex = 0
-        Me.Mcode.Text = "M5V 123"
-        '
         'Label16
         '
         Me.Label16.AutoSize = True
@@ -296,9 +246,9 @@ Partial Class pageHome
         Me.Email.Location = New System.Drawing.Point(381, 155)
         Me.Email.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Email.Name = "Email"
-        Me.Email.Size = New System.Drawing.Size(66, 20)
+        Me.Email.Size = New System.Drawing.Size(72, 20)
         Me.Email.TabIndex = 5
-        Me.Email.Text = "Label16"
+        Me.Email.Text = "No Email"
         '
         'Label14
         '
@@ -328,51 +278,9 @@ Partial Class pageHome
         Me.Label15.Location = New System.Drawing.Point(10, 131)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(116, 20)
+        Me.Label15.Size = New System.Drawing.Size(220, 40)
         Me.Label15.TabIndex = 2
         Me.Label15.Text = "Home Phone"
-        '
-        'Address
-        '
-        Me.Address.AutoSize = True
-        Me.Address.Location = New System.Drawing.Point(26, 68)
-        Me.Address.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Address.Name = "Address"
-        Me.Address.Size = New System.Drawing.Size(188, 40)
-        Me.Address.TabIndex = 1
-        Me.Address.Text = "100 Random Street" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Toronto Ontario M5V 123"
-        '
-        'Hstreet
-        '
-        Me.Hstreet.Location = New System.Drawing.Point(0, 0)
-        Me.Hstreet.Name = "Hstreet"
-        Me.Hstreet.Size = New System.Drawing.Size(100, 23)
-        Me.Hstreet.TabIndex = 0
-        Me.Hstreet.Text = "100 Random Street"
-        '
-        'Hcity
-        '
-        Me.Hcity.Location = New System.Drawing.Point(0, 0)
-        Me.Hcity.Name = "Hcity"
-        Me.Hcity.Size = New System.Drawing.Size(100, 23)
-        Me.Hcity.TabIndex = 0
-        Me.Hcity.Text = "Toronto"
-        '
-        'Hprovince
-        '
-        Me.Hprovince.Location = New System.Drawing.Point(0, 0)
-        Me.Hprovince.Name = "Hprovince"
-        Me.Hprovince.Size = New System.Drawing.Size(100, 23)
-        Me.Hprovince.TabIndex = 0
-        Me.Hprovince.Text = "Ontario"
-        '
-        'Hcode
-        '
-        Me.Hcode.Location = New System.Drawing.Point(0, 0)
-        Me.Hcode.Name = "Hcode"
-        Me.Hcode.Size = New System.Drawing.Size(100, 23)
-        Me.Hcode.TabIndex = 0
-        Me.Hcode.Text = "M5V 123"
         '
         'Label1
         '
@@ -543,6 +451,22 @@ Partial Class pageHome
         Me.Label13.TabIndex = 11
         Me.Label13.Text = "Tu 12:00 PM - 2:00 PM" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "We 2:00 PM - 4:00 PM"
         '
+        'Address
+        '
+        Me.Address.AutoSize = True
+        Me.Address.Location = New System.Drawing.Point(26, 68)
+        Me.Address.Name = "Address"
+        Me.Address.Size = New System.Drawing.Size(0, 20)
+        Me.Address.TabIndex = 9
+        '
+        'mail
+        '
+        Me.mail.AutoSize = True
+        Me.mail.Location = New System.Drawing.Point(381, 68)
+        Me.mail.Name = "mail"
+        Me.mail.Size = New System.Drawing.Size(0, 20)
+        Me.mail.TabIndex = 10
+        '
         'pageHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -601,19 +525,11 @@ Partial Class pageHome
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Phone As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Address As Label
-    Friend WithEvents Hstreet As Label
-    Friend WithEvents Hcity As Label
-    Friend WithEvents Hprovince As Label
-    Friend WithEvents Hcode As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Mail As Label
-    Friend WithEvents Mstreet As Label
-    Friend WithEvents Mcity As Label
-    Friend WithEvents Mprovince As Label
-    Friend WithEvents Mcode As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Email As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents Address As Label
+    Friend WithEvents mail As Label
 End Class
