@@ -236,14 +236,14 @@ Partial Class Personal_Information
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(46, 204)
+        Me.TextBox1.Location = New System.Drawing.Point(47, 204)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 26
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(312, 204)
+        Me.TextBox2.Location = New System.Drawing.Point(313, 204)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 27
