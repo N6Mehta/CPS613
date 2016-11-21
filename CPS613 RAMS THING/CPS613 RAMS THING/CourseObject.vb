@@ -32,10 +32,6 @@
         Me.changeState(State.open)
     End Sub
     'Called my the main form class
-    Public Sub initialize()
-        Me.changeState(State.open)
-        Me.grade = 0.0
-    End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         searchWindow = New CourseSearch
@@ -130,7 +126,6 @@
             Me.type = value
         End Set
     End Property
-
 
 
     Public Sub connectSearch(search As CourseSearch)
