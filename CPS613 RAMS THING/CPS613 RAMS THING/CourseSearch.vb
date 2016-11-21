@@ -1,5 +1,6 @@
 ﻿Public Class CourseSearch
     Public courseSelected As String
+    Public course As CourseObject
     Public Sub New()
 
         ' This call is required by the designer.
@@ -9,6 +10,7 @@
     End Sub
 
     Private Sub CourseSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        course.connectSearch(Me)
         MCheckBox.Visible = False
         MdesLabel.Visible = False
         MtimeLabel.Visible = False
@@ -37,6 +39,7 @@
     End Sub
 
     Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
+        course.CourseName.Text = courseSelected
         Me.Close()
     End Sub
 
@@ -48,6 +51,7 @@
             MroomLabel.Visible = True
             MunitLabel.Visible = True
             MPictureBox.Visible = True
+            CheckBox4.Checked = True
         ElseIf searchTextBox.Text = "PSY202" Then
             P2CheckBox.Visible = True
             P2desLabel.Visible = True
@@ -89,4 +93,9 @@
     Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles cancelButton.Click
         Me.Close()
     End Sub
+
+    Public Sub connectCourse(newCourse As CourseObject)
+        Me.course = newCourse
+    End Sub
+
 End Class

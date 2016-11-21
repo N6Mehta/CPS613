@@ -13,6 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -88,6 +88,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcademicStanding.Designer.vb">
+      <DependentUpon>AcademicStanding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicStanding.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CourseInfoObject.Designer.vb">
       <DependentUpon>CourseInfoObject.vb</DependentUpon>
     </Compile>
@@ -104,6 +110,18 @@
       <DependentUpon>Enrollment.vb</DependentUpon>
     </Compile>
     <Compile Include="Enrollment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="erro2.Designer.vb">
+      <DependentUpon>erro2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="erro2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login2.0.Designer.vb">
+      <DependentUpon>login2.0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login2.0.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI.vb">
@@ -146,8 +164,17 @@
     <Compile Include="pageHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Personal Information.Designer.vb">
+      <DependentUpon>Personal Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AcademicStanding.resx">
+      <DependentUpon>AcademicStanding.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CourseInfoObject.resx">
       <DependentUpon>CourseInfoObject.vb</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +187,15 @@
     <EmbeddedResource Include="Enrollment.resx">
       <DependentUpon>Enrollment.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="erro2.resx">
+      <DependentUpon>erro2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login2.0.resx">
+      <DependentUpon>login2.0.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pageHome.resx">
       <DependentUpon>pageHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal Information.resx">
+      <DependentUpon>Personal Information.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
