@@ -47,4 +47,8 @@
         CheckBox3.Checked = True
         CheckBox4.Checked = True
     End Sub
+
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
+
+    End Sub
 End Class
