@@ -26,14 +26,6 @@ Partial Class CourseSearch
         Me.searchTextBox = New System.Windows.Forms.TextBox()
         Me.cancelButton = New System.Windows.Forms.Button()
         Me.doneButton = New System.Windows.Forms.Button()
-        Me.filterLabel = New System.Windows.Forms.Label()
-        Me.LLCheckBox = New System.Windows.Forms.CheckBox()
-        Me.ULCheckBox = New System.Windows.Forms.CheckBox()
-        Me.PRCheckBox = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.OECheckBox = New System.Windows.Forms.CheckBox()
-        Me.FTCheckBox = New System.Windows.Forms.CheckBox()
-        Me.WTCheckBox = New System.Windows.Forms.CheckBox()
         Me.courseListView = New System.Windows.Forms.ListView()
         Me.MCheckBox = New System.Windows.Forms.CheckBox()
         Me.legendLabel = New System.Windows.Forms.Label()
@@ -115,98 +107,11 @@ Partial Class CourseSearch
         Me.doneButton.Text = "Done"
         Me.doneButton.UseVisualStyleBackColor = True
         '
-        'filterLabel
-        '
-        Me.filterLabel.AutoSize = True
-        Me.filterLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.filterLabel.Location = New System.Drawing.Point(31, 91)
-        Me.filterLabel.Name = "filterLabel"
-        Me.filterLabel.Size = New System.Drawing.Size(56, 20)
-        Me.filterLabel.TabIndex = 5
-        Me.filterLabel.Text = "Filters:"
-        '
-        'LLCheckBox
-        '
-        Me.LLCheckBox.AutoSize = True
-        Me.LLCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LLCheckBox.Location = New System.Drawing.Point(55, 126)
-        Me.LLCheckBox.Name = "LLCheckBox"
-        Me.LLCheckBox.Size = New System.Drawing.Size(114, 20)
-        Me.LLCheckBox.TabIndex = 6
-        Me.LLCheckBox.Text = "Lower Liberals"
-        Me.LLCheckBox.UseVisualStyleBackColor = True
-        '
-        'ULCheckBox
-        '
-        Me.ULCheckBox.AutoSize = True
-        Me.ULCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ULCheckBox.Location = New System.Drawing.Point(55, 166)
-        Me.ULCheckBox.Name = "ULCheckBox"
-        Me.ULCheckBox.Size = New System.Drawing.Size(116, 20)
-        Me.ULCheckBox.TabIndex = 7
-        Me.ULCheckBox.Text = "Upper Liberals"
-        Me.ULCheckBox.UseVisualStyleBackColor = True
-        '
-        'PRCheckBox
-        '
-        Me.PRCheckBox.AutoSize = True
-        Me.PRCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PRCheckBox.Location = New System.Drawing.Point(220, 126)
-        Me.PRCheckBox.Name = "PRCheckBox"
-        Me.PRCheckBox.Size = New System.Drawing.Size(166, 20)
-        Me.PRCheckBox.TabIndex = 8
-        Me.PRCheckBox.Text = "Professionally Related "
-        Me.PRCheckBox.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(220, 166)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(91, 20)
-        Me.CheckBox4.TabIndex = 9
-        Me.CheckBox4.Text = "Mandatory"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'OECheckBox
-        '
-        Me.OECheckBox.AutoSize = True
-        Me.OECheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OECheckBox.Location = New System.Drawing.Point(408, 126)
-        Me.OECheckBox.Name = "OECheckBox"
-        Me.OECheckBox.Size = New System.Drawing.Size(111, 20)
-        Me.OECheckBox.TabIndex = 10
-        Me.OECheckBox.Text = "Open Elective"
-        Me.OECheckBox.UseVisualStyleBackColor = True
-        '
-        'FTCheckBox
-        '
-        Me.FTCheckBox.AutoSize = True
-        Me.FTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FTCheckBox.Location = New System.Drawing.Point(408, 166)
-        Me.FTCheckBox.Name = "FTCheckBox"
-        Me.FTCheckBox.Size = New System.Drawing.Size(84, 20)
-        Me.FTCheckBox.TabIndex = 11
-        Me.FTCheckBox.Text = "Fall Term"
-        Me.FTCheckBox.UseVisualStyleBackColor = True
-        '
-        'WTCheckBox
-        '
-        Me.WTCheckBox.AutoSize = True
-        Me.WTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.WTCheckBox.Location = New System.Drawing.Point(563, 126)
-        Me.WTCheckBox.Name = "WTCheckBox"
-        Me.WTCheckBox.Size = New System.Drawing.Size(100, 20)
-        Me.WTCheckBox.TabIndex = 12
-        Me.WTCheckBox.Text = "Winter Term"
-        Me.WTCheckBox.UseVisualStyleBackColor = True
-        '
         'courseListView
         '
-        Me.courseListView.Location = New System.Drawing.Point(27, 243)
+        Me.courseListView.Location = New System.Drawing.Point(27, 113)
         Me.courseListView.Name = "courseListView"
-        Me.courseListView.Size = New System.Drawing.Size(682, 288)
+        Me.courseListView.Size = New System.Drawing.Size(743, 403)
         Me.courseListView.TabIndex = 14
         Me.courseListView.UseCompatibleStateImageBehavior = False
         '
@@ -215,9 +120,9 @@ Partial Class CourseSearch
         Me.MCheckBox.AutoSize = True
         Me.MCheckBox.BackColor = System.Drawing.SystemColors.Window
         Me.MCheckBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.MCheckBox.Location = New System.Drawing.Point(4, 24)
+        Me.MCheckBox.Location = New System.Drawing.Point(4, 26)
         Me.MCheckBox.Name = "MCheckBox"
-        Me.MCheckBox.Size = New System.Drawing.Size(67, 17)
+        Me.MCheckBox.Size = New System.Drawing.Size(68, 17)
         Me.MCheckBox.TabIndex = 16
         Me.MCheckBox.Text = "MTH110"
         Me.MCheckBox.UseVisualStyleBackColor = False
@@ -228,7 +133,7 @@ Partial Class CourseSearch
         Me.legendLabel.AutoSize = True
         Me.legendLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.legendLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.legendLabel.Location = New System.Drawing.Point(417, 259)
+        Me.legendLabel.Location = New System.Drawing.Point(427, 123)
         Me.legendLabel.Name = "legendLabel"
         Me.legendLabel.Size = New System.Drawing.Size(57, 16)
         Me.legendLabel.TabIndex = 17
@@ -239,7 +144,7 @@ Partial Class CourseSearch
         Me.openLabel.AutoSize = True
         Me.openLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.openLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.openLabel.Location = New System.Drawing.Point(505, 259)
+        Me.openLabel.Location = New System.Drawing.Point(516, 124)
         Me.openLabel.Name = "openLabel"
         Me.openLabel.Size = New System.Drawing.Size(37, 15)
         Me.openLabel.TabIndex = 19
@@ -250,7 +155,7 @@ Partial Class CourseSearch
         Me.closedLabel.AutoSize = True
         Me.closedLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.closedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.closedLabel.Location = New System.Drawing.Point(575, 259)
+        Me.closedLabel.Location = New System.Drawing.Point(585, 124)
         Me.closedLabel.Name = "closedLabel"
         Me.closedLabel.Size = New System.Drawing.Size(45, 15)
         Me.closedLabel.TabIndex = 21
@@ -261,7 +166,7 @@ Partial Class CourseSearch
         Me.waitLabel.AutoSize = True
         Me.waitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.waitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.waitLabel.Location = New System.Drawing.Point(653, 259)
+        Me.waitLabel.Location = New System.Drawing.Point(662, 124)
         Me.waitLabel.Name = "waitLabel"
         Me.waitLabel.Size = New System.Drawing.Size(46, 15)
         Me.waitLabel.TabIndex = 23
@@ -272,7 +177,7 @@ Partial Class CourseSearch
         Me.PictureBox3.ErrorImage = Nothing
         Me.PictureBox3.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.yellow_circle1
         Me.PictureBox3.InitialImage = Nothing
-        Me.PictureBox3.Location = New System.Drawing.Point(626, 256)
+        Me.PictureBox3.Location = New System.Drawing.Point(636, 124)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox3.TabIndex = 22
@@ -282,7 +187,7 @@ Partial Class CourseSearch
         '
         Me.PictureBox2.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.green_circle2
         Me.PictureBox2.InitialImage = Nothing
-        Me.PictureBox2.Location = New System.Drawing.Point(478, 256)
+        Me.PictureBox2.Location = New System.Drawing.Point(490, 123)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.TabIndex = 20
@@ -292,7 +197,7 @@ Partial Class CourseSearch
         '
         Me.PictureBox1.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.blue_circle1
         Me.PictureBox1.InitialImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(548, 256)
+        Me.PictureBox1.Location = New System.Drawing.Point(559, 124)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox1.TabIndex = 18
@@ -314,7 +219,7 @@ Partial Class CourseSearch
         Me.DescripLabel.AutoSize = True
         Me.DescripLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DescripLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripLabel.Location = New System.Drawing.Point(78, 1)
+        Me.DescripLabel.Location = New System.Drawing.Point(118, 1)
         Me.DescripLabel.Name = "DescripLabel"
         Me.DescripLabel.Size = New System.Drawing.Size(76, 16)
         Me.DescripLabel.TabIndex = 25
@@ -325,7 +230,7 @@ Partial Class CourseSearch
         Me.TimeLabel.AutoSize = True
         Me.TimeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel.Location = New System.Drawing.Point(219, 1)
+        Me.TimeLabel.Location = New System.Drawing.Point(337, 1)
         Me.TimeLabel.Name = "TimeLabel"
         Me.TimeLabel.Size = New System.Drawing.Size(46, 16)
         Me.TimeLabel.TabIndex = 26
@@ -336,7 +241,7 @@ Partial Class CourseSearch
         Me.roomLabel.AutoSize = True
         Me.roomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.roomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.roomLabel.Location = New System.Drawing.Point(323, 1)
+        Me.roomLabel.Location = New System.Drawing.Point(441, 1)
         Me.roomLabel.Name = "roomLabel"
         Me.roomLabel.Size = New System.Drawing.Size(45, 16)
         Me.roomLabel.TabIndex = 27
@@ -347,7 +252,7 @@ Partial Class CourseSearch
         Me.UnitLabel.AutoSize = True
         Me.UnitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.UnitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UnitLabel.Location = New System.Drawing.Point(424, 1)
+        Me.UnitLabel.Location = New System.Drawing.Point(542, 1)
         Me.UnitLabel.Name = "UnitLabel"
         Me.UnitLabel.Size = New System.Drawing.Size(31, 16)
         Me.UnitLabel.TabIndex = 28
@@ -358,7 +263,7 @@ Partial Class CourseSearch
         Me.statusLabel.AutoSize = True
         Me.statusLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.statusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.statusLabel.Location = New System.Drawing.Point(515, 1)
+        Me.statusLabel.Location = New System.Drawing.Point(633, 1)
         Me.statusLabel.Name = "statusLabel"
         Me.statusLabel.Size = New System.Drawing.Size(45, 16)
         Me.statusLabel.TabIndex = 29
@@ -368,7 +273,7 @@ Partial Class CourseSearch
         '
         Me.P2CheckBox.AutoSize = True
         Me.P2CheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.P2CheckBox.Location = New System.Drawing.Point(4, 59)
+        Me.P2CheckBox.Location = New System.Drawing.Point(4, 57)
         Me.P2CheckBox.Name = "P2CheckBox"
         Me.P2CheckBox.Size = New System.Drawing.Size(65, 17)
         Me.P2CheckBox.TabIndex = 30
@@ -380,7 +285,7 @@ Partial Class CourseSearch
         '
         Me.P4CheckBox.AutoSize = True
         Me.P4CheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.P4CheckBox.Location = New System.Drawing.Point(4, 97)
+        Me.P4CheckBox.Location = New System.Drawing.Point(4, 88)
         Me.P4CheckBox.Name = "P4CheckBox"
         Me.P4CheckBox.Size = New System.Drawing.Size(61, 17)
         Me.P4CheckBox.TabIndex = 31
@@ -393,7 +298,7 @@ Partial Class CourseSearch
         Me.P2desLabel.AutoSize = True
         Me.P2desLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P2desLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P2desLabel.Location = New System.Drawing.Point(78, 56)
+        Me.P2desLabel.Location = New System.Drawing.Point(118, 54)
         Me.P2desLabel.Name = "P2desLabel"
         Me.P2desLabel.Size = New System.Drawing.Size(77, 15)
         Me.P2desLabel.TabIndex = 32
@@ -405,7 +310,7 @@ Partial Class CourseSearch
         Me.P4desLabel.AutoSize = True
         Me.P4desLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P4desLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P4desLabel.Location = New System.Drawing.Point(78, 94)
+        Me.P4desLabel.Location = New System.Drawing.Point(118, 85)
         Me.P4desLabel.Name = "P4desLabel"
         Me.P4desLabel.Size = New System.Drawing.Size(113, 15)
         Me.P4desLabel.TabIndex = 33
@@ -417,7 +322,7 @@ Partial Class CourseSearch
         Me.MdesLabel.AutoSize = True
         Me.MdesLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MdesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MdesLabel.Location = New System.Drawing.Point(78, 21)
+        Me.MdesLabel.Location = New System.Drawing.Point(118, 23)
         Me.MdesLabel.Name = "MdesLabel"
         Me.MdesLabel.Size = New System.Drawing.Size(126, 15)
         Me.MdesLabel.TabIndex = 34
@@ -429,7 +334,7 @@ Partial Class CourseSearch
         Me.MtimeLabel.AutoSize = True
         Me.MtimeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MtimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MtimeLabel.Location = New System.Drawing.Point(219, 21)
+        Me.MtimeLabel.Location = New System.Drawing.Point(337, 23)
         Me.MtimeLabel.Name = "MtimeLabel"
         Me.MtimeLabel.Size = New System.Drawing.Size(51, 26)
         Me.MtimeLabel.TabIndex = 35
@@ -440,7 +345,7 @@ Partial Class CourseSearch
         '
         Me.P2timeLabel.AutoSize = True
         Me.P2timeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.P2timeLabel.Location = New System.Drawing.Point(219, 56)
+        Me.P2timeLabel.Location = New System.Drawing.Point(337, 54)
         Me.P2timeLabel.Name = "P2timeLabel"
         Me.P2timeLabel.Size = New System.Drawing.Size(58, 26)
         Me.P2timeLabel.TabIndex = 36
@@ -451,7 +356,7 @@ Partial Class CourseSearch
         '
         Me.P4timeLabel.AutoSize = True
         Me.P4timeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.P4timeLabel.Location = New System.Drawing.Point(219, 94)
+        Me.P4timeLabel.Location = New System.Drawing.Point(337, 85)
         Me.P4timeLabel.Name = "P4timeLabel"
         Me.P4timeLabel.Size = New System.Drawing.Size(55, 26)
         Me.P4timeLabel.TabIndex = 37
@@ -463,7 +368,7 @@ Partial Class CourseSearch
         Me.MroomLabel.AutoSize = True
         Me.MroomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MroomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MroomLabel.Location = New System.Drawing.Point(323, 21)
+        Me.MroomLabel.Location = New System.Drawing.Point(441, 23)
         Me.MroomLabel.Name = "MroomLabel"
         Me.MroomLabel.Size = New System.Drawing.Size(65, 15)
         Me.MroomLabel.TabIndex = 38
@@ -475,7 +380,7 @@ Partial Class CourseSearch
         Me.P2roomLabel.AutoSize = True
         Me.P2roomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P2roomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P2roomLabel.Location = New System.Drawing.Point(323, 56)
+        Me.P2roomLabel.Location = New System.Drawing.Point(441, 54)
         Me.P2roomLabel.Name = "P2roomLabel"
         Me.P2roomLabel.Size = New System.Drawing.Size(46, 15)
         Me.P2roomLabel.TabIndex = 39
@@ -487,7 +392,7 @@ Partial Class CourseSearch
         Me.P4roomLabel.AutoSize = True
         Me.P4roomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P4roomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P4roomLabel.Location = New System.Drawing.Point(323, 94)
+        Me.P4roomLabel.Location = New System.Drawing.Point(441, 85)
         Me.P4roomLabel.Name = "P4roomLabel"
         Me.P4roomLabel.Size = New System.Drawing.Size(53, 15)
         Me.P4roomLabel.TabIndex = 40
@@ -499,7 +404,7 @@ Partial Class CourseSearch
         Me.MunitLabel.AutoSize = True
         Me.MunitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MunitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MunitLabel.Location = New System.Drawing.Point(424, 21)
+        Me.MunitLabel.Location = New System.Drawing.Point(542, 23)
         Me.MunitLabel.Name = "MunitLabel"
         Me.MunitLabel.Size = New System.Drawing.Size(14, 15)
         Me.MunitLabel.TabIndex = 41
@@ -511,7 +416,7 @@ Partial Class CourseSearch
         Me.P2unitLabel.AutoSize = True
         Me.P2unitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P2unitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P2unitLabel.Location = New System.Drawing.Point(424, 56)
+        Me.P2unitLabel.Location = New System.Drawing.Point(542, 54)
         Me.P2unitLabel.Name = "P2unitLabel"
         Me.P2unitLabel.Size = New System.Drawing.Size(14, 15)
         Me.P2unitLabel.TabIndex = 42
@@ -522,7 +427,7 @@ Partial Class CourseSearch
         '
         Me.P4unitLabel.AutoSize = True
         Me.P4unitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.P4unitLabel.Location = New System.Drawing.Point(424, 94)
+        Me.P4unitLabel.Location = New System.Drawing.Point(542, 85)
         Me.P4unitLabel.Name = "P4unitLabel"
         Me.P4unitLabel.Size = New System.Drawing.Size(13, 13)
         Me.P4unitLabel.TabIndex = 43
@@ -532,7 +437,7 @@ Partial Class CourseSearch
         'MPictureBox
         '
         Me.MPictureBox.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.green_circle2
-        Me.MPictureBox.Location = New System.Drawing.Point(515, 24)
+        Me.MPictureBox.Location = New System.Drawing.Point(633, 26)
         Me.MPictureBox.Name = "MPictureBox"
         Me.MPictureBox.Size = New System.Drawing.Size(20, 20)
         Me.MPictureBox.TabIndex = 44
@@ -542,7 +447,7 @@ Partial Class CourseSearch
         'P2PictureBox
         '
         Me.P2PictureBox.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.blue_circle1
-        Me.P2PictureBox.Location = New System.Drawing.Point(515, 59)
+        Me.P2PictureBox.Location = New System.Drawing.Point(633, 57)
         Me.P2PictureBox.Name = "P2PictureBox"
         Me.P2PictureBox.Size = New System.Drawing.Size(20, 20)
         Me.P2PictureBox.TabIndex = 45
@@ -552,7 +457,7 @@ Partial Class CourseSearch
         'P4PictureBox
         '
         Me.P4PictureBox.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.yellow_circle1
-        Me.P4PictureBox.Location = New System.Drawing.Point(515, 97)
+        Me.P4PictureBox.Location = New System.Drawing.Point(633, 88)
         Me.P4PictureBox.Name = "P4PictureBox"
         Me.P4PictureBox.Size = New System.Drawing.Size(20, 20)
         Me.P4PictureBox.TabIndex = 46
@@ -570,7 +475,7 @@ Partial Class CourseSearch
         Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103.0!))
         Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90.0!))
-        Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
+        Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79.0!))
         Me.courseTableLayoutPanel.Controls.Add(Me.courseLabel, 0, 0)
         Me.courseTableLayoutPanel.Controls.Add(Me.P4PictureBox, 5, 3)
         Me.courseTableLayoutPanel.Controls.Add(Me.DescripLabel, 1, 0)
@@ -596,15 +501,22 @@ Partial Class CourseSearch
         Me.courseTableLayoutPanel.Controls.Add(Me.P4desLabel, 1, 3)
         Me.courseTableLayoutPanel.Controls.Add(Me.P2desLabel, 1, 2)
         Me.courseTableLayoutPanel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.courseTableLayoutPanel.Location = New System.Drawing.Point(72, 325)
+        Me.courseTableLayoutPanel.Location = New System.Drawing.Point(43, 150)
         Me.courseTableLayoutPanel.Name = "courseTableLayoutPanel"
         Me.courseTableLayoutPanel.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.courseTableLayoutPanel.RowCount = 4
-        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.71429!))
-        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.28571!))
-        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
+        Me.courseTableLayoutPanel.RowCount = 11
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.50943!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.49057!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36.0!))
         Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
-        Me.courseTableLayoutPanel.Size = New System.Drawing.Size(591, 128)
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.courseTableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31.0!))
+        Me.courseTableLayoutPanel.Size = New System.Drawing.Size(711, 348)
         Me.courseTableLayoutPanel.TabIndex = 47
         '
         'CourseSearch
@@ -621,14 +533,6 @@ Partial Class CourseSearch
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.legendLabel)
         Me.Controls.Add(Me.courseListView)
-        Me.Controls.Add(Me.WTCheckBox)
-        Me.Controls.Add(Me.FTCheckBox)
-        Me.Controls.Add(Me.OECheckBox)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.PRCheckBox)
-        Me.Controls.Add(Me.ULCheckBox)
-        Me.Controls.Add(Me.LLCheckBox)
-        Me.Controls.Add(Me.filterLabel)
         Me.Controls.Add(Me.doneButton)
         Me.Controls.Add(Me.cancelButton)
         Me.Controls.Add(Me.searchTextBox)
@@ -652,14 +556,6 @@ Partial Class CourseSearch
     Friend WithEvents searchTextBox As TextBox
     Friend WithEvents cancelButton As Button
     Friend WithEvents doneButton As Button
-    Friend WithEvents filterLabel As Label
-    Friend WithEvents LLCheckBox As CheckBox
-    Friend WithEvents ULCheckBox As CheckBox
-    Friend WithEvents PRCheckBox As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents OECheckBox As CheckBox
-    Friend WithEvents FTCheckBox As CheckBox
-    Friend WithEvents WTCheckBox As CheckBox
     Friend WithEvents courseListView As ListView
     Friend WithEvents MCheckBox As CheckBox
     Friend WithEvents legendLabel As Label
