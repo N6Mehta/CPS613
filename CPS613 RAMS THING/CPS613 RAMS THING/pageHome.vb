@@ -1,6 +1,6 @@
 ﻿Public Class pageHome
     Public nam As String
-
+    Private person As Personal_Information
     Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
 
@@ -53,8 +53,13 @@
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Dim edit As New Personal_Information
-        edit.ShowDialog()
+        ' Dim edit As New Personal_Information
+        person = New Personal_Information
+        person.personalConnect(Me)
+        person.Show()
+    End Sub
 
+    Public Sub homeConnect(personal As Personal_Information)
+        Me.person = personal
     End Sub
 End Class
