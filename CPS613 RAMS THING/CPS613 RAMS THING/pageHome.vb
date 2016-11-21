@@ -47,4 +47,14 @@
         CheckBox3.Checked = True
         CheckBox4.Checked = True
     End Sub
+
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
+
+    End Sub
+
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Dim edit As New Personal_Information
+        edit.ShowDialog()
+
+    End Sub
 End Class

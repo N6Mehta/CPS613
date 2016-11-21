@@ -3,6 +3,8 @@
 
     End Sub
 
+
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim err As New erro2
         Dim home As New pageHome
@@ -20,6 +22,12 @@
             Me.Close()
             home.MdiParent = MDI
             home.Show()
+        End If
+    End Sub
+
+    Private Sub EnterClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Username.KeyUp, Masked1.KeyUp
+        If e.KeyCode.Equals(Keys.Enter) Then
+            Button1_Click(sender, e)
         End If
     End Sub
 
