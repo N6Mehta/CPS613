@@ -5,8 +5,16 @@
     Shared selectedCourse As CourseObject
 
     Private searchWindow As CourseSearch
+    Private type As CourseType
     Public grade As Double
 
+    Public Enum CourseType
+        Liberal
+        Mandatory
+        Open_Elective
+        Pro_Related
+        No_Type
+    End Enum
     Public Enum State
         open
         closed
@@ -24,10 +32,6 @@
         Me.changeState(State.open)
     End Sub
     'Called my the main form class
-    Public Sub initialize()
-        Me.changeState(State.open)
-        Me.grade = 0.0
-    End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         searchWindow = New CourseSearch
@@ -114,6 +118,14 @@
         End Set
     End Property
 
+    Public Property Course_Type As CourseType
+        Get
+            Return Me.type
+        End Get
+        Set(value As CourseType)
+            Me.type = value
+        End Set
+    End Property
 
 
     Public Sub connectSearch(search As CourseSearch)
