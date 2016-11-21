@@ -158,6 +158,12 @@
     <Compile Include="pageHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Personal Information.Designer.vb">
+      <DependentUpon>Personal Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CourseInfoObject.resx">
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pageHome.resx">
       <DependentUpon>pageHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal Information.resx">
+      <DependentUpon>Personal Information.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
