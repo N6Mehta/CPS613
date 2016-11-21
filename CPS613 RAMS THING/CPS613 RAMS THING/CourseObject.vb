@@ -5,8 +5,16 @@
     Shared selectedCourse As CourseObject
 
     Private searchWindow As CourseSearch
+    Private type As CourseType
     Public grade As Double
 
+    Public Enum CourseType
+        Liberal
+        Mandatory
+        Open_Elective
+        Pro_Related
+        No_Type
+    End Enum
     Public Enum State
         open
         closed
@@ -111,6 +119,15 @@
         End Get
         Set(value As String)
             pre_rec = value
+        End Set
+    End Property
+
+    Public Property Course_Type As CourseType
+        Get
+            Return Me.type
+        End Get
+        Set(value As CourseType)
+            Me.type = value
         End Set
     End Property
 
