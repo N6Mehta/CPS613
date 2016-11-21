@@ -21,21 +21,24 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim home As New pageHome
+        pageHome.Close()
+        home.Hstreet.Text = Me.homeStreet.Text
+        home.Hprovince.Text = Me.homeProvince.Text
+        home.Hcity.Text = Me.homeCity.Text
+        home.Hcode.Text = Me.homeCode.Text
+
+
+        home.Mstreet.Text = Me.mailStreet.Text
+        home.Mprovince.Text = Me.mailProvince.Text
+        home.Mcity.Text = Me.mailCity.Text
+        home.Mcode.Text = Me.mailCode.Text
+
+
+        home.Phone.Text = Me.phone.Text
+        home.Email.Text = Me.email.Text
+        home.Show()
+
         Me.Close()
-
-        pageHome.Hstreet.Text = Me.homeStreet.Text
-        pageHome.Hprovince.Text = Me.homeProvince.Text
-        pageHome.Hcity.Text = Me.homeCity.Text
-        pageHome.Hcode.Text = Me.homeCode.Text
-
-
-        pageHome.Mstreet.Text = Me.mailStreet.Text
-        pageHome.Mprovince.Text = Me.mailProvince.Text
-        pageHome.Mcity.Text = Me.mailCity.Text
-        pageHome.Mcode.Text = Me.mailCode.Text
-
-
-        pageHome.Phone.Text = Me.phone.Text
-        pageHome.Email.Text = Me.email.Text
     End Sub
 End Class

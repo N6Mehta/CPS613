@@ -239,14 +239,6 @@ Partial Class pageHome
         '
         'Mail
         '
-        Me.Mail.AutoSize = True
-        Me.Mail.Location = New System.Drawing.Point(381, 68)
-        Me.Mail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Mail.Name = "Mail"
-        Me.Mail.Size = New System.Drawing.Size(188, 40)
-        Me.Mail.TabIndex = 7
-        Me.Mail.Text = Me.Mstreet.Text & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Toronto Ontario M5V 123"
-
         Me.Mstreet.Text = "100 Random Street"
 
         '
@@ -273,6 +265,16 @@ Partial Class pageHome
         Me.Mcode.Size = New System.Drawing.Size(100, 23)
         Me.Mcode.TabIndex = 0
         Me.Mcode.Text = "M5V 123"
+
+        Me.Mail.AutoSize = True
+        Me.Mail.Location = New System.Drawing.Point(381, 68)
+        Me.Mail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Mail.Name = "Mail"
+        Me.Mail.Size = New System.Drawing.Size(188, 40)
+        Me.Mail.TabIndex = 7
+        Me.Mail.Text = Me.Mstreet.Text & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Me.Mcity.Text & Space(1) & Me.Mprovince.Text & Space(1) & Me.Mcode.Text
+
+
         '
         'Label16
         '
@@ -329,14 +331,6 @@ Partial Class pageHome
         '
         'Address
         '
-        Me.Address.AutoSize = True
-        Me.Address.Location = New System.Drawing.Point(26, 68)
-        Me.Address.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Address.Name = "Address"
-        Me.Address.Size = New System.Drawing.Size(188, 40)
-        Me.Address.TabIndex = 1
-        Me.Address.Text = Me.Hstreet.Text & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Toronto Ontario M5V 123"
-
         Me.Hstreet.Text = "100 Random Street"
         '
         'Hcity
@@ -362,6 +356,17 @@ Partial Class pageHome
         Me.Hcode.Size = New System.Drawing.Size(100, 23)
         Me.Hcode.TabIndex = 0
         Me.Hcode.Text = "M5V 123"
+
+
+        Me.Address.AutoSize = True
+        Me.Address.Location = New System.Drawing.Point(26, 68)
+        Me.Address.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Address.Name = "Address"
+        Me.Address.Size = New System.Drawing.Size(188, 40)
+        Me.Address.TabIndex = 1
+        Me.Address.Text = Me.Hstreet.Text & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Me.Hcity.Text & Space(1) & Me.Hprovince.Text & Space(1) & Me.Hcode.Text
+
+
         '
         'Label1
         '
