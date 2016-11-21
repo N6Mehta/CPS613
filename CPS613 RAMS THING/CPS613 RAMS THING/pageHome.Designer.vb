@@ -35,6 +35,14 @@ Partial Class pageHome
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Mail = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Email = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Phone = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Address = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -49,8 +57,10 @@ Partial Class pageHome
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -196,6 +206,15 @@ Partial Class pageHome
         Me.GroupBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox4.Controls.Add(Me.LinkLabel4)
+        Me.GroupBox4.Controls.Add(Me.Mail)
+        Me.GroupBox4.Controls.Add(Me.Label16)
+        Me.GroupBox4.Controls.Add(Me.Email)
+        Me.GroupBox4.Controls.Add(Me.Label14)
+        Me.GroupBox4.Controls.Add(Me.Phone)
+        Me.GroupBox4.Controls.Add(Me.Label15)
+        Me.GroupBox4.Controls.Add(Me.Address)
+        Me.GroupBox4.Controls.Add(Me.Label1)
         Me.GroupBox4.Location = New System.Drawing.Point(121, 437)
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Name = "GroupBox4"
@@ -204,6 +223,82 @@ Partial Class pageHome
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Personal Information"
+        '
+        'Mail
+        '
+        Me.Mail.AutoSize = True
+        Me.Mail.Location = New System.Drawing.Point(254, 44)
+        Me.Mail.Name = "Mail"
+        Me.Mail.Size = New System.Drawing.Size(127, 26)
+        Me.Mail.TabIndex = 7
+        Me.Mail.Text = "100 Random Street" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Toronto Ontario M5V 123"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(237, 27)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(96, 13)
+        Me.Label16.TabIndex = 6
+        Me.Label16.Text = "Mailing Address"
+        '
+        'Email
+        '
+        Me.Email.AutoSize = True
+        Me.Email.Location = New System.Drawing.Point(254, 101)
+        Me.Email.Name = "Email"
+        Me.Email.Size = New System.Drawing.Size(45, 13)
+        Me.Email.TabIndex = 5
+        Me.Email.Text = "Label16"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(237, 85)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(87, 13)
+        Me.Label14.TabIndex = 4
+        Me.Label14.Text = "Ryerson Email"
+        '
+        'Phone
+        '
+        Me.Phone.AutoSize = True
+        Me.Phone.Location = New System.Drawing.Point(17, 101)
+        Me.Phone.Name = "Phone"
+        Me.Phone.Size = New System.Drawing.Size(73, 13)
+        Me.Phone.TabIndex = 3
+        Me.Phone.Text = "905-321-4321"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(7, 85)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(79, 13)
+        Me.Label15.TabIndex = 2
+        Me.Label15.Text = "Home Phone"
+        '
+        'Address
+        '
+        Me.Address.AutoSize = True
+        Me.Address.Location = New System.Drawing.Point(17, 44)
+        Me.Address.Name = "Address"
+        Me.Address.Size = New System.Drawing.Size(130, 26)
+        Me.Address.TabIndex = 1
+        Me.Address.Text = "100 Random Street" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Toronto Ontario M5V 123 "
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(7, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(88, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Home Address"
         '
         'GroupBox5
         '
@@ -378,6 +473,17 @@ Partial Class pageHome
         Me.Label13.TabIndex = 11
         Me.Label13.Text = "Tu 12:00 PM - 2:00 PM" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "We 2:00 PM - 4:00 PM"
         '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.Location = New System.Drawing.Point(361, 105)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(89, 13)
+        Me.LinkLabel4.TabIndex = 8
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Edit Information..."
+        '
         'pageHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -398,6 +504,8 @@ Partial Class pageHome
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
@@ -433,4 +541,13 @@ Partial Class pageHome
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Phone As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Address As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Mail As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Email As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents LinkLabel4 As LinkLabel
 End Class
