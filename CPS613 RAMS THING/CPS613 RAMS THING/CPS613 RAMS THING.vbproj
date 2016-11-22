@@ -170,6 +170,12 @@
     <Compile Include="Personal Information.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="viewDocs.Designer.vb">
+      <DependentUpon>viewDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AcademicStanding.resx">
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personal Information.resx">
       <DependentUpon>Personal Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewDocs.resx">
+      <DependentUpon>viewDocs.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -82,5 +82,13 @@
         Dim grades As New AcademicStanding
         grades.MdiParent = MDI
         grades.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+        Dim view As New viewDocs
+        view.MdiParent = MDI
+        view.Show()
+        Me.Close()
     End Sub
 End Class
