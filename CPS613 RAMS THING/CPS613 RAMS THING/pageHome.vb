@@ -1,5 +1,15 @@
 ﻿Public Class pageHome
     Public nam As String
+    Public homeStreet As String = "100 Random Street"
+    Public homeProvince As String = "Ontario"
+    Public homeCity As String = "Toronto"
+    Public homeCode As String = "M5V 123"
+
+
+    Public mailStreet As String = "100 Random Street"
+    Public mailProvince As String = "Ontario"
+    Public mailCity As String = "Toronto"
+    Public mailCode As String = "M5V 123"
     Private person As Personal_Information
     Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
@@ -14,6 +24,10 @@
     End Sub
 
     Private Sub pageHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.Address.Text = homeStreet & vbNewLine & homeCity & Space(1) & homeProvince & Space(1) & homeCode
+        Me.mail.Text = mailStreet & vbNewLine & mailCity & Space(1) & mailProvince & Space(1) & mailCode
+
         Username.Text = "Welcome, " & nam
     End Sub
 
@@ -55,7 +69,7 @@
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
         ' Dim edit As New Personal_Information
         person = New Personal_Information
-        Me.Close()
+        'Me.Close()
         person.personalConnect(Me)
         person.Show()
     End Sub
