@@ -1,6 +1,6 @@
 ﻿Public Class pageHome
     Public nam As String
-
+    Private person As Personal_Information
     Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
 
@@ -46,5 +46,27 @@
         CheckBox2.Checked = True
         CheckBox3.Checked = True
         CheckBox4.Checked = True
+    End Sub
+
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
+
+    End Sub
+
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        ' Dim edit As New Personal_Information
+        person = New Personal_Information
+        Me.Close()
+        person.personalConnect(Me)
+        person.Show()
+    End Sub
+
+    Public Sub homeConnect(personal As Personal_Information)
+        Me.person = personal
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        Dim grades As New AcademicStanding
+        grades.MdiParent = MDI
+        grades.Show()
     End Sub
 End Class

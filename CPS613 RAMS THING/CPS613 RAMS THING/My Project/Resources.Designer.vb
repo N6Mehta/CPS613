@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property blue_circle() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("blue circle", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property blue_circle1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("blue circle1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property collapse_arrow16001() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("collapse_arrow16001", resourceCulture)
@@ -73,9 +93,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property fall2015label() As System.Drawing.Bitmap
+        Friend ReadOnly Property green_circle() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("fall2015label", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("green circle", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -83,9 +103,19 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property fall2016label() As System.Drawing.Bitmap
+        Friend ReadOnly Property green_circle1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("fall2016label", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("green circle1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property green_circle2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("green circle2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -123,9 +153,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property winter2016label() As System.Drawing.Bitmap
+        Friend ReadOnly Property yellow_circle() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("winter2016label", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("yellow circle", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -133,9 +163,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property winter2017label() As System.Drawing.Bitmap
+        Friend ReadOnly Property yellow_circle1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("winter2017label", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("yellow circle1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

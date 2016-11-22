@@ -6,9 +6,12 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim login As New login
+        Dim login As New login2
         Me.WindowState = FormWindowState.Maximized
-        'login.ShowDialog()
+        login.ShowDialog()
+        ' Dim home As New pageHome
+        ' home.MdiParent = Me
+        'home.Show()
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
@@ -23,5 +26,9 @@
         hombre.nam = user
         hombre.MdiParent = Me
         hombre.Show()
+    End Sub
+
+    Private Sub CourseObject2_Load(sender As Object, e As EventArgs) 
+
     End Sub
 End Class
