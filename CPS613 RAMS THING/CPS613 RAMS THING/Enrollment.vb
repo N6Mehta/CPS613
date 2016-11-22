@@ -4,6 +4,7 @@
     Dim break = 15
     Dim Year1Opened As Boolean = False
     Dim Year2Opened As Boolean = False
+    Private searchWindow As CourseSearch
 
     Private Sub Enrollment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
@@ -16,7 +17,7 @@
     End Sub
 
     Sub LoadFirstYear()
-        MTH110CO.Course_Code = "MTH1100000"
+        MTH110CO.Course_Code = "MTH110"
         MTH207CO.Course_Code = "MTH207"
         CPS209CO.Course_Code = "CPS209"
         CPS213CO.Course_Code = "CPS213"
@@ -35,8 +36,8 @@
         CPS213CO.Course_Name = "Computer Org I"
         CPS209CO.Course_Name = "Computer" + vbCrLf + "Science II"
         CPS109CO.Course_Name = "Computer" + vbCrLf + "Science I"
-        LL2CO.Course_Name = "Perspectives in Psychology"
-        LL1CO.Course_Name = "Psychology of Gender"
+        LL2CO.Course_Name = "Perspectives in" + vbCrLf + "Psychology"
+        LL1CO.Course_Name = "Psychology of" + vbCrLf + "Gender"
         PCS110CO.Course_Name = "Physics"
 
         MTH110CO.changeState(CourseObject.State.failed)
@@ -78,7 +79,6 @@
     End Sub
 
     Sub LoadSecondYear()
-        'CPS406CO.CourseName.TextAlign = ContentAlignment.MiddleCenter
         MTH108CO.Course_Code = "MTH108"
         CMN300CO.Course_Code = "CMN300"
         CPS305CO.Course_Code = "CPS305"
@@ -193,5 +193,16 @@
             closeYear2()
         Else openYear2()
         End If
+    End Sub
+
+    Private Sub Y2S1AddButton_Click(sender As Object, e As EventArgs) Handles Y2S1AddButton.Click
+        Dim newCourse = New CourseObject
+        searchWindow = New CourseSearch
+        searchWindow.connectCourse(newCourse)
+        searchWindow.Show()
+        newCourse.CourseName.Text = searchWindow.course.CourseName.Text
+        newCourse.changeState(CourseObject.State.enrolled)
+        newCourse.Location = New Point(Y2S1AddButton.Location.X, Y2S1AddButton.Location.Y - 10)
+        Y2S1AddButton.Location = New Point(Y2S1AddButton.Location.X + newCourse.Width + 10, Y2S1AddButton.Location.Y)
     End Sub
 End Class

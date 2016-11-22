@@ -195,10 +195,10 @@
     <None Include="Resources\fall2015label.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fall2016label.png" />
+    <None Include="Resources\winter2016label.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\winter2016label.png" />
+    <None Include="Resources\fall2016label.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\winter2017label.png" />

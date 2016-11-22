@@ -10,7 +10,7 @@
     Public mailProvince As String = "Ontario"
     Public mailCity As String = "Toronto"
     Public mailCode As String = "M5V 123"
-    Private person As Personal_Information
+    'Private person As Personal_Information
     Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
 
@@ -68,19 +68,19 @@
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
         ' Dim edit As New Personal_Information
-        person = New Personal_Information
+        ' person = New Personal_Information
         'Me.Close()
-        person.personalConnect(Me)
-        person.Show()
+        ' person.personalConnect(Me)
+        'person.Show()
     End Sub
 
-    Public Sub homeConnect(personal As Personal_Information)
-        Me.person = personal
-    End Sub
+    '  Public Sub homeConnect(personal As Personal_Information)
+    ' Me.person = personal
+    ' End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Dim grades As New AcademicStanding
-        grades.MdiParent = MDI
-        grades.Show()
+        ' Dim grades As New AcademicStanding
+        'grades.MdiParent = MDI
+        'grades.Show()
     End Sub
 End Class

@@ -90,7 +90,7 @@
         courseSelected = P4CheckBox.Text
     End Sub
 
-    Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles cancelButton.Click
+    Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
         Me.Close()
     End Sub
 

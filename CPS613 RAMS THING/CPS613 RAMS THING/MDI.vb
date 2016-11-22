@@ -6,9 +6,9 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim login As New login2
+        'Dim login As New login2
         Me.WindowState = FormWindowState.Maximized
-        login.ShowDialog()
+        ' login.ShowDialog()
         ' Dim home As New pageHome
         ' home.MdiParent = Me
         'home.Show()
