@@ -196,13 +196,24 @@
     End Sub
 
     Private Sub Y2S1AddButton_Click(sender As Object, e As EventArgs) Handles Y2S1AddButton.Click
-        Dim newCourse = New CourseObject
         searchWindow = New CourseSearch
-        searchWindow.connectCourse(newCourse)
+        searchWindow.connectCourse(Y2S16thCO)
         searchWindow.Show()
-        newCourse.CourseName.Text = searchWindow.course.CourseName.Text
-        newCourse.changeState(CourseObject.State.enrolled)
-        newCourse.Location = New Point(Y2S1AddButton.Location.X, Y2S1AddButton.Location.Y - 10)
-        Y2S1AddButton.Location = New Point(Y2S1AddButton.Location.X + newCourse.Width + 10, Y2S1AddButton.Location.Y)
+        Y2S16thCO.Visible = True
+        Y2S16thCO.CourseName.Text = searchWindow.course.CourseName.Text
+        Y2S16thCO.changeState(CourseObject.State.enrolled)
+        Y2S16thCO.Location = New Point(Y2S1AddButton.Location.X, MTH108CO.Location.Y)
+        Y2S1AddButton.Visible = False
+    End Sub
+
+    Private Sub Y2S2AddButton_Click(sender As Object, e As EventArgs) Handles Y2S2AddButton.Click
+        searchWindow = New CourseSearch
+        searchWindow.connectCourse(Y2S26thCO)
+        searchWindow.Show()
+        Y2S26thCO.Visible = True
+        Y2S26thCO.CourseName.Text = searchWindow.course.CourseName.Text
+        Y2S26thCO.changeState(CourseObject.State.enrolled)
+        Y2S26thCO.Location = New Point(Y2S2AddButton.Location.X, OE2CO.Location.Y)
+        Y2S2AddButton.Visible = False
     End Sub
 End Class
