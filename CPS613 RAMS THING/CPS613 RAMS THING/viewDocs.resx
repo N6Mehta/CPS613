@@ -294,6 +294,20 @@
         wf+0BQAAgAUAAIAFAACAAQAAgAHB/4ABAACAAQAAgAEAALwBAAC8AQAAvAHB/4ABbP///5H/
 </value>
   </data>
+  <data name="Transcript.Text" xml:space="preserve">
+    <value>Ryerson University 
+Unofficial Transcript 
+
+Course 		Description		Grading 	            Grade		Grade Point 
+CPS 109 	                Computer Science I	                Graded		B		3.00
+CPS 209		Computer Science II	Graded 		B-		2.67
+CPS 213		Computer Org. I		Graded		B		3.00
+CPS 310		Computer Org. II	                Graded		A-		3.67
+CPS 412 	                Social Issues, Ethics	Graded		B		3.00
+MTH 110 	Discrete Math I		Graded		F		
+MTH 207 	Calc. and Comp.		Graded		B		2.27
+PCS 110		Physics			Graded		B		2.27</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>49</value>
   </metadata>
