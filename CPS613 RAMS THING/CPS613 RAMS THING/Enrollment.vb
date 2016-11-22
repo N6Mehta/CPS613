@@ -38,7 +38,7 @@
         CPS310CO.CourseName.Text = "Computer Org II"
         CPS213CO.CourseName.Text = "Computer Org I"
         CPS209CO.CourseName.Text = "Computer" + vbCrLf + "Science II"
-        CPS109CO.CourseName.Text = "Computer" + vbCrLf + "Science I"
+        CPS109CO.CourseName.Text = "Computer" + vbCrLf + "Science Iiiii"
         LL2CO.CourseName.Text = ""
         LL1CO.CourseName.Text = ""
         PCS110CO.CourseName.Text = "Physics"
