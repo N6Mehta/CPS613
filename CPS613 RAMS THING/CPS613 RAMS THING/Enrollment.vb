@@ -16,7 +16,7 @@
     End Sub
 
     Sub LoadFirstYear()
-        MTH110CO.Course_Code = "MTH110"
+        MTH110CO.Course_Code = "MTH1100000"
         MTH207CO.Course_Code = "MTH207"
         CPS209CO.Course_Code = "CPS209"
         CPS213CO.Course_Code = "CPS213"
