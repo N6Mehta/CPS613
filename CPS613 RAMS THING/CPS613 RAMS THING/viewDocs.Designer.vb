@@ -47,9 +47,10 @@ Partial Class viewDocs
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(25, 31)
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(22, 54)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(104, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(175, 20)
         Me.LinkLabel1.TabIndex = 1
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Unofficial Transcript "
@@ -123,9 +124,10 @@ Partial Class viewDocs
         'TaxInformation
         '
         Me.TaxInformation.AutoSize = True
-        Me.TaxInformation.Location = New System.Drawing.Point(23, 89)
+        Me.TaxInformation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TaxInformation.Location = New System.Drawing.Point(23, 149)
         Me.TaxInformation.Name = "TaxInformation"
-        Me.TaxInformation.Size = New System.Drawing.Size(80, 13)
+        Me.TaxInformation.Size = New System.Drawing.Size(134, 20)
         Me.TaxInformation.TabIndex = 3
         Me.TaxInformation.TabStop = True
         Me.TaxInformation.Text = "Tax Information"
