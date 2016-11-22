@@ -59,7 +59,7 @@ Partial Class Personal_Information
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(296, 283)
+        Me.Button2.Location = New System.Drawing.Point(297, 283)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
