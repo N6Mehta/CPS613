@@ -9,26 +9,30 @@
         Dim login As New login2
         Me.WindowState = FormWindowState.Maximized
         login.ShowDialog()
-        ' Dim home As New pageHome
-        ' home.MdiParent = Me
-        'home.Show()
+
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         Dim home As New pageHome
+        'ActiveForm.Close()
         home.nam = user
         home.MdiParent = Me
         home.Show()
     End Sub
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-        Dim hombre As New pageHome
-        hombre.nam = user
-        hombre.MdiParent = Me
-        hombre.Show()
+        Dim home As New pageHome
+        home.nam = user
+        home.MdiParent = Me
+        home.Show()
+        Me.ActiveMdiChild.Close()
+        'If Me.ActiveMdiChild.Visible = True Then
+        '  Me.ActiveMdiChild.Visible = False
+        '   hombre.Visible = True
+        'End If
     End Sub
 
-    Private Sub CourseObject2_Load(sender As Object, e As EventArgs) 
-
+    Private Sub CourseObject2_Load(sender As Object, e As EventArgs)
+        'change here
     End Sub
 End Class
