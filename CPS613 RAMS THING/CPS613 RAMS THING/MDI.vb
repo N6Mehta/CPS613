@@ -1,7 +1,7 @@
 ﻿Public Class MDI
     Public user As String
     Public Shared home As New pageHome
-    Public Shared enroll As New Enrollment
+    Public Shared enroll As New EnrollementForm
     Public Shared grades As New AcademicStanding
     Public Shared view As New viewDocs
     Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click

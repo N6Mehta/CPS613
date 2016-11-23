@@ -23,7 +23,7 @@
         enrolled
     End Enum
 
-    Private courseState As State
+    Public courseState As State
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.grade = 0.0
