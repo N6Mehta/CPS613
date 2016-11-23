@@ -1,6 +1,8 @@
 ﻿Public Class CourseObject
-    Private prevName As String
+    Private defName As String
+    Private defCode As String
     Private pre_rec As String
+
 
     Shared selectedCourse As CourseObject
 
@@ -27,8 +29,6 @@
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.grade = 0.0
-        Me.prevName = Me.CourseName.Text
-
         Me.changeState(State.open)
     End Sub
     'Called my the main form class
@@ -37,17 +37,15 @@
         searchWindow = New CourseSearch
         searchWindow.connectCourse(Me)
         searchWindow.Show()
-        Me.CourseName.Text = searchWindow.course.CourseName.Text
+
+        Me.CourseCode.Text = searchWindow.course.CourseCode.Text
         Me.changeState(State.enrolled)
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
         Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Me.CourseName.Text + "?", "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If msgResult = DialogResult.Yes Then
-            Me.changeState(State.open)
-            Me.CourseName.Text = prevName
-            Me.CourseCode.Text = "Course Course"
-            Me.grade = 0.0
+            Me.reset()
         End If
     End Sub
 
@@ -127,6 +125,35 @@
         End Set
     End Property
 
+    Private Sub reset()
+        Me.changeState(State.open)
+        updateType()
+        Me.CourseCode.Text = defCode
+        Me.CourseName.Text = defName
+        Me.grade = 0.0
+        Me.pre_rec = ""
+    End Sub
+
+    Private Sub updateType()
+        If type.Equals(CourseType.Liberal) Then
+            Me.defCode = "Add Liberal"
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.Open_Elective) Then
+            Me.defCode = "Add Open Elective"
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.Mandatory) Then
+            Me.defCode = "Add Mandatory "
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.Pro_Related) Then
+            Me.defCode = "Add Pro-Related"
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.No_Type) Then
+            Me.defCode = "Add Course"
+            Me.defName = ""
+
+        End If
+
+    End Sub
 
     Public Sub connectSearch(search As CourseSearch)
         Me.searchWindow = search

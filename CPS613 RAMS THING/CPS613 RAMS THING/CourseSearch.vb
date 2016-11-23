@@ -39,7 +39,7 @@
     End Sub
 
     Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
-        course.CourseName.Text = courseSelected
+        course.CourseCode.Text = courseSelected
         Me.Close()
     End Sub
 
