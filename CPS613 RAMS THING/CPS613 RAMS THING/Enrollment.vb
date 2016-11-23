@@ -1,19 +1,20 @@
 ﻿Public Class EnrollementForm
     Dim Year2InitLoc As Point
-    Dim Y3Y4InitLoc As Point
-    Dim break = 15
+    Dim break = 5
     Dim Year1Opened As Boolean = False
     Dim Year2Opened As Boolean = False
+    Dim Year3Opened As Boolean = False
     Private searchWindow As CourseSearch
 
     Private Sub Enrollment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         LoadFirstYear()
         LoadSecondYear()
+        LoadThirdYear()
         Year2InitLoc = Y2BigPanel.Location
-        Y3Y4InitLoc = Y3Y4Panel.Location
         closeYear1()
         closeYear2()
+        closeYear3()
     End Sub
 
     Sub LoadFirstYear()
@@ -87,8 +88,8 @@
         CPS406CO.Course_Code = "CPS406"
         CPS506CO.Course_Code = "CPS506"
         CPS590CO.Course_Code = "CPS590"
-        OE1CO.Course_Code = "Open Elective 1"
-        OE2CO.Course_Code = "Open Elective 2"
+        OE1CO.Course_Code = "Open Elective"
+        OE2CO.Course_Code = "Open Elective"
 
         MTH108CO.Course_Name = "Linear Algebra"
         CMN300CO.Course_Name = "Cmn in" + vbCrLf + "Comp. Industry"
@@ -131,12 +132,84 @@
         CPS590CO.Pre_Requisite = "CPS305, CPS393"
     End Sub
 
+    Sub LoadThirdYear()
+        Y3S1PRCO.Course_Code = "Professionally" + vbCrLf + "Related"
+        Y3S2PR1CO.Course_Code = "Professionally" + vbCrLf + "Related"
+        Y3S2PR2CO.Course_Code = "Professionally" + vbCrLf + "Related"
+        CPS616CO.Course_Code = "CPS616"
+        CPS633CO.Course_Code = "CPS633"
+        CPS706CO.Course_Code = "CPS706"
+        CPS721CO.Course_Code = "CPS721"
+        CPS510CO.Course_Code = "CPS510"
+        UL1CO.Course_Code = "Upper Liberal"
+        LL3CO.Course_Code = "Lower Liberal"
+
+        Y3S1PRCO.Course_Name = ""
+        Y3S2PR1CO.Course_Name = ""
+        Y3S2PR2CO.Course_Name = ""
+        CPS616CO.Course_Name = "Algorithms"
+        CPS633CO.Course_Name = "Computer" + vbCrLf + "Security"
+        CPS706CO.Course_Name = "Networks I"
+        CPS721CO.Course_Name = "Artificial" + vbCrLf + "Intelligence"
+        CPS510CO.Course_Name = "Databases I"
+        UL1CO.Course_Name = ""
+        LL3CO.Course_Name = ""
+
+        Y3S1PRCO.changeState(CourseObject.State.open)
+        Y3S2PR1CO.changeState(CourseObject.State.open)
+        Y3S2PR2CO.changeState(CourseObject.State.open)
+        CPS616CO.changeState(CourseObject.State.closed)
+        CPS633CO.changeState(CourseObject.State.closed)
+        CPS706CO.changeState(CourseObject.State.closed)
+        CPS721CO.changeState(CourseObject.State.closed)
+        CPS510CO.changeState(CourseObject.State.closed)
+        UL1CO.changeState(CourseObject.State.open)
+        LL3CO.changeState(CourseObject.State.open)
+
+        Y3S1PRCO.Course_Type = CourseObject.CourseType.Pro_Related
+        Y3S2PR1CO.Course_Type = CourseObject.CourseType.Pro_Related
+        Y3S2PR2CO.Course_Type = CourseObject.CourseType.Pro_Related
+        CPS616CO.Course_Type = CourseObject.CourseType.Mandatory
+        CPS633CO.Course_Type = CourseObject.CourseType.Mandatory
+        CPS706CO.Course_Type = CourseObject.CourseType.Mandatory
+        CPS721CO.Course_Type = CourseObject.CourseType.Mandatory
+        CPS510CO.Course_Type = CourseObject.CourseType.Mandatory
+        UL1CO.Course_Type = CourseObject.CourseType.Liberal
+        LL3CO.Course_Type = CourseObject.CourseType.Liberal
+
+        Y3S1PRCO.Pre_Requisite = ""
+        Y3S2PR1CO.Pre_Requisite = ""
+        Y3S2PR2CO.Pre_Requisite = ""
+        CPS616CO.Pre_Requisite = "CPS420, CPS305"
+        CPS633CO.Pre_Requisite = "CPS393"
+        CPS706CO.Pre_Requisite = "CPS590"
+        CPS721CO.Pre_Requisite = "CPS420, CPS305"
+        CPS510CO.Pre_Requisite = "CPS305"
+        UL1CO.Pre_Requisite = ""
+        LL3CO.Pre_Requisite = ""
+
+        'Y3S1PRCO
+        'Y3S2PR1CO
+        'Y3S2PR2CO
+        'CPS616CO
+        'CPS633CO
+        'CPS706CO
+        'CPS721CO
+        'CPS510CO
+        'UL1CO
+        'LL3CO
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Year1OpenButton.Click
         openYear1()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Year2OpenButton.Click
         openYear2()
+    End Sub
+
+    Private Sub Year3OpenButton_Click(sender As Object, e As EventArgs) Handles Year3OpenButton.Click
+        openYear3()
     End Sub
 
     Private Sub CloseYear1Button_Click(sender As Object, e As EventArgs) Handles Year1CloseButton.Click
@@ -147,13 +220,17 @@
         closeYear2()
     End Sub
 
+    Private Sub Year3CloseButton_Click(sender As Object, e As EventArgs) Handles Year3CloseButton.Click
+        closeYear3()
+    End Sub
+
     Sub openYear1()
         Year1Opened = True
         Year1Panel.Visible = True
         Year1CloseButton.Visible = True
         Year1OpenButton.Visible = False
         Y2BigPanel.Location = Year2InitLoc
-        Y3Y4Panel.Location = New Point(Y3Y4Panel.Location.X, Y3Y4Panel.Location.Y + break + Year1Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y + break + Year1Panel.Height)
     End Sub
 
     Sub openYear2()
@@ -161,7 +238,14 @@
         Year2Panel.Visible = True
         Year2CloseButton.Visible = True
         Year2OpenButton.Visible = False
-        Y3Y4Panel.Location = New Point(Y3Y4Panel.Location.X, Y3Y4Panel.Location.Y + break + Year2Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y + break + Year2Panel.Height)
+    End Sub
+
+    Sub openYear3()
+        Year3Opened = True
+        Year3Panel.Visible = True
+        Year3CloseButton.Visible = True
+        Year3OpenButton.Visible = False
     End Sub
 
     Sub closeYear1()
@@ -170,7 +254,7 @@
         Year1OpenButton.Visible = True
         Year1CloseButton.Visible = False
         Y2BigPanel.Location = New Point(Y2BigPanel.Location.X, Year1Panel.Location.Y)
-        Y3Y4Panel.Location = New Point(Y3Y4Panel.Location.X, Y3Y4Panel.Location.Y - break - Year1Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y - break - Year1Panel.Height)
     End Sub
 
     Sub closeYear2()
@@ -178,7 +262,15 @@
         Year2Panel.Visible = False
         Year2CloseButton.Visible = False
         Year2OpenButton.Visible = True
-        Y3Y4Panel.Location = New Point(Y3Y4Panel.Location.X, Y3Y4Panel.Location.Y - break - Year2Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y - Year2Panel.Height - break)
+        Year3BigPanel.BringToFront()
+    End Sub
+
+    Sub closeYear3()
+        Year3Opened = False
+        Year3Panel.Visible = False
+        Year3CloseButton.Visible = False
+        Year3OpenButton.Visible = True
     End Sub
 
     Private Sub Year1Label_Click(sender As Object, e As EventArgs) Handles Year1Label.Click

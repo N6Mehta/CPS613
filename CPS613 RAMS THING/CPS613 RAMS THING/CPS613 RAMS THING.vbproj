@@ -203,6 +203,12 @@
   <ItemGroup>
     <None Include="Resources\winter2017label.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fall2017label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winter2018label.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

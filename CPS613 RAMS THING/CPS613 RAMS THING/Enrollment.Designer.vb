@@ -25,42 +25,15 @@ Partial Class EnrollementForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EnrollementForm))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Year1Label = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Year3Label = New System.Windows.Forms.Label()
         Me.Year2Label = New System.Windows.Forms.Label()
         Me.Year1Panel = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.CPS209CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS109CO = New CPS613_RAMS_THING.CourseObject()
-        Me.MTH207CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PCS110CO = New CPS613_RAMS_THING.CourseObject()
-        Me.LL1CO = New CPS613_RAMS_THING.CourseObject()
-        Me.LL2CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS412CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS213CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS310CO = New CPS613_RAMS_THING.CourseObject()
-        Me.MTH110CO = New CPS613_RAMS_THING.CourseObject()
         Me.Year2Panel = New System.Windows.Forms.Panel()
         Me.Y2S2AddButton = New System.Windows.Forms.Button()
         Me.Y2S1AddButton = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.CPS506CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS305CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS420CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CMN300CO = New CPS613_RAMS_THING.CourseObject()
-        Me.OE1CO = New CPS613_RAMS_THING.CourseObject()
-        Me.OE2CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS406CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS393CO = New CPS613_RAMS_THING.CourseObject()
-        Me.CPS590CO = New CPS613_RAMS_THING.CourseObject()
-        Me.MTH108CO = New CPS613_RAMS_THING.CourseObject()
-        Me.Y3Y4Panel = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Year3OpenButton = New System.Windows.Forms.Button()
         Me.Y2BigPanel = New System.Windows.Forms.Panel()
         Me.Year2CloseButton = New System.Windows.Forms.Button()
         Me.Year2OpenButton = New System.Windows.Forms.Button()
@@ -76,17 +49,54 @@ Partial Class EnrollementForm
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Year3BigPanel = New System.Windows.Forms.Panel()
+        Me.Year3CloseButton = New System.Windows.Forms.Button()
+        Me.Year3OpenButton = New System.Windows.Forms.Button()
+        Me.Year3Panel = New System.Windows.Forms.Panel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Year1CloseButton = New System.Windows.Forms.Button()
         Me.Year1OpenButton = New System.Windows.Forms.Button()
-        Me.Y2S16thCO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS209CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS109CO = New CPS613_RAMS_THING.CourseObject()
+        Me.MTH207CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PCS110CO = New CPS613_RAMS_THING.CourseObject()
+        Me.LL1CO = New CPS613_RAMS_THING.CourseObject()
+        Me.LL2CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS412CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS213CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS310CO = New CPS613_RAMS_THING.CourseObject()
+        Me.MTH110CO = New CPS613_RAMS_THING.CourseObject()
         Me.Y2S26thCO = New CPS613_RAMS_THING.CourseObject()
+        Me.Y2S16thCO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS506CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS305CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS420CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CMN300CO = New CPS613_RAMS_THING.CourseObject()
+        Me.OE1CO = New CPS613_RAMS_THING.CourseObject()
+        Me.OE2CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS406CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS393CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS590CO = New CPS613_RAMS_THING.CourseObject()
+        Me.MTH108CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS616CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS510CO = New CPS613_RAMS_THING.CourseObject()
+        Me.Y3S2PR1CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS721CO = New CPS613_RAMS_THING.CourseObject()
+        Me.LL3CO = New CPS613_RAMS_THING.CourseObject()
+        Me.UL1CO = New CPS613_RAMS_THING.CourseObject()
+        Me.Y3S2PR2CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS633CO = New CPS613_RAMS_THING.CourseObject()
+        Me.CPS706CO = New CPS613_RAMS_THING.CourseObject()
+        Me.Y3S1PRCO = New CPS613_RAMS_THING.CourseObject()
         Me.Year1Panel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Year2Panel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Y3Y4Panel.SuspendLayout()
         Me.Y2BigPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,6 +104,10 @@ Partial Class EnrollementForm
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Year3BigPanel.SuspendLayout()
+        Me.Year3Panel.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -115,26 +129,6 @@ Partial Class EnrollementForm
         Me.Year1Label.Size = New System.Drawing.Size(179, 42)
         Me.Year1Label.TabIndex = 5
         Me.Year1Label.Text = "First Year"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(50, 85)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(215, 42)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Fourth Year"
-        '
-        'Year3Label
-        '
-        Me.Year3Label.AutoSize = True
-        Me.Year3Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year3Label.Location = New System.Drawing.Point(50, 13)
-        Me.Year3Label.Name = "Year3Label"
-        Me.Year3Label.Size = New System.Drawing.Size(192, 42)
-        Me.Year3Label.TabIndex = 7
-        Me.Year3Label.Text = "Third Year"
         '
         'Year2Label
         '
@@ -185,146 +179,6 @@ Partial Class EnrollementForm
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
-        '
-        'CPS209CO
-        '
-        Me.CPS209CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS209CO.Course_Code = "Course Code"
-        Me.CPS209CO.Course_Grade = 0R
-        Me.CPS209CO.Course_Name = "Course Name"
-        Me.CPS209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS209CO.Location = New System.Drawing.Point(807, 162)
-        Me.CPS209CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS209CO.Name = "CPS209CO"
-        Me.CPS209CO.Pre_Requisite = Nothing
-        Me.CPS209CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS209CO.TabIndex = 18
-        '
-        'CPS109CO
-        '
-        Me.CPS109CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS109CO.Course_Code = "Course Code"
-        Me.CPS109CO.Course_Grade = 0R
-        Me.CPS109CO.Course_Name = "Course Name"
-        Me.CPS109CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS109CO.Location = New System.Drawing.Point(807, 6)
-        Me.CPS109CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS109CO.Name = "CPS109CO"
-        Me.CPS109CO.Pre_Requisite = Nothing
-        Me.CPS109CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS109CO.TabIndex = 17
-        '
-        'MTH207CO
-        '
-        Me.MTH207CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.MTH207CO.Course_Code = "Course Code"
-        Me.MTH207CO.Course_Grade = 0R
-        Me.MTH207CO.Course_Name = "Course Name"
-        Me.MTH207CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.MTH207CO.Location = New System.Drawing.Point(65, 162)
-        Me.MTH207CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.MTH207CO.Name = "MTH207CO"
-        Me.MTH207CO.Pre_Requisite = Nothing
-        Me.MTH207CO.Size = New System.Drawing.Size(340, 144)
-        Me.MTH207CO.TabIndex = 16
-        '
-        'PCS110CO
-        '
-        Me.PCS110CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PCS110CO.Course_Code = "Course Code"
-        Me.PCS110CO.Course_Grade = 0R
-        Me.PCS110CO.Course_Name = "Course Name"
-        Me.PCS110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.PCS110CO.Location = New System.Drawing.Point(436, 6)
-        Me.PCS110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PCS110CO.Name = "PCS110CO"
-        Me.PCS110CO.Pre_Requisite = Nothing
-        Me.PCS110CO.Size = New System.Drawing.Size(340, 144)
-        Me.PCS110CO.TabIndex = 15
-        '
-        'LL1CO
-        '
-        Me.LL1CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.LL1CO.Course_Code = "Course Code"
-        Me.LL1CO.Course_Grade = 0R
-        Me.LL1CO.Course_Name = "Course Name"
-        Me.LL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.LL1CO.Location = New System.Drawing.Point(1549, 6)
-        Me.LL1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.LL1CO.Name = "LL1CO"
-        Me.LL1CO.Pre_Requisite = Nothing
-        Me.LL1CO.Size = New System.Drawing.Size(340, 144)
-        Me.LL1CO.TabIndex = 14
-        '
-        'LL2CO
-        '
-        Me.LL2CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.LL2CO.Course_Code = "Course Code"
-        Me.LL2CO.Course_Grade = 0R
-        Me.LL2CO.Course_Name = "Course Name"
-        Me.LL2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.LL2CO.Location = New System.Drawing.Point(1549, 162)
-        Me.LL2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.LL2CO.Name = "LL2CO"
-        Me.LL2CO.Pre_Requisite = Nothing
-        Me.LL2CO.Size = New System.Drawing.Size(340, 144)
-        Me.LL2CO.TabIndex = 13
-        '
-        'CPS412CO
-        '
-        Me.CPS412CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS412CO.Course_Code = "Course Code"
-        Me.CPS412CO.Course_Grade = 0R
-        Me.CPS412CO.Course_Name = "Course Name"
-        Me.CPS412CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS412CO.Location = New System.Drawing.Point(436, 162)
-        Me.CPS412CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS412CO.Name = "CPS412CO"
-        Me.CPS412CO.Pre_Requisite = Nothing
-        Me.CPS412CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS412CO.TabIndex = 12
-        '
-        'CPS213CO
-        '
-        Me.CPS213CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS213CO.Course_Code = "Course Code"
-        Me.CPS213CO.Course_Grade = 0R
-        Me.CPS213CO.Course_Name = "Course Name"
-        Me.CPS213CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS213CO.Location = New System.Drawing.Point(1178, 6)
-        Me.CPS213CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS213CO.Name = "CPS213CO"
-        Me.CPS213CO.Pre_Requisite = Nothing
-        Me.CPS213CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS213CO.TabIndex = 11
-        '
-        'CPS310CO
-        '
-        Me.CPS310CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS310CO.Course_Code = "Course Code"
-        Me.CPS310CO.Course_Grade = 0R
-        Me.CPS310CO.Course_Name = "Course Name"
-        Me.CPS310CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS310CO.Location = New System.Drawing.Point(1178, 162)
-        Me.CPS310CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS310CO.Name = "CPS310CO"
-        Me.CPS310CO.Pre_Requisite = Nothing
-        Me.CPS310CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS310CO.TabIndex = 10
-        '
-        'MTH110CO
-        '
-        Me.MTH110CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.MTH110CO.Course_Code = "Course Code"
-        Me.MTH110CO.Course_Grade = 0R
-        Me.MTH110CO.Course_Name = "Course Name"
-        Me.MTH110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.MTH110CO.Location = New System.Drawing.Point(65, 6)
-        Me.MTH110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.MTH110CO.Name = "MTH110CO"
-        Me.MTH110CO.Pre_Requisite = Nothing
-        Me.MTH110CO.Size = New System.Drawing.Size(340, 144)
-        Me.MTH110CO.TabIndex = 9
         '
         'Year2Panel
         '
@@ -390,223 +244,14 @@ Partial Class EnrollementForm
         Me.PictureBox4.TabIndex = 25
         Me.PictureBox4.TabStop = False
         '
-        'CPS506CO
-        '
-        Me.CPS506CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS506CO.Course_Code = "Course Code"
-        Me.CPS506CO.Course_Grade = 0R
-        Me.CPS506CO.Course_Name = "Course Name"
-        Me.CPS506CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS506CO.Location = New System.Drawing.Point(807, 159)
-        Me.CPS506CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS506CO.Name = "CPS506CO"
-        Me.CPS506CO.Pre_Requisite = Nothing
-        Me.CPS506CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS506CO.TabIndex = 18
-        '
-        'CPS305CO
-        '
-        Me.CPS305CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS305CO.Course_Code = "Course Code"
-        Me.CPS305CO.Course_Grade = 0R
-        Me.CPS305CO.Course_Name = "Course Name"
-        Me.CPS305CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS305CO.Location = New System.Drawing.Point(807, 3)
-        Me.CPS305CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS305CO.Name = "CPS305CO"
-        Me.CPS305CO.Pre_Requisite = Nothing
-        Me.CPS305CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS305CO.TabIndex = 17
-        '
-        'CPS420CO
-        '
-        Me.CPS420CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS420CO.Course_Code = "Course Code"
-        Me.CPS420CO.Course_Grade = 0R
-        Me.CPS420CO.Course_Name = "Course Name"
-        Me.CPS420CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS420CO.Location = New System.Drawing.Point(65, 159)
-        Me.CPS420CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS420CO.Name = "CPS420CO"
-        Me.CPS420CO.Pre_Requisite = Nothing
-        Me.CPS420CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS420CO.TabIndex = 16
-        '
-        'CMN300CO
-        '
-        Me.CMN300CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CMN300CO.Course_Code = "Course Code"
-        Me.CMN300CO.Course_Grade = 0R
-        Me.CMN300CO.Course_Name = "Course Name"
-        Me.CMN300CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CMN300CO.Location = New System.Drawing.Point(436, 3)
-        Me.CMN300CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CMN300CO.Name = "CMN300CO"
-        Me.CMN300CO.Pre_Requisite = Nothing
-        Me.CMN300CO.Size = New System.Drawing.Size(340, 144)
-        Me.CMN300CO.TabIndex = 15
-        '
-        'OE1CO
-        '
-        Me.OE1CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.OE1CO.Course_Code = "Course Code"
-        Me.OE1CO.Course_Grade = 0R
-        Me.OE1CO.Course_Name = "Course Name"
-        Me.OE1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.OE1CO.Location = New System.Drawing.Point(1549, 6)
-        Me.OE1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.OE1CO.Name = "OE1CO"
-        Me.OE1CO.Pre_Requisite = Nothing
-        Me.OE1CO.Size = New System.Drawing.Size(340, 144)
-        Me.OE1CO.TabIndex = 14
-        '
-        'OE2CO
-        '
-        Me.OE2CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.OE2CO.Course_Code = "Course Code"
-        Me.OE2CO.Course_Grade = 0R
-        Me.OE2CO.Course_Name = "Course Name"
-        Me.OE2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.OE2CO.Location = New System.Drawing.Point(1549, 159)
-        Me.OE2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.OE2CO.Name = "OE2CO"
-        Me.OE2CO.Pre_Requisite = Nothing
-        Me.OE2CO.Size = New System.Drawing.Size(340, 144)
-        Me.OE2CO.TabIndex = 13
-        '
-        'CPS406CO
-        '
-        Me.CPS406CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS406CO.Course_Code = "Course Code"
-        Me.CPS406CO.Course_Grade = 0R
-        Me.CPS406CO.Course_Name = "Course Name"
-        Me.CPS406CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS406CO.Location = New System.Drawing.Point(436, 159)
-        Me.CPS406CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS406CO.Name = "CPS406CO"
-        Me.CPS406CO.Pre_Requisite = Nothing
-        Me.CPS406CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS406CO.TabIndex = 12
-        '
-        'CPS393CO
-        '
-        Me.CPS393CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS393CO.Course_Code = "Course Code"
-        Me.CPS393CO.Course_Grade = 0R
-        Me.CPS393CO.Course_Name = "Course Name"
-        Me.CPS393CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS393CO.Location = New System.Drawing.Point(1178, 3)
-        Me.CPS393CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS393CO.Name = "CPS393CO"
-        Me.CPS393CO.Pre_Requisite = Nothing
-        Me.CPS393CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS393CO.TabIndex = 11
-        '
-        'CPS590CO
-        '
-        Me.CPS590CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS590CO.Course_Code = "Course Code"
-        Me.CPS590CO.Course_Grade = 0R
-        Me.CPS590CO.Course_Name = "Course Name"
-        Me.CPS590CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.CPS590CO.Location = New System.Drawing.Point(1178, 159)
-        Me.CPS590CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.CPS590CO.Name = "CPS590CO"
-        Me.CPS590CO.Pre_Requisite = Nothing
-        Me.CPS590CO.Size = New System.Drawing.Size(340, 144)
-        Me.CPS590CO.TabIndex = 10
-        '
-        'MTH108CO
-        '
-        Me.MTH108CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.MTH108CO.Course_Code = "Course Code"
-        Me.MTH108CO.Course_Grade = 0R
-        Me.MTH108CO.Course_Name = "Course Name"
-        Me.MTH108CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.MTH108CO.Location = New System.Drawing.Point(65, 3)
-        Me.MTH108CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.MTH108CO.Name = "MTH108CO"
-        Me.MTH108CO.Pre_Requisite = Nothing
-        Me.MTH108CO.Size = New System.Drawing.Size(340, 144)
-        Me.MTH108CO.TabIndex = 9
-        '
-        'Y3Y4Panel
-        '
-        Me.Y3Y4Panel.Controls.Add(Me.Label9)
-        Me.Y3Y4Panel.Controls.Add(Me.Label7)
-        Me.Y3Y4Panel.Controls.Add(Me.Button1)
-        Me.Y3Y4Panel.Controls.Add(Me.Year3OpenButton)
-        Me.Y3Y4Panel.Controls.Add(Me.Year3Label)
-        Me.Y3Y4Panel.Controls.Add(Me.Label3)
-        Me.Y3Y4Panel.Location = New System.Drawing.Point(102, 878)
-        Me.Y3Y4Panel.Name = "Y3Y4Panel"
-        Me.Y3Y4Panel.Size = New System.Drawing.Size(646, 131)
-        Me.Y3Y4Panel.TabIndex = 19
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label9.Location = New System.Drawing.Point(271, 90)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(169, 31)
-        Me.Label9.TabIndex = 21
-        Me.Label9.Text = "(unavailable)"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label7.Location = New System.Drawing.Point(248, 24)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(169, 31)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "(unavailable)"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Button1.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.inactive
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Enabled = False
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.DimGray
-        Me.Button1.Location = New System.Drawing.Point(0, 85)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button1.Size = New System.Drawing.Size(47, 36)
-        Me.Button1.TabIndex = 19
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Year3OpenButton
-        '
-        Me.Year3OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.Year3OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.inactive
-        Me.Year3OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Year3OpenButton.Enabled = False
-        Me.Year3OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year3OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year3OpenButton.Location = New System.Drawing.Point(0, 19)
-        Me.Year3OpenButton.Margin = New System.Windows.Forms.Padding(0)
-        Me.Year3OpenButton.Name = "Year3OpenButton"
-        Me.Year3OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year3OpenButton.Size = New System.Drawing.Size(47, 36)
-        Me.Year3OpenButton.TabIndex = 18
-        Me.Year3OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Year3OpenButton.UseVisualStyleBackColor = False
-        '
         'Y2BigPanel
         '
         Me.Y2BigPanel.BackColor = System.Drawing.SystemColors.Window
         Me.Y2BigPanel.Controls.Add(Me.Year2CloseButton)
         Me.Y2BigPanel.Controls.Add(Me.Year2OpenButton)
-        Me.Y2BigPanel.Controls.Add(Me.Year2Panel)
         Me.Y2BigPanel.Controls.Add(Me.Year2Label)
-        Me.Y2BigPanel.Location = New System.Drawing.Point(12, 481)
+        Me.Y2BigPanel.Controls.Add(Me.Year2Panel)
+        Me.Y2BigPanel.Location = New System.Drawing.Point(11, 450)
         Me.Y2BigPanel.Name = "Y2BigPanel"
         Me.Y2BigPanel.Size = New System.Drawing.Size(2843, 391)
         Me.Y2BigPanel.TabIndex = 21
@@ -772,6 +417,110 @@ Partial Class EnrollementForm
         Me.PictureBox5.TabIndex = 26
         Me.PictureBox5.TabStop = False
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(141, 10)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(192, 42)
+        Me.Label11.TabIndex = 22
+        Me.Label11.Text = "Third Year"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(2066, 190)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(215, 42)
+        Me.Label12.TabIndex = 22
+        Me.Label12.Text = "Fourth Year"
+        '
+        'Year3BigPanel
+        '
+        Me.Year3BigPanel.BackColor = System.Drawing.SystemColors.Window
+        Me.Year3BigPanel.Controls.Add(Me.Year3CloseButton)
+        Me.Year3BigPanel.Controls.Add(Me.Year3OpenButton)
+        Me.Year3BigPanel.Controls.Add(Me.Label11)
+        Me.Year3BigPanel.Controls.Add(Me.Year3Panel)
+        Me.Year3BigPanel.Location = New System.Drawing.Point(11, 847)
+        Me.Year3BigPanel.Name = "Year3BigPanel"
+        Me.Year3BigPanel.Size = New System.Drawing.Size(1942, 391)
+        Me.Year3BigPanel.TabIndex = 22
+        '
+        'Year3CloseButton
+        '
+        Me.Year3CloseButton.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Year3CloseButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.open_button
+        Me.Year3CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Year3CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year3CloseButton.ForeColor = System.Drawing.Color.DimGray
+        Me.Year3CloseButton.Location = New System.Drawing.Point(91, 13)
+        Me.Year3CloseButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.Year3CloseButton.Name = "Year3CloseButton"
+        Me.Year3CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Year3CloseButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year3CloseButton.TabIndex = 16
+        Me.Year3CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Year3CloseButton.UseVisualStyleBackColor = False
+        '
+        'Year3OpenButton
+        '
+        Me.Year3OpenButton.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.Year3OpenButton.BackgroundImage = Global.CPS613_RAMS_THING.My.Resources.Resources.collapse_arrow16001
+        Me.Year3OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Year3OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year3OpenButton.ForeColor = System.Drawing.Color.DimGray
+        Me.Year3OpenButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year3OpenButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.Year3OpenButton.Name = "Year3OpenButton"
+        Me.Year3OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Year3OpenButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year3OpenButton.TabIndex = 14
+        Me.Year3OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Year3OpenButton.UseVisualStyleBackColor = False
+        '
+        'Year3Panel
+        '
+        Me.Year3Panel.BackColor = System.Drawing.SystemColors.Window
+        Me.Year3Panel.Controls.Add(Me.PictureBox9)
+        Me.Year3Panel.Controls.Add(Me.PictureBox10)
+        Me.Year3Panel.Controls.Add(Me.CPS616CO)
+        Me.Year3Panel.Controls.Add(Me.CPS510CO)
+        Me.Year3Panel.Controls.Add(Me.Y3S2PR1CO)
+        Me.Year3Panel.Controls.Add(Me.CPS721CO)
+        Me.Year3Panel.Controls.Add(Me.LL3CO)
+        Me.Year3Panel.Controls.Add(Me.UL1CO)
+        Me.Year3Panel.Controls.Add(Me.Y3S2PR2CO)
+        Me.Year3Panel.Controls.Add(Me.CPS633CO)
+        Me.Year3Panel.Controls.Add(Me.CPS706CO)
+        Me.Year3Panel.Controls.Add(Me.Y3S1PRCO)
+        Me.Year3Panel.Location = New System.Drawing.Point(23, 55)
+        Me.Year3Panel.Name = "Year3Panel"
+        Me.Year3Panel.Size = New System.Drawing.Size(1919, 315)
+        Me.Year3Panel.TabIndex = 12
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.winter2018label
+        Me.PictureBox9.Location = New System.Drawing.Point(6, 159)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox9.TabIndex = 24
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.fall2017label
+        Me.PictureBox10.Location = New System.Drawing.Point(6, 3)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox10.TabIndex = 25
+        Me.PictureBox10.TabStop = False
+        '
         'Year1CloseButton
         '
         Me.Year1CloseButton.BackColor = System.Drawing.SystemColors.InactiveBorder
@@ -804,20 +553,145 @@ Partial Class EnrollementForm
         Me.Year1OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year1OpenButton.UseVisualStyleBackColor = False
         '
-        'Y2S16thCO
+        'CPS209CO
         '
-        Me.Y2S16thCO.BackColor = System.Drawing.Color.SkyBlue
-        Me.Y2S16thCO.Course_Code = "Course Code"
-        Me.Y2S16thCO.Course_Grade = 0R
-        Me.Y2S16thCO.Course_Name = "Course Name"
-        Me.Y2S16thCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
-        Me.Y2S16thCO.Location = New System.Drawing.Point(1925, 6)
-        Me.Y2S16thCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.Y2S16thCO.Name = "Y2S16thCO"
-        Me.Y2S16thCO.Pre_Requisite = Nothing
-        Me.Y2S16thCO.Size = New System.Drawing.Size(340, 144)
-        Me.Y2S16thCO.TabIndex = 28
-        Me.Y2S16thCO.Visible = False
+        Me.CPS209CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS209CO.Course_Code = "Course Code"
+        Me.CPS209CO.Course_Grade = 0R
+        Me.CPS209CO.Course_Name = "Course Name"
+        Me.CPS209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS209CO.Location = New System.Drawing.Point(807, 162)
+        Me.CPS209CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS209CO.Name = "CPS209CO"
+        Me.CPS209CO.Pre_Requisite = Nothing
+        Me.CPS209CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS209CO.TabIndex = 18
+        '
+        'CPS109CO
+        '
+        Me.CPS109CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS109CO.Course_Code = "Course Code"
+        Me.CPS109CO.Course_Grade = 0R
+        Me.CPS109CO.Course_Name = "Course Name"
+        Me.CPS109CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS109CO.Location = New System.Drawing.Point(807, 6)
+        Me.CPS109CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS109CO.Name = "CPS109CO"
+        Me.CPS109CO.Pre_Requisite = Nothing
+        Me.CPS109CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS109CO.TabIndex = 17
+        '
+        'MTH207CO
+        '
+        Me.MTH207CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.MTH207CO.Course_Code = "Course Code"
+        Me.MTH207CO.Course_Grade = 0R
+        Me.MTH207CO.Course_Name = "Course Name"
+        Me.MTH207CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.MTH207CO.Location = New System.Drawing.Point(65, 162)
+        Me.MTH207CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MTH207CO.Name = "MTH207CO"
+        Me.MTH207CO.Pre_Requisite = Nothing
+        Me.MTH207CO.Size = New System.Drawing.Size(340, 144)
+        Me.MTH207CO.TabIndex = 16
+        '
+        'PCS110CO
+        '
+        Me.PCS110CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PCS110CO.Course_Code = "Course Code"
+        Me.PCS110CO.Course_Grade = 0R
+        Me.PCS110CO.Course_Name = "Course Name"
+        Me.PCS110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PCS110CO.Location = New System.Drawing.Point(436, 6)
+        Me.PCS110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PCS110CO.Name = "PCS110CO"
+        Me.PCS110CO.Pre_Requisite = Nothing
+        Me.PCS110CO.Size = New System.Drawing.Size(340, 144)
+        Me.PCS110CO.TabIndex = 15
+        '
+        'LL1CO
+        '
+        Me.LL1CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.LL1CO.Course_Code = "Course Code"
+        Me.LL1CO.Course_Grade = 0R
+        Me.LL1CO.Course_Name = "Course Name"
+        Me.LL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.LL1CO.Location = New System.Drawing.Point(1549, 6)
+        Me.LL1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LL1CO.Name = "LL1CO"
+        Me.LL1CO.Pre_Requisite = Nothing
+        Me.LL1CO.Size = New System.Drawing.Size(340, 144)
+        Me.LL1CO.TabIndex = 14
+        '
+        'LL2CO
+        '
+        Me.LL2CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.LL2CO.Course_Code = "Course Code"
+        Me.LL2CO.Course_Grade = 0R
+        Me.LL2CO.Course_Name = "Course Name"
+        Me.LL2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.LL2CO.Location = New System.Drawing.Point(1549, 162)
+        Me.LL2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LL2CO.Name = "LL2CO"
+        Me.LL2CO.Pre_Requisite = Nothing
+        Me.LL2CO.Size = New System.Drawing.Size(340, 144)
+        Me.LL2CO.TabIndex = 13
+        '
+        'CPS412CO
+        '
+        Me.CPS412CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS412CO.Course_Code = "Course Code"
+        Me.CPS412CO.Course_Grade = 0R
+        Me.CPS412CO.Course_Name = "Course Name"
+        Me.CPS412CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS412CO.Location = New System.Drawing.Point(436, 162)
+        Me.CPS412CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS412CO.Name = "CPS412CO"
+        Me.CPS412CO.Pre_Requisite = Nothing
+        Me.CPS412CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS412CO.TabIndex = 12
+        '
+        'CPS213CO
+        '
+        Me.CPS213CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS213CO.Course_Code = "Course Code"
+        Me.CPS213CO.Course_Grade = 0R
+        Me.CPS213CO.Course_Name = "Course Name"
+        Me.CPS213CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS213CO.Location = New System.Drawing.Point(1178, 6)
+        Me.CPS213CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS213CO.Name = "CPS213CO"
+        Me.CPS213CO.Pre_Requisite = Nothing
+        Me.CPS213CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS213CO.TabIndex = 11
+        '
+        'CPS310CO
+        '
+        Me.CPS310CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS310CO.Course_Code = "Course Code"
+        Me.CPS310CO.Course_Grade = 0R
+        Me.CPS310CO.Course_Name = "Course Name"
+        Me.CPS310CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS310CO.Location = New System.Drawing.Point(1178, 162)
+        Me.CPS310CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS310CO.Name = "CPS310CO"
+        Me.CPS310CO.Pre_Requisite = Nothing
+        Me.CPS310CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS310CO.TabIndex = 10
+        '
+        'MTH110CO
+        '
+        Me.MTH110CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.MTH110CO.Course_Code = "Course Code"
+        Me.MTH110CO.Course_Grade = 0R
+        Me.MTH110CO.Course_Name = "Course Name"
+        Me.MTH110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.MTH110CO.Location = New System.Drawing.Point(65, 6)
+        Me.MTH110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MTH110CO.Name = "MTH110CO"
+        Me.MTH110CO.Pre_Requisite = Nothing
+        Me.MTH110CO.Size = New System.Drawing.Size(340, 144)
+        Me.MTH110CO.TabIndex = 9
         '
         'Y2S26thCO
         '
@@ -834,6 +708,301 @@ Partial Class EnrollementForm
         Me.Y2S26thCO.TabIndex = 29
         Me.Y2S26thCO.Visible = False
         '
+        'Y2S16thCO
+        '
+        Me.Y2S16thCO.BackColor = System.Drawing.Color.SkyBlue
+        Me.Y2S16thCO.Course_Code = "Course Code"
+        Me.Y2S16thCO.Course_Grade = 0R
+        Me.Y2S16thCO.Course_Name = "Course Name"
+        Me.Y2S16thCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.Y2S16thCO.Location = New System.Drawing.Point(1925, 6)
+        Me.Y2S16thCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y2S16thCO.Name = "Y2S16thCO"
+        Me.Y2S16thCO.Pre_Requisite = Nothing
+        Me.Y2S16thCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y2S16thCO.TabIndex = 28
+        Me.Y2S16thCO.Visible = False
+        '
+        'CPS506CO
+        '
+        Me.CPS506CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS506CO.Course_Code = "Course Code"
+        Me.CPS506CO.Course_Grade = 0R
+        Me.CPS506CO.Course_Name = "Course Name"
+        Me.CPS506CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS506CO.Location = New System.Drawing.Point(807, 159)
+        Me.CPS506CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS506CO.Name = "CPS506CO"
+        Me.CPS506CO.Pre_Requisite = Nothing
+        Me.CPS506CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS506CO.TabIndex = 18
+        '
+        'CPS305CO
+        '
+        Me.CPS305CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS305CO.Course_Code = "Course Code"
+        Me.CPS305CO.Course_Grade = 0R
+        Me.CPS305CO.Course_Name = "Course Name"
+        Me.CPS305CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS305CO.Location = New System.Drawing.Point(807, 3)
+        Me.CPS305CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS305CO.Name = "CPS305CO"
+        Me.CPS305CO.Pre_Requisite = Nothing
+        Me.CPS305CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS305CO.TabIndex = 17
+        '
+        'CPS420CO
+        '
+        Me.CPS420CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS420CO.Course_Code = "Course Code"
+        Me.CPS420CO.Course_Grade = 0R
+        Me.CPS420CO.Course_Name = "Course Name"
+        Me.CPS420CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS420CO.Location = New System.Drawing.Point(65, 159)
+        Me.CPS420CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS420CO.Name = "CPS420CO"
+        Me.CPS420CO.Pre_Requisite = Nothing
+        Me.CPS420CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS420CO.TabIndex = 16
+        '
+        'CMN300CO
+        '
+        Me.CMN300CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CMN300CO.Course_Code = "Course Code"
+        Me.CMN300CO.Course_Grade = 0R
+        Me.CMN300CO.Course_Name = "Course Name"
+        Me.CMN300CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CMN300CO.Location = New System.Drawing.Point(436, 3)
+        Me.CMN300CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CMN300CO.Name = "CMN300CO"
+        Me.CMN300CO.Pre_Requisite = Nothing
+        Me.CMN300CO.Size = New System.Drawing.Size(340, 144)
+        Me.CMN300CO.TabIndex = 15
+        '
+        'OE1CO
+        '
+        Me.OE1CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.OE1CO.Course_Code = "Course Code"
+        Me.OE1CO.Course_Grade = 0R
+        Me.OE1CO.Course_Name = "Course Name"
+        Me.OE1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.OE1CO.Location = New System.Drawing.Point(1549, 6)
+        Me.OE1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.OE1CO.Name = "OE1CO"
+        Me.OE1CO.Pre_Requisite = Nothing
+        Me.OE1CO.Size = New System.Drawing.Size(340, 144)
+        Me.OE1CO.TabIndex = 14
+        '
+        'OE2CO
+        '
+        Me.OE2CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.OE2CO.Course_Code = "Course Code"
+        Me.OE2CO.Course_Grade = 0R
+        Me.OE2CO.Course_Name = "Course Name"
+        Me.OE2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.OE2CO.Location = New System.Drawing.Point(1549, 159)
+        Me.OE2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.OE2CO.Name = "OE2CO"
+        Me.OE2CO.Pre_Requisite = Nothing
+        Me.OE2CO.Size = New System.Drawing.Size(340, 144)
+        Me.OE2CO.TabIndex = 13
+        '
+        'CPS406CO
+        '
+        Me.CPS406CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS406CO.Course_Code = "Course Code"
+        Me.CPS406CO.Course_Grade = 0R
+        Me.CPS406CO.Course_Name = "Course Name"
+        Me.CPS406CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS406CO.Location = New System.Drawing.Point(436, 159)
+        Me.CPS406CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS406CO.Name = "CPS406CO"
+        Me.CPS406CO.Pre_Requisite = Nothing
+        Me.CPS406CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS406CO.TabIndex = 12
+        '
+        'CPS393CO
+        '
+        Me.CPS393CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS393CO.Course_Code = "Course Code"
+        Me.CPS393CO.Course_Grade = 0R
+        Me.CPS393CO.Course_Name = "Course Name"
+        Me.CPS393CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS393CO.Location = New System.Drawing.Point(1178, 3)
+        Me.CPS393CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS393CO.Name = "CPS393CO"
+        Me.CPS393CO.Pre_Requisite = Nothing
+        Me.CPS393CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS393CO.TabIndex = 11
+        '
+        'CPS590CO
+        '
+        Me.CPS590CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS590CO.Course_Code = "Course Code"
+        Me.CPS590CO.Course_Grade = 0R
+        Me.CPS590CO.Course_Name = "Course Name"
+        Me.CPS590CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS590CO.Location = New System.Drawing.Point(1178, 159)
+        Me.CPS590CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS590CO.Name = "CPS590CO"
+        Me.CPS590CO.Pre_Requisite = Nothing
+        Me.CPS590CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS590CO.TabIndex = 10
+        '
+        'MTH108CO
+        '
+        Me.MTH108CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.MTH108CO.Course_Code = "Course Code"
+        Me.MTH108CO.Course_Grade = 0R
+        Me.MTH108CO.Course_Name = "Course Name"
+        Me.MTH108CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.MTH108CO.Location = New System.Drawing.Point(65, 3)
+        Me.MTH108CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MTH108CO.Name = "MTH108CO"
+        Me.MTH108CO.Pre_Requisite = Nothing
+        Me.MTH108CO.Size = New System.Drawing.Size(340, 144)
+        Me.MTH108CO.TabIndex = 9
+        '
+        'CPS616CO
+        '
+        Me.CPS616CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS616CO.Course_Code = "Course Code"
+        Me.CPS616CO.Course_Grade = 0R
+        Me.CPS616CO.Course_Name = "Course Name"
+        Me.CPS616CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS616CO.Location = New System.Drawing.Point(807, 159)
+        Me.CPS616CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS616CO.Name = "CPS616CO"
+        Me.CPS616CO.Pre_Requisite = Nothing
+        Me.CPS616CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS616CO.TabIndex = 18
+        '
+        'CPS510CO
+        '
+        Me.CPS510CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS510CO.Course_Code = "Course Code"
+        Me.CPS510CO.Course_Grade = 0R
+        Me.CPS510CO.Course_Name = "Course Name"
+        Me.CPS510CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS510CO.Location = New System.Drawing.Point(807, 3)
+        Me.CPS510CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS510CO.Name = "CPS510CO"
+        Me.CPS510CO.Pre_Requisite = Nothing
+        Me.CPS510CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS510CO.TabIndex = 17
+        '
+        'Y3S2PR1CO
+        '
+        Me.Y3S2PR1CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.Y3S2PR1CO.Course_Code = "Course Code"
+        Me.Y3S2PR1CO.Course_Grade = 0R
+        Me.Y3S2PR1CO.Course_Name = "Course Name"
+        Me.Y3S2PR1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.Y3S2PR1CO.Location = New System.Drawing.Point(65, 159)
+        Me.Y3S2PR1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y3S2PR1CO.Name = "Y3S2PR1CO"
+        Me.Y3S2PR1CO.Pre_Requisite = Nothing
+        Me.Y3S2PR1CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y3S2PR1CO.TabIndex = 16
+        '
+        'CPS721CO
+        '
+        Me.CPS721CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS721CO.Course_Code = "Course Code"
+        Me.CPS721CO.Course_Grade = 0R
+        Me.CPS721CO.Course_Name = "Course Name"
+        Me.CPS721CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS721CO.Location = New System.Drawing.Point(436, 3)
+        Me.CPS721CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS721CO.Name = "CPS721CO"
+        Me.CPS721CO.Pre_Requisite = Nothing
+        Me.CPS721CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS721CO.TabIndex = 15
+        '
+        'LL3CO
+        '
+        Me.LL3CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.LL3CO.Course_Code = "Course Code"
+        Me.LL3CO.Course_Grade = 0R
+        Me.LL3CO.Course_Name = "Course Name"
+        Me.LL3CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.LL3CO.Location = New System.Drawing.Point(1549, 6)
+        Me.LL3CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LL3CO.Name = "LL3CO"
+        Me.LL3CO.Pre_Requisite = Nothing
+        Me.LL3CO.Size = New System.Drawing.Size(340, 144)
+        Me.LL3CO.TabIndex = 14
+        '
+        'UL1CO
+        '
+        Me.UL1CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.UL1CO.Course_Code = "Course Code"
+        Me.UL1CO.Course_Grade = 0R
+        Me.UL1CO.Course_Name = "Course Name"
+        Me.UL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.UL1CO.Location = New System.Drawing.Point(1549, 159)
+        Me.UL1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.UL1CO.Name = "UL1CO"
+        Me.UL1CO.Pre_Requisite = Nothing
+        Me.UL1CO.Size = New System.Drawing.Size(340, 144)
+        Me.UL1CO.TabIndex = 13
+        '
+        'Y3S2PR2CO
+        '
+        Me.Y3S2PR2CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.Y3S2PR2CO.Course_Code = "Course Code"
+        Me.Y3S2PR2CO.Course_Grade = 0R
+        Me.Y3S2PR2CO.Course_Name = "Course Name"
+        Me.Y3S2PR2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.Y3S2PR2CO.Location = New System.Drawing.Point(436, 159)
+        Me.Y3S2PR2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y3S2PR2CO.Name = "Y3S2PR2CO"
+        Me.Y3S2PR2CO.Pre_Requisite = Nothing
+        Me.Y3S2PR2CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y3S2PR2CO.TabIndex = 12
+        '
+        'CPS633CO
+        '
+        Me.CPS633CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS633CO.Course_Code = "Course Code"
+        Me.CPS633CO.Course_Grade = 0R
+        Me.CPS633CO.Course_Name = "Course Name"
+        Me.CPS633CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS633CO.Location = New System.Drawing.Point(1178, 3)
+        Me.CPS633CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS633CO.Name = "CPS633CO"
+        Me.CPS633CO.Pre_Requisite = Nothing
+        Me.CPS633CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS633CO.TabIndex = 11
+        '
+        'CPS706CO
+        '
+        Me.CPS706CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.CPS706CO.Course_Code = "Course Code"
+        Me.CPS706CO.Course_Grade = 0R
+        Me.CPS706CO.Course_Name = "Course Name"
+        Me.CPS706CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS706CO.Location = New System.Drawing.Point(1178, 159)
+        Me.CPS706CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS706CO.Name = "CPS706CO"
+        Me.CPS706CO.Pre_Requisite = Nothing
+        Me.CPS706CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS706CO.TabIndex = 10
+        '
+        'Y3S1PRCO
+        '
+        Me.Y3S1PRCO.BackColor = System.Drawing.Color.SkyBlue
+        Me.Y3S1PRCO.Course_Code = "Course Code"
+        Me.Y3S1PRCO.Course_Grade = 0R
+        Me.Y3S1PRCO.Course_Name = "Course Name"
+        Me.Y3S1PRCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.Y3S1PRCO.Location = New System.Drawing.Point(65, 3)
+        Me.Y3S1PRCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y3S1PRCO.Name = "Y3S1PRCO"
+        Me.Y3S1PRCO.Pre_Requisite = Nothing
+        Me.Y3S1PRCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y3S1PRCO.TabIndex = 9
+        '
         'EnrollementForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -841,13 +1010,14 @@ Partial Class EnrollementForm
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(2867, 1189)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Year1CloseButton)
         Me.Controls.Add(Me.Year1OpenButton)
         Me.Controls.Add(Me.Year1Label)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Year1Panel)
-        Me.Controls.Add(Me.Y3Y4Panel)
         Me.Controls.Add(Me.Y2BigPanel)
+        Me.Controls.Add(Me.Year3BigPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "EnrollementForm"
         Me.Text = "Compupter Science Program"
@@ -857,8 +1027,6 @@ Partial Class EnrollementForm
         Me.Year2Panel.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Y3Y4Panel.ResumeLayout(False)
-        Me.Y3Y4Panel.PerformLayout()
         Me.Y2BigPanel.ResumeLayout(False)
         Me.Y2BigPanel.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -868,14 +1036,17 @@ Partial Class EnrollementForm
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Year3BigPanel.ResumeLayout(False)
+        Me.Year3BigPanel.PerformLayout()
+        Me.Year3Panel.ResumeLayout(False)
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As Label
     Friend WithEvents Year1Label As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Year3Label As Label
     Friend WithEvents Year2Label As Label
     Friend WithEvents MTH110CO As CourseObject
     Friend WithEvents Year1Panel As Panel
@@ -903,10 +1074,7 @@ Partial Class EnrollementForm
     Friend WithEvents Year2OpenButton As Button
     Friend WithEvents Year1CloseButton As Button
     Friend WithEvents Year2CloseButton As Button
-    Friend WithEvents Year3OpenButton As Button
-    Friend WithEvents Y3Y4Panel As Panel
     Friend WithEvents Y2BigPanel As Panel
-    Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
@@ -921,12 +1089,28 @@ Partial Class EnrollementForm
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Y2S2AddButton As Button
     Friend WithEvents Y2S1AddButton As Button
     Friend WithEvents Y2S26thCO As CourseObject
     Friend WithEvents Y2S16thCO As CourseObject
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Year3BigPanel As Panel
+    Friend WithEvents Year3CloseButton As Button
+    Friend WithEvents Year3OpenButton As Button
+    Friend WithEvents Year3Panel As Panel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents CPS616CO As CourseObject
+    Friend WithEvents CPS510CO As CourseObject
+    Friend WithEvents Y3S2PR1CO As CourseObject
+    Friend WithEvents CPS721CO As CourseObject
+    Friend WithEvents LL3CO As CourseObject
+    Friend WithEvents UL1CO As CourseObject
+    Friend WithEvents Y3S2PR2CO As CourseObject
+    Friend WithEvents CPS633CO As CourseObject
+    Friend WithEvents CPS706CO As CourseObject
+    Friend WithEvents Y3S1PRCO As CourseObject
 End Class
