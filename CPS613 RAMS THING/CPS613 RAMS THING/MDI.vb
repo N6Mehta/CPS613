@@ -20,10 +20,12 @@
     End Sub
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-        Dim hombre As New pageHome
-        hombre.nam = user
-        hombre.MdiParent = Me
-        hombre.Show()
+
+        Me.ActiveMdiChild.Close()
+        'If Me.ActiveMdiChild.Visible = True Then
+        '  Me.ActiveMdiChild.Visible = False
+        '   hombre.Visible = True
+        'End If
     End Sub
 
     Private Sub CourseObject2_Load(sender As Object, e As EventArgs)
