@@ -2,10 +2,7 @@
     Private defName As String
     Private defCode As String
     Private pre_rec As String
-
-
     Shared selectedCourse As CourseObject
-
     Private searchWindow As CourseSearch
     Private type As CourseType
     Public grade As Double
