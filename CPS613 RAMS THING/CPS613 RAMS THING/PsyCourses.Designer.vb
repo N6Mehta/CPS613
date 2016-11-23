@@ -33,29 +33,11 @@ Partial Class PsyCourses
         Me.PSY124CO = New CPS613_RAMS_THING.CourseObject()
         Me.PSY325CO = New CPS613_RAMS_THING.CourseObject()
         Me.PSY304CO = New CPS613_RAMS_THING.CourseObject()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.PassedPictureBox = New System.Windows.Forms.PictureBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DoneMinorButton = New System.Windows.Forms.Button()
         Me.CancelMinorButton = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,7 +68,7 @@ Partial Class PsyCourses
         Me.PSY105CO.BackColor = System.Drawing.Color.SkyBlue
         Me.PSY105CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PSY105CO.Course_Code = "PSY105"
-        Me.PSY105CO.Course_Grade = 2.27R
+        Me.PSY105CO.Course_Grade = 0R
         Me.PSY105CO.Course_Name = "Perspect in Psy"
         Me.PSY105CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.PSY105CO.Cursor = System.Windows.Forms.Cursors.Help
@@ -198,7 +180,7 @@ Partial Class PsyCourses
         Me.PSY304CO.BackColor = System.Drawing.Color.SkyBlue
         Me.PSY304CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PSY304CO.Course_Code = "PSY304"
-        Me.PSY304CO.Course_Grade = 3.33R
+        Me.PSY304CO.Course_Grade = 0R
         Me.PSY304CO.Course_Name = "Psy of Gender"
         Me.PSY304CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.PSY304CO.Cursor = System.Windows.Forms.Cursors.Help
@@ -208,135 +190,6 @@ Partial Class PsyCourses
         Me.PSY304CO.Pre_Requisite = Nothing
         Me.PSY304CO.Size = New System.Drawing.Size(340, 144)
         Me.PSY304CO.TabIndex = 10
-        '
-        'Panel1
-        '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.PassedPictureBox)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.PictureBox8)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Location = New System.Drawing.Point(1437, 81)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(234, 315)
-        Me.Panel1.TabIndex = 34
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(90, 275)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(141, 31)
-        Me.Label5.TabIndex = 31
-        Me.Label5.Text = "Unavailble"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(3, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(161, 42)
-        Me.Label10.TabIndex = 32
-        Me.Label10.Text = "Legend:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(90, 222)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 31)
-        Me.Label4.TabIndex = 30
-        Me.Label4.Text = "Open"
-        '
-        'PassedPictureBox
-        '
-        Me.PassedPictureBox.BackColor = System.Drawing.Color.LimeGreen
-        Me.PassedPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PassedPictureBox.Location = New System.Drawing.Point(3, 45)
-        Me.PassedPictureBox.Name = "PassedPictureBox"
-        Me.PassedPictureBox.Size = New System.Drawing.Size(46, 40)
-        Me.PassedPictureBox.TabIndex = 22
-        Me.PassedPictureBox.TabStop = False
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(90, 166)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(113, 31)
-        Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Enrolled"
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.DarkGray
-        Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox8.Location = New System.Drawing.Point(3, 269)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(46, 40)
-        Me.PictureBox8.TabIndex = 28
-        Me.PictureBox8.TabStop = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(90, 110)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(88, 31)
-        Me.Label6.TabIndex = 25
-        Me.Label6.Text = "Failed"
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackColor = System.Drawing.Color.SkyBlue
-        Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox7.Location = New System.Drawing.Point(3, 213)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(46, 40)
-        Me.PictureBox7.TabIndex = 29
-        Me.PictureBox7.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(90, 54)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(105, 31)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Passed"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.IndianRed
-        Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox6.Location = New System.Drawing.Point(3, 101)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(46, 40)
-        Me.PictureBox6.TabIndex = 23
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox5.Location = New System.Drawing.Point(3, 157)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(46, 40)
-        Me.PictureBox5.TabIndex = 26
-        Me.PictureBox5.TabStop = False
         '
         'PictureBox4
         '
@@ -392,13 +245,12 @@ Partial Class PsyCourses
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1738, 798)
+        Me.ClientSize = New System.Drawing.Size(1501, 894)
         Me.Controls.Add(Me.CancelMinorButton)
         Me.Controls.Add(Me.DoneMinorButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PSY304CO)
         Me.Controls.Add(Me.PSY325CO)
         Me.Controls.Add(Me.PSY124CO)
@@ -410,14 +262,8 @@ Partial Class PsyCourses
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "PsyCourses"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PsyCourses"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PassedPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -436,18 +282,6 @@ Partial Class PsyCourses
     Friend WithEvents PSY124CO As CourseObject
     Friend WithEvents PSY325CO As CourseObject
     Friend WithEvents PSY304CO As CourseObject
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents PassedPictureBox As PictureBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox

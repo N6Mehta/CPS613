@@ -47,27 +47,6 @@
     End Sub
 
     Sub LoadSecondYear()
-        MTH108CO.Course_Code = "MTH10888"
-        CMN300CO.Course_Code = "CMN300"
-        CPS305CO.Course_Code = "CPS305"
-        CPS393CO.Course_Code = "CPS393"
-        CPS420CO.Course_Code = "CPS420"
-        CPS406CO.Course_Code = "CPS406"
-        CPS506CO.Course_Code = "CPS506"
-        CPS590CO.Course_Code = "CPS590"
-        OE1CO.Course_Code = "Open Elective"
-        OE2CO.Course_Code = "Open Elective"
-
-        MTH108CO.Course_Name = "Linear Algebra"
-        CMN300CO.Course_Name = "Cmn in" + vbCrLf + "Comp. Industry"
-        CPS305CO.Course_Name = "Data Structures"
-        CPS393CO.Course_Name = "C and UNIX"
-        CPS420CO.Course_Name = "Discrete" + vbCrLf + "Structures"
-        CPS406CO.Course_Name = "Software" + vbCrLf + "Engineering"
-        CPS506CO.Course_Name = "Comparative" + vbCrLf + "Prog Languages"
-        CPS590CO.Course_Name = "Operating" + vbCrLf + "Systems I"
-        OE1CO.Course_Name = ""
-        OE2CO.Course_Name = ""
 
         MTH108CO.changeState(CourseObject.State.enrolled)
         CMN300CO.changeState(CourseObject.State.enrolled)
@@ -79,49 +58,9 @@
         CPS590CO.changeState(CourseObject.State.enrolled)
         OE1CO.changeState(CourseObject.State.open)
         OE2CO.changeState(CourseObject.State.open)
-
-        MTH108CO.Course_Type = CourseObject.CourseType.Mandatory
-        CMN300CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS305CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS393CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS420CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS506CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS590CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS406CO.Course_Type = CourseObject.CourseType.Mandatory
-        OE1CO.Course_Type = CourseObject.CourseType.Open_Elective
-        OE2CO.Course_Type = CourseObject.CourseType.Open_Elective
-
-        CPS305CO.Pre_Requisite = "CPS209"
-        CPS393CO.Pre_Requisite = "CPS109"
-        CPS420CO.Pre_Requisite = "MTH110"
-        CPS406CO.Pre_Requisite = "CPS209"
-        CPS506CO.Pre_Requisite = "CPS209"
-        CPS590CO.Pre_Requisite = "CPS305, CPS393"
     End Sub
 
     Sub LoadThirdYear()
-        Y3S1PRCO.Course_Code = "Professionally" + vbCrLf + "Related"
-        Y3S2PR1CO.Course_Code = "Professionally" + vbCrLf + "Related"
-        Y3S2PR2CO.Course_Code = "Professionally" + vbCrLf + "Related"
-        CPS616CO.Course_Code = "CPS616"
-        CPS633CO.Course_Code = "CPS633"
-        CPS706CO.Course_Code = "CPS706"
-        CPS721CO.Course_Code = "CPS721"
-        CPS510CO.Course_Code = "CPS510"
-        UL1CO.Course_Code = "Upper Liberal"
-        LL3CO.Course_Code = "Lower Liberal"
-
-        Y3S1PRCO.Course_Name = ""
-        Y3S2PR1CO.Course_Name = ""
-        Y3S2PR2CO.Course_Name = ""
-        CPS616CO.Course_Name = "Algorithms"
-        CPS633CO.Course_Name = "Computer" + vbCrLf + "Security"
-        CPS706CO.Course_Name = "Networks I"
-        CPS721CO.Course_Name = "Artificial" + vbCrLf + "Intelligence"
-        CPS510CO.Course_Name = "Databases I"
-        UL1CO.Course_Name = ""
-        LL3CO.Course_Name = ""
-
         Y3S1PRCO.changeState(CourseObject.State.open)
         Y3S2PR1CO.changeState(CourseObject.State.open)
         Y3S2PR2CO.changeState(CourseObject.State.open)
@@ -132,39 +71,6 @@
         CPS510CO.changeState(CourseObject.State.closed)
         UL1CO.changeState(CourseObject.State.open)
         LL3CO.changeState(CourseObject.State.open)
-
-        Y3S1PRCO.Course_Type = CourseObject.CourseType.Pro_Related
-        Y3S2PR1CO.Course_Type = CourseObject.CourseType.Pro_Related
-        Y3S2PR2CO.Course_Type = CourseObject.CourseType.Pro_Related
-        CPS616CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS633CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS706CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS721CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS510CO.Course_Type = CourseObject.CourseType.Mandatory
-        UL1CO.Course_Type = CourseObject.CourseType.Liberal
-        LL3CO.Course_Type = CourseObject.CourseType.Liberal
-
-        Y3S1PRCO.Pre_Requisite = ""
-        Y3S2PR1CO.Pre_Requisite = ""
-        Y3S2PR2CO.Pre_Requisite = ""
-        CPS616CO.Pre_Requisite = "CPS420, CPS305"
-        CPS633CO.Pre_Requisite = "CPS393"
-        CPS706CO.Pre_Requisite = "CPS590"
-        CPS721CO.Pre_Requisite = "CPS420, CPS305"
-        CPS510CO.Pre_Requisite = "CPS305"
-        UL1CO.Pre_Requisite = ""
-        LL3CO.Pre_Requisite = ""
-
-        'Y3S1PRCO
-        'Y3S2PR1CO
-        'Y3S2PR2CO
-        'CPS616CO
-        'CPS633CO
-        'CPS706CO
-        'CPS721CO
-        'CPS510CO
-        'UL1CO
-        'LL3CO
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Year1OpenButton.Click
