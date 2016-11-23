@@ -143,10 +143,6 @@
             P209Unit.Visible = True
             P209Status.Visible = True
 
-
-
-
-
         End If
     End Sub
 
