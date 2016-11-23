@@ -30,6 +30,8 @@
         Me.changeState(State.open)
         Me.Course_Code = CourseCode.Text
         Me.Course_Name = CourseName.Text
+        Me.type = CourseType.No_Type
+
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
@@ -163,6 +165,9 @@
         ElseIf type.Equals(CourseType.No_Type) Then
             Me.defCode = "Add Course"
             Me.defName = ""
+        ElseIf type.Equals(CourseType.No_Type) Then
+            Me.defCode = Course_Code
+            Me.defName = Course_Name
 
         End If
 
