@@ -67,6 +67,7 @@ Partial Class CourseSearch
         Me.P2PictureBox = New System.Windows.Forms.PictureBox()
         Me.P4PictureBox = New System.Windows.Forms.PictureBox()
         Me.courseTableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +81,7 @@ Partial Class CourseSearch
         '
         Me.searchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchButton.Location = New System.Drawing.Point(953, 54)
-        Me.searchButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.searchButton.Margin = New System.Windows.Forms.Padding(4)
         Me.searchButton.Name = "searchButton"
         Me.searchButton.Size = New System.Drawing.Size(99, 36)
         Me.searchButton.TabIndex = 0
@@ -92,7 +93,7 @@ Partial Class CourseSearch
         Me.searchTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchTextBox.ForeColor = System.Drawing.SystemColors.MenuText
         Me.searchTextBox.Location = New System.Drawing.Point(36, 54)
-        Me.searchTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.searchTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.searchTextBox.Name = "searchTextBox"
         Me.searchTextBox.Size = New System.Drawing.Size(908, 34)
         Me.searchTextBox.TabIndex = 1
@@ -101,7 +102,7 @@ Partial Class CourseSearch
         '
         Me.cancelButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelButton.Location = New System.Drawing.Point(544, 661)
-        Me.cancelButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cancelButton.Margin = New System.Windows.Forms.Padding(4)
         Me.cancelButton.Name = "cancelButton"
         Me.cancelButton.Size = New System.Drawing.Size(167, 46)
         Me.cancelButton.TabIndex = 3
@@ -112,7 +113,7 @@ Partial Class CourseSearch
         '
         Me.doneButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.doneButton.Location = New System.Drawing.Point(325, 661)
-        Me.doneButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.doneButton.Margin = New System.Windows.Forms.Padding(4)
         Me.doneButton.Name = "doneButton"
         Me.doneButton.Size = New System.Drawing.Size(164, 46)
         Me.doneButton.TabIndex = 4
@@ -135,7 +136,7 @@ Partial Class CourseSearch
         Me.LLCheckBox.AutoSize = True
         Me.LLCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LLCheckBox.Location = New System.Drawing.Point(73, 155)
-        Me.LLCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LLCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LLCheckBox.Name = "LLCheckBox"
         Me.LLCheckBox.Size = New System.Drawing.Size(142, 24)
         Me.LLCheckBox.TabIndex = 6
@@ -147,7 +148,7 @@ Partial Class CourseSearch
         Me.ULCheckBox.AutoSize = True
         Me.ULCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ULCheckBox.Location = New System.Drawing.Point(73, 204)
-        Me.ULCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ULCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ULCheckBox.Name = "ULCheckBox"
         Me.ULCheckBox.Size = New System.Drawing.Size(141, 24)
         Me.ULCheckBox.TabIndex = 7
@@ -159,7 +160,7 @@ Partial Class CourseSearch
         Me.PRCheckBox.AutoSize = True
         Me.PRCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PRCheckBox.Location = New System.Drawing.Point(293, 155)
-        Me.PRCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PRCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PRCheckBox.Name = "PRCheckBox"
         Me.PRCheckBox.Size = New System.Drawing.Size(203, 24)
         Me.PRCheckBox.TabIndex = 8
@@ -171,7 +172,7 @@ Partial Class CourseSearch
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox4.Location = New System.Drawing.Point(293, 204)
-        Me.CheckBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(109, 24)
         Me.CheckBox4.TabIndex = 9
@@ -183,7 +184,7 @@ Partial Class CourseSearch
         Me.OECheckBox.AutoSize = True
         Me.OECheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OECheckBox.Location = New System.Drawing.Point(544, 155)
-        Me.OECheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OECheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.OECheckBox.Name = "OECheckBox"
         Me.OECheckBox.Size = New System.Drawing.Size(135, 24)
         Me.OECheckBox.TabIndex = 10
@@ -195,7 +196,7 @@ Partial Class CourseSearch
         Me.FTCheckBox.AutoSize = True
         Me.FTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FTCheckBox.Location = New System.Drawing.Point(544, 204)
-        Me.FTCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FTCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.FTCheckBox.Name = "FTCheckBox"
         Me.FTCheckBox.Size = New System.Drawing.Size(102, 24)
         Me.FTCheckBox.TabIndex = 11
@@ -207,7 +208,7 @@ Partial Class CourseSearch
         Me.WTCheckBox.AutoSize = True
         Me.WTCheckBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WTCheckBox.Location = New System.Drawing.Point(750, 155)
-        Me.WTCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WTCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.WTCheckBox.Name = "WTCheckBox"
         Me.WTCheckBox.Size = New System.Drawing.Size(124, 24)
         Me.WTCheckBox.TabIndex = 12
@@ -217,7 +218,7 @@ Partial Class CourseSearch
         'courseListView
         '
         Me.courseListView.Location = New System.Drawing.Point(36, 299)
-        Me.courseListView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.courseListView.Margin = New System.Windows.Forms.Padding(4)
         Me.courseListView.Name = "courseListView"
         Me.courseListView.Size = New System.Drawing.Size(908, 354)
         Me.courseListView.TabIndex = 14
@@ -229,7 +230,7 @@ Partial Class CourseSearch
         Me.MCheckBox.BackColor = System.Drawing.SystemColors.Window
         Me.MCheckBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.MCheckBox.Location = New System.Drawing.Point(5, 30)
-        Me.MCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.MCheckBox.Name = "MCheckBox"
         Me.MCheckBox.Size = New System.Drawing.Size(84, 21)
         Me.MCheckBox.TabIndex = 16
@@ -291,7 +292,7 @@ Partial Class CourseSearch
         Me.PictureBox3.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.yellow_circle1
         Me.PictureBox3.InitialImage = Nothing
         Me.PictureBox3.Location = New System.Drawing.Point(835, 315)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(27, 25)
         Me.PictureBox3.TabIndex = 22
@@ -302,7 +303,7 @@ Partial Class CourseSearch
         Me.PictureBox2.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.green_circle2
         Me.PictureBox2.InitialImage = Nothing
         Me.PictureBox2.Location = New System.Drawing.Point(637, 315)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(27, 25)
         Me.PictureBox2.TabIndex = 20
@@ -313,7 +314,7 @@ Partial Class CourseSearch
         Me.PictureBox1.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.blue_circle1
         Me.PictureBox1.InitialImage = Nothing
         Me.PictureBox1.Location = New System.Drawing.Point(731, 315)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(27, 25)
         Me.PictureBox1.TabIndex = 18
@@ -336,7 +337,7 @@ Partial Class CourseSearch
         Me.DescripLabel.AutoSize = True
         Me.DescripLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DescripLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripLabel.Location = New System.Drawing.Point(103, 1)
+        Me.DescripLabel.Location = New System.Drawing.Point(102, 1)
         Me.DescripLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.DescripLabel.Name = "DescripLabel"
         Me.DescripLabel.Size = New System.Drawing.Size(95, 20)
@@ -348,7 +349,7 @@ Partial Class CourseSearch
         Me.TimeLabel.AutoSize = True
         Me.TimeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel.Location = New System.Drawing.Point(290, 1)
+        Me.TimeLabel.Location = New System.Drawing.Point(288, 1)
         Me.TimeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TimeLabel.Name = "TimeLabel"
         Me.TimeLabel.Size = New System.Drawing.Size(55, 20)
@@ -360,7 +361,7 @@ Partial Class CourseSearch
         Me.roomLabel.AutoSize = True
         Me.roomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.roomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.roomLabel.Location = New System.Drawing.Point(428, 1)
+        Me.roomLabel.Location = New System.Drawing.Point(426, 1)
         Me.roomLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.roomLabel.Name = "roomLabel"
         Me.roomLabel.Size = New System.Drawing.Size(53, 20)
@@ -372,7 +373,7 @@ Partial Class CourseSearch
         Me.UnitLabel.AutoSize = True
         Me.UnitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.UnitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UnitLabel.Location = New System.Drawing.Point(562, 1)
+        Me.UnitLabel.Location = New System.Drawing.Point(560, 1)
         Me.UnitLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.UnitLabel.Name = "UnitLabel"
         Me.UnitLabel.Size = New System.Drawing.Size(39, 20)
@@ -384,7 +385,7 @@ Partial Class CourseSearch
         Me.statusLabel.AutoSize = True
         Me.statusLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.statusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.statusLabel.Location = New System.Drawing.Point(683, 1)
+        Me.statusLabel.Location = New System.Drawing.Point(681, 1)
         Me.statusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.statusLabel.Name = "statusLabel"
         Me.statusLabel.Size = New System.Drawing.Size(57, 20)
@@ -396,7 +397,7 @@ Partial Class CourseSearch
         Me.P2CheckBox.AutoSize = True
         Me.P2CheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.P2CheckBox.Location = New System.Drawing.Point(5, 74)
-        Me.P2CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.P2CheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.P2CheckBox.Name = "P2CheckBox"
         Me.P2CheckBox.Size = New System.Drawing.Size(81, 21)
         Me.P2CheckBox.TabIndex = 30
@@ -409,7 +410,7 @@ Partial Class CourseSearch
         Me.P4CheckBox.AutoSize = True
         Me.P4CheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.P4CheckBox.Location = New System.Drawing.Point(5, 121)
-        Me.P4CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.P4CheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.P4CheckBox.Name = "P4CheckBox"
         Me.P4CheckBox.Size = New System.Drawing.Size(81, 21)
         Me.P4CheckBox.TabIndex = 31
@@ -422,7 +423,7 @@ Partial Class CourseSearch
         Me.P2desLabel.AutoSize = True
         Me.P2desLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P2desLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P2desLabel.Location = New System.Drawing.Point(103, 70)
+        Me.P2desLabel.Location = New System.Drawing.Point(102, 70)
         Me.P2desLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P2desLabel.Name = "P2desLabel"
         Me.P2desLabel.Size = New System.Drawing.Size(95, 18)
@@ -435,7 +436,7 @@ Partial Class CourseSearch
         Me.P4desLabel.AutoSize = True
         Me.P4desLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P4desLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P4desLabel.Location = New System.Drawing.Point(103, 117)
+        Me.P4desLabel.Location = New System.Drawing.Point(102, 117)
         Me.P4desLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P4desLabel.Name = "P4desLabel"
         Me.P4desLabel.Size = New System.Drawing.Size(141, 18)
@@ -448,7 +449,7 @@ Partial Class CourseSearch
         Me.MdesLabel.AutoSize = True
         Me.MdesLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MdesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MdesLabel.Location = New System.Drawing.Point(103, 26)
+        Me.MdesLabel.Location = New System.Drawing.Point(102, 26)
         Me.MdesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MdesLabel.Name = "MdesLabel"
         Me.MdesLabel.Size = New System.Drawing.Size(152, 18)
@@ -461,7 +462,7 @@ Partial Class CourseSearch
         Me.MtimeLabel.AutoSize = True
         Me.MtimeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MtimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MtimeLabel.Location = New System.Drawing.Point(290, 26)
+        Me.MtimeLabel.Location = New System.Drawing.Point(288, 26)
         Me.MtimeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MtimeLabel.Name = "MtimeLabel"
         Me.MtimeLabel.Size = New System.Drawing.Size(66, 34)
@@ -473,7 +474,7 @@ Partial Class CourseSearch
         '
         Me.P2timeLabel.AutoSize = True
         Me.P2timeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.P2timeLabel.Location = New System.Drawing.Point(290, 70)
+        Me.P2timeLabel.Location = New System.Drawing.Point(288, 70)
         Me.P2timeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P2timeLabel.Name = "P2timeLabel"
         Me.P2timeLabel.Size = New System.Drawing.Size(77, 34)
@@ -485,7 +486,7 @@ Partial Class CourseSearch
         '
         Me.P4timeLabel.AutoSize = True
         Me.P4timeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.P4timeLabel.Location = New System.Drawing.Point(290, 117)
+        Me.P4timeLabel.Location = New System.Drawing.Point(288, 117)
         Me.P4timeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P4timeLabel.Name = "P4timeLabel"
         Me.P4timeLabel.Size = New System.Drawing.Size(72, 34)
@@ -498,7 +499,7 @@ Partial Class CourseSearch
         Me.MroomLabel.AutoSize = True
         Me.MroomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MroomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MroomLabel.Location = New System.Drawing.Point(428, 26)
+        Me.MroomLabel.Location = New System.Drawing.Point(426, 26)
         Me.MroomLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MroomLabel.Name = "MroomLabel"
         Me.MroomLabel.Size = New System.Drawing.Size(79, 18)
@@ -511,7 +512,7 @@ Partial Class CourseSearch
         Me.P2roomLabel.AutoSize = True
         Me.P2roomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P2roomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P2roomLabel.Location = New System.Drawing.Point(428, 70)
+        Me.P2roomLabel.Location = New System.Drawing.Point(426, 70)
         Me.P2roomLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P2roomLabel.Name = "P2roomLabel"
         Me.P2roomLabel.Size = New System.Drawing.Size(55, 18)
@@ -524,7 +525,7 @@ Partial Class CourseSearch
         Me.P4roomLabel.AutoSize = True
         Me.P4roomLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P4roomLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P4roomLabel.Location = New System.Drawing.Point(428, 117)
+        Me.P4roomLabel.Location = New System.Drawing.Point(426, 117)
         Me.P4roomLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P4roomLabel.Name = "P4roomLabel"
         Me.P4roomLabel.Size = New System.Drawing.Size(63, 18)
@@ -537,7 +538,7 @@ Partial Class CourseSearch
         Me.MunitLabel.AutoSize = True
         Me.MunitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MunitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MunitLabel.Location = New System.Drawing.Point(562, 26)
+        Me.MunitLabel.Location = New System.Drawing.Point(560, 26)
         Me.MunitLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MunitLabel.Name = "MunitLabel"
         Me.MunitLabel.Size = New System.Drawing.Size(16, 18)
@@ -550,7 +551,7 @@ Partial Class CourseSearch
         Me.P2unitLabel.AutoSize = True
         Me.P2unitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.P2unitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.P2unitLabel.Location = New System.Drawing.Point(562, 70)
+        Me.P2unitLabel.Location = New System.Drawing.Point(560, 70)
         Me.P2unitLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P2unitLabel.Name = "P2unitLabel"
         Me.P2unitLabel.Size = New System.Drawing.Size(16, 18)
@@ -562,7 +563,7 @@ Partial Class CourseSearch
         '
         Me.P4unitLabel.AutoSize = True
         Me.P4unitLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.P4unitLabel.Location = New System.Drawing.Point(562, 117)
+        Me.P4unitLabel.Location = New System.Drawing.Point(560, 117)
         Me.P4unitLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.P4unitLabel.Name = "P4unitLabel"
         Me.P4unitLabel.Size = New System.Drawing.Size(16, 17)
@@ -573,8 +574,8 @@ Partial Class CourseSearch
         'MPictureBox
         '
         Me.MPictureBox.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.green_circle2
-        Me.MPictureBox.Location = New System.Drawing.Point(683, 30)
-        Me.MPictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MPictureBox.Location = New System.Drawing.Point(681, 30)
+        Me.MPictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.MPictureBox.Name = "MPictureBox"
         Me.MPictureBox.Size = New System.Drawing.Size(27, 25)
         Me.MPictureBox.TabIndex = 44
@@ -584,8 +585,8 @@ Partial Class CourseSearch
         'P2PictureBox
         '
         Me.P2PictureBox.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.blue_circle1
-        Me.P2PictureBox.Location = New System.Drawing.Point(683, 74)
-        Me.P2PictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.P2PictureBox.Location = New System.Drawing.Point(681, 74)
+        Me.P2PictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.P2PictureBox.Name = "P2PictureBox"
         Me.P2PictureBox.Size = New System.Drawing.Size(27, 25)
         Me.P2PictureBox.TabIndex = 45
@@ -595,8 +596,8 @@ Partial Class CourseSearch
         'P4PictureBox
         '
         Me.P4PictureBox.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.yellow_circle1
-        Me.P4PictureBox.Location = New System.Drawing.Point(683, 121)
-        Me.P4PictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.P4PictureBox.Location = New System.Drawing.Point(681, 121)
+        Me.P4PictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.P4PictureBox.Name = "P4PictureBox"
         Me.P4PictureBox.Size = New System.Drawing.Size(27, 25)
         Me.P4PictureBox.TabIndex = 46
@@ -614,7 +615,7 @@ Partial Class CourseSearch
         Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137.0!))
         Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133.0!))
         Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120.0!))
-        Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107.0!))
+        Me.courseTableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109.0!))
         Me.courseTableLayoutPanel.Controls.Add(Me.courseLabel, 0, 0)
         Me.courseTableLayoutPanel.Controls.Add(Me.P4PictureBox, 5, 3)
         Me.courseTableLayoutPanel.Controls.Add(Me.DescripLabel, 1, 0)
@@ -641,7 +642,7 @@ Partial Class CourseSearch
         Me.courseTableLayoutPanel.Controls.Add(Me.P2desLabel, 1, 2)
         Me.courseTableLayoutPanel.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.courseTableLayoutPanel.Location = New System.Drawing.Point(96, 400)
-        Me.courseTableLayoutPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.courseTableLayoutPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.courseTableLayoutPanel.Name = "courseTableLayoutPanel"
         Me.courseTableLayoutPanel.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.courseTableLayoutPanel.RowCount = 4
@@ -652,12 +653,23 @@ Partial Class CourseSearch
         Me.courseTableLayoutPanel.Size = New System.Drawing.Size(788, 158)
         Me.courseTableLayoutPanel.TabIndex = 47
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(36, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(246, 20)
+        Me.Label1.TabIndex = 48
+        Me.Label1.Text = "Please enter a course code:"
+        '
         'CourseSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1068, 722)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.courseTableLayoutPanel)
         Me.Controls.Add(Me.waitLabel)
         Me.Controls.Add(Me.PictureBox3)
@@ -679,7 +691,7 @@ Partial Class CourseSearch
         Me.Controls.Add(Me.cancelButton)
         Me.Controls.Add(Me.searchTextBox)
         Me.Controls.Add(Me.searchButton)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CourseSearch"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Search"
@@ -741,4 +753,5 @@ Partial Class CourseSearch
     Friend WithEvents P2PictureBox As PictureBox
     Friend WithEvents P4PictureBox As PictureBox
     Public WithEvents courseTableLayoutPanel As TableLayoutPanel
+    Friend WithEvents Label1 As Label
 End Class

@@ -30,20 +30,23 @@
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.grade = 0.0
         Me.changeState(State.open)
+        Me.Course_Code = CourseCode.Text
+        Me.Course_Name = CourseName.Text
     End Sub
-    'Called my the main form class
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         searchWindow = New CourseSearch
         searchWindow.connectCourse(Me)
         searchWindow.Show()
-
-        Me.CourseCode.Text = searchWindow.course.CourseCode.Text
         Me.changeState(State.enrolled)
+        Course_Code = searchWindow.course.CourseCode.Text
+        Course_Name = searchWindow.course.CourseName.Text
+
+
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
-        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Me.CourseName.Text + "?", "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Course_Code + ": " + Course_Name + "?", "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If msgResult = DialogResult.Yes Then
             Me.reset()
         End If
@@ -55,25 +58,35 @@
 
     Public Sub changeState(state As State)
         If state.Equals(State.open) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = True
             Me.DropButton.Enabled = False
             Me.BackColor = Color.SkyBlue
+            Me.AddButton.Cursor = Cursors.Hand
+            Me.DropButton.Cursor = Cursors.No
         ElseIf state.Equals(State.passed) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.LimeGreen
         ElseIf state.Equals(State.failed) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.IndianRed
         ElseIf state.Equals(State.closed) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
-            Me.DropButton.Enabled = False
+            Me.DropButton.Enabled = True
             Me.BackColor = Color.DarkGray
+            Me.DropButton.Cursor = Cursors.Hand
         ElseIf state.Equals(State.enrolled) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = True
             Me.BackColor = Color.Gold
+            Me.AddButton.Cursor = Cursors.Hand
+            Me.DropButton.Cursor = Cursors.Hand
         Else
             MsgBox("Incorrect State")
             Me.BackColor = Color.DarkGray
