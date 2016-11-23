@@ -14,13 +14,17 @@
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         Dim home As New pageHome
+        ActiveForm.Close()
         home.nam = user
         home.MdiParent = Me
         home.Show()
     End Sub
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-
+        Dim home As New pageHome
+        home.nam = user
+        home.MdiParent = Me
+        home.Show()
         Me.ActiveMdiChild.Close()
         'If Me.ActiveMdiChild.Visible = True Then
         '  Me.ActiveMdiChild.Visible = False
