@@ -15,16 +15,16 @@
     Private Sub Personal_Information_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'home = New pageHome
         home.homeConnect(Me)
-        Me.homeStreet.Text = pageHome.Hstreet.Text
-        Me.homeProvince.Text = pageHome.Hprovince.Text
-        Me.homeCity.Text = pageHome.Hcity.Text
-        Me.homeCode.Text = pageHome.Hcode.Text
+        Me.homeStreet.Text = pageHome.homeStreet
+        Me.homeProvince.Text = pageHome.homeProvince
+        Me.homeCity.Text = pageHome.homeCity
+        Me.homeCode.Text = pageHome.homeCode
 
 
-        Me.mailStreet.Text = pageHome.Mstreet.Text
-        Me.mailProvince.Text = pageHome.Mprovince.Text
-        Me.mailCity.Text = pageHome.Mcity.Text
-        Me.mailCode.Text = pageHome.Mcode.Text
+        Me.mailStreet.Text = pageHome.mailStreet
+        Me.mailProvince.Text = pageHome.mailProvince
+        Me.mailCity.Text = pageHome.mailCity
+        Me.mailCode.Text = pageHome.mailCode
 
 
         Me.phone.Text = pageHome.Phone.Text
@@ -53,22 +53,17 @@
         mCity = Me.mailCity.Text
         mCode = Me.mailCode.Text
 
+        phony = Me.phone.Text
+        emaily = Me.email.Text
 
-        home.Hstreet.Text = hStreet
-        home.Hprovince.Text = hProvince
-        home.Hcity.Text = hCity
-        home.Hcode.Text = hCode
-
-
-        home.Mstreet.Text = mStreet
-        home.Mprovince.Text = mProvince
-        home.Mcity.Text = mCity
-        home.Mcode.Text = mCode
+        home.Address.Text = hStreet & vbNewLine & hCity & Space(1) & hProvince & Space(1) & hCode
+        home.mail.Text = mStreet & vbNewLine & mCity & Space(1) & mProvince & Space(1) & mCode
 
 
-        home.Phone.Text = Me.phone.Text
-        home.Email.Text = Me.email.Text
-        ' home.Show()
+        home.Phone.Text = phony
+        home.Email.Text = emaily
+
+        home.Show()
 
         Me.Close()
     End Sub

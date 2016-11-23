@@ -1,19 +1,33 @@
 ﻿Public Class pageHome
     Public nam As String
-    Private person As Personal_Information
+    Public homeStreet As String = "100 Random Street"
+    Public homeProvince As String = "Ontario"
+    Public homeCity As String = "Toronto"
+    Public homeCode As String = "M5V 123"
+
+
+    Public mailStreet As String = "100 Random Street"
+    Public mailProvince As String = "Ontario"
+    Public mailCity As String = "Toronto"
+    Public mailCode As String = "M5V 123"
+    'Private person As Personal_Information
     Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
 
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Dim enroll As New Enrollment
+        Dim enroll As New EnrollementForm
         Me.Close()
         enroll.MdiParent = MDI
         enroll.Show()
     End Sub
 
     Private Sub pageHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.Address.Text = homeStreet & vbNewLine & homeCity & Space(1) & homeProvince & Space(1) & homeCode
+        Me.mail.Text = mailStreet & vbNewLine & mailCity & Space(1) & mailProvince & Space(1) & mailCode
+
         Username.Text = "Welcome, " & nam
     End Sub
 
@@ -54,19 +68,19 @@
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
         ' Dim edit As New Personal_Information
-        person = New Personal_Information
-        Me.Close()
-        person.personalConnect(Me)
-        person.Show()
+        ' person = New Personal_Information
+        'Me.Close()
+        ' person.personalConnect(Me)
+        'person.Show()
     End Sub
 
-    Public Sub homeConnect(personal As Personal_Information)
-        Me.person = personal
-    End Sub
+    '  Public Sub homeConnect(personal As Personal_Information)
+    ' Me.person = personal
+    ' End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Dim grades As New AcademicStanding
-        grades.MdiParent = MDI
-        grades.Show()
+        ' Dim grades As New AcademicStanding
+        'grades.MdiParent = MDI
+        'grades.Show()
     End Sub
 End Class
