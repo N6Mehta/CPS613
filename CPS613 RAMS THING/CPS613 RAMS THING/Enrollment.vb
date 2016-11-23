@@ -44,7 +44,7 @@
     End Sub
 
     Sub LoadSecondYear()
-        MTH108CO.Course_Code = "MTH108"
+        MTH108CO.Course_Code = "MTH10888"
         CMN300CO.Course_Code = "CMN300"
         CPS305CO.Course_Code = "CPS305"
         CPS393CO.Course_Code = "CPS393"
