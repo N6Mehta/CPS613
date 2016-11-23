@@ -23,9 +23,8 @@
         'Me.WindowState = FormWindowState.Minimized
         'Me.Visible = False
         MDI.home.Visible = False
-            MDI.enroll.MdiParent = MDI
-            MDI.enroll.Visible = True
-        '
+        MDI.enroll.MdiParent = MDI
+        MDI.enroll.Visible = True
 
     End Sub
 
