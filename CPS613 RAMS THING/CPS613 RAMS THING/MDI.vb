@@ -1,6 +1,9 @@
 ﻿Public Class MDI
     Public user As String
-
+    Public Shared home As New pageHome
+    Public Shared enroll As New Enrollment
+    Public Shared grades As New AcademicStanding
+    Public Shared view As New viewDocs
     Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click
         Me.Close()
     End Sub
@@ -13,19 +16,27 @@
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-        Dim home As New pageHome
-        'ActiveForm.Close()
-        home.nam = user
-        home.MdiParent = Me
-        home.Show()
+        If enroll.Visible = True Or view.Visible = True Or grades.Visible = True Or home.Visible = True Then
+            enroll.Visible = False
+            view.Visible = False
+            grades.Visible = False
+            ' home.Visible = True
+        End If
+
     End Sub
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-        Dim home As New pageHome
-        home.nam = user
-        home.MdiParent = Me
-        home.Show()
-        Me.ActiveMdiChild.Close()
+        'Dim home As New pageHome
+        If enroll.Visible = True Or view.Visible = True Or grades.Visible = True Or home.Visible = True Then
+            enroll.Visible = False
+            view.Visible = False
+            grades.Visible = False
+            'home.Visible = True
+        End If
+        'ActiveMdiChild.Close()
+        'home.nam = user
+        'home.MdiParent = Me
+        'home.Show()
         'If Me.ActiveMdiChild.Visible = True Then
         '  Me.ActiveMdiChild.Visible = False
         '   hombre.Visible = True

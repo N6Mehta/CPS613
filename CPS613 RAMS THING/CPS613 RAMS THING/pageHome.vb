@@ -17,12 +17,15 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Dim enroll As New Enrollment
+        'Dim enroll As New Enrollment
         'Me.Close()
-        Me.WindowState = FormWindowState.Minimized
+        'MDI.enroll
+        'Me.WindowState = FormWindowState.Minimized
         'Me.Visible = False
-        enroll.MdiParent = MDI
-        enroll.Show()
+        MDI.home.Visible = False
+            MDI.enroll.MdiParent = MDI
+            MDI.enroll.Visible = True
+        '
 
     End Sub
 
@@ -84,23 +87,23 @@
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Dim grades As New AcademicStanding
-        grades.MdiParent = MDI
-        Me.Visible = False
-        grades.Show()
-        Me.Close()
+        'Dim grades As New AcademicStanding
+        MDI.grades.MdiParent = MDI
+        MDI.home.Visible = False
+        MDI.grades.Visible = True
+        'Me.Close()
         'Me.WindowState = FormWindowState.Minimized
 
         'Me.Visible = False
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
-        Dim view As New viewDocs
-        view.MdiParent = MDI
-        Me.Visible = False
-        view.Show()
+        'Dim view As New viewDocs
+        MDI.view.MdiParent = MDI
+        MDI.home.Visible = False
+        MDI.view.Visible = True
         'Me.WindowState = FormWindowState.Minimized
-        Me.Close()
+        'Me.Close()
         ' Me.Visible = False
     End Sub
 
