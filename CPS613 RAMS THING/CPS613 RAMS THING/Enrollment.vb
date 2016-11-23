@@ -5,6 +5,9 @@
     Dim Year2Opened As Boolean = False
     Dim Year3Opened As Boolean = False
     Dim Year4Opened As Boolean = False
+
+    Public psy_minor As PsyCourses
+    Private minorPage As Minors
     Private searchWindow As CourseSearch
 
     Private Sub Enrollment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -318,6 +321,19 @@
     End Sub
 
     Private Sub MinorsButton_Click(sender As Object, e As EventArgs) Handles MinorsButton.Click
-        Minors.Show()
+        minorPage = New Minors
+        psy_minor = New PsyCourses
+        minorPage.connectToEnroll(Me)
+
+        psy_minor.connectToEnroll(Me)
+        minorPage.Show()
+    End Sub
+
+    Public Sub connectToPSYMinor(page As PsyCourses)
+        Me.psy_minor = page
+    End Sub
+
+    Public Sub connectToMinor(page As Minors)
+        Me.minorPage = page
     End Sub
 End Class

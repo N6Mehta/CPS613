@@ -23,7 +23,7 @@
         enrolled
     End Enum
 
-    Private courseState As State
+    Public courseState As State
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.grade = 0.0
@@ -64,22 +64,26 @@
             Me.BackColor = Color.SkyBlue
             Me.AddButton.Cursor = Cursors.Hand
             Me.DropButton.Cursor = Cursors.No
+            Me.courseState = state
         ElseIf state.Equals(State.passed) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.LimeGreen
+            Me.courseState = state
         ElseIf state.Equals(State.failed) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.IndianRed
+            Me.courseState = state
         ElseIf state.Equals(State.closed) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = True
             Me.BackColor = Color.DarkGray
             Me.DropButton.Cursor = Cursors.Hand
+            Me.courseState = state
         ElseIf state.Equals(State.enrolled) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
@@ -87,6 +91,7 @@
             Me.BackColor = Color.Gold
             Me.AddButton.Cursor = Cursors.Hand
             Me.DropButton.Cursor = Cursors.Hand
+            Me.courseState = state
         Else
             MsgBox("Incorrect State")
             Me.BackColor = Color.DarkGray
