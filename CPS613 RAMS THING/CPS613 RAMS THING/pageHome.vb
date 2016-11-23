@@ -18,9 +18,10 @@
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Dim enroll As New Enrollment
-        Me.Close()
+        Me.Visible = False
         enroll.MdiParent = MDI
         enroll.Show()
+
     End Sub
 
     Private Sub pageHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -83,6 +84,7 @@
         grades.MdiParent = MDI
         grades.Show()
         Me.Close()
+        'Me.Visible = False
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
@@ -90,5 +92,11 @@
         view.MdiParent = MDI
         view.Show()
         Me.Close()
+        ' Me.Visible = False
+    End Sub
+
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        Dim dialog As New gradDialog
+        dialog.ShowDialog()
     End Sub
 End Class
