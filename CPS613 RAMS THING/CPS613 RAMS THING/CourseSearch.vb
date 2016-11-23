@@ -45,11 +45,12 @@
     Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
         course.CourseCode.Text = courseCode
         course.CourseName.Text = courseName
+        course.changeState(CourseObject.State.enrolled)
         Me.Close()
     End Sub
 
     Private Sub searchButton_Click(sender As Object, e As EventArgs) Handles searchButton.Click
-        If searchTextBox.Text.ToUpper = "MTH110" Or searchTextBox.Text.ToUpper = "MTH 110" Then
+        If searchTextBox.Text.ToUpper = "MTH110" Or searchTextBox.Text.ToUpper = "MTH 110" Or searchTextBox.Text.ToUpper = "MTH" Then
             MCheckBox.Visible = True
             MdesLabel.Visible = True
             MtimeLabel.Visible = True
@@ -84,6 +85,14 @@
             P4roomLabel.Visible = True
             P4unitLabel.Visible = True
             P4PictureBox.Visible = True
+
+            MCheckBox.Visible = False
+            MdesLabel.Visible = False
+            MtimeLabel.Visible = False
+            MroomLabel.Visible = False
+            MunitLabel.Visible = False
+            MPictureBox.Visible = False
+            CheckBox4.Checked = False
         End If
     End Sub
 
@@ -100,7 +109,7 @@
         courseCode = P4CheckBox.Text
     End Sub
 
-    Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles cancelButton.Click
+    Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
         Me.Close()
     End Sub
 

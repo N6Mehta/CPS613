@@ -2,10 +2,7 @@
     Private defName As String
     Private defCode As String
     Private pre_rec As String
-
-
     Shared selectedCourse As CourseObject
-
     Private searchWindow As CourseSearch
     Private type As CourseType
     Public grade As Double
@@ -16,6 +13,7 @@
         Open_Elective
         Pro_Related
         No_Type
+        PSY
     End Enum
     Public Enum State
         open
@@ -25,7 +23,7 @@
         enrolled
     End Enum
 
-    Private courseState As State
+    Public courseState As State
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.grade = 0.0
@@ -35,14 +33,16 @@
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
-        searchWindow = New CourseSearch
-        searchWindow.connectCourse(Me)
-        searchWindow.Show()
-        Me.changeState(State.enrolled)
-        Course_Code = searchWindow.course.CourseCode.Text
-        Course_Name = searchWindow.course.CourseName.Text
+        If Me.type = CourseType.PSY Then
+            Me.changeState(State.enrolled)
+        Else
+            searchWindow = New CourseSearch
+            searchWindow.connectCourse(Me)
+            searchWindow.Show()
 
-
+            Course_Code = searchWindow.course.CourseCode.Text
+            Course_Name = searchWindow.course.CourseName.Text
+        End If
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
@@ -64,22 +64,26 @@
             Me.BackColor = Color.SkyBlue
             Me.AddButton.Cursor = Cursors.Hand
             Me.DropButton.Cursor = Cursors.No
+            Me.courseState = state
         ElseIf state.Equals(State.passed) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.LimeGreen
+            Me.courseState = state
         ElseIf state.Equals(State.failed) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.IndianRed
+            Me.courseState = state
         ElseIf state.Equals(State.closed) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = True
             Me.BackColor = Color.DarkGray
             Me.DropButton.Cursor = Cursors.Hand
+            Me.courseState = state
         ElseIf state.Equals(State.enrolled) Then
             Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
@@ -87,6 +91,7 @@
             Me.BackColor = Color.Gold
             Me.AddButton.Cursor = Cursors.Hand
             Me.DropButton.Cursor = Cursors.Hand
+            Me.courseState = state
         Else
             MsgBox("Incorrect State")
             Me.BackColor = Color.DarkGray

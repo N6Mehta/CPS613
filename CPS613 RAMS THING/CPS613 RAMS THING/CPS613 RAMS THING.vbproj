@@ -146,9 +146,7 @@
     <Compile Include="Help.Designer.vb">
       <DependentUpon>Help.vb</DependentUpon>
     </Compile>
-    <Compile Include="Help.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Help.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
