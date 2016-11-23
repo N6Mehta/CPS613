@@ -30,37 +30,31 @@ Partial Class CourseObject
         '
         'AddButton
         '
-        Me.AddButton.BackColor = System.Drawing.SystemColors.Control
-        Me.AddButton.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.AddButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddButton.Location = New System.Drawing.Point(176, 58)
+        Me.AddButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddButton.Location = New System.Drawing.Point(187, 52)
         Me.AddButton.Margin = New System.Windows.Forms.Padding(4)
         Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(45, 35)
+        Me.AddButton.Size = New System.Drawing.Size(40, 37)
         Me.AddButton.TabIndex = 0
         Me.AddButton.Text = "+"
-        Me.AddButton.UseVisualStyleBackColor = False
+        Me.AddButton.UseVisualStyleBackColor = True
         '
         'DropButton
         '
-        Me.DropButton.BackColor = System.Drawing.SystemColors.Control
-        Me.DropButton.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.DropButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DropButton.Location = New System.Drawing.Point(4, 58)
+        Me.DropButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DropButton.Location = New System.Drawing.Point(0, 52)
         Me.DropButton.Margin = New System.Windows.Forms.Padding(4)
         Me.DropButton.Name = "DropButton"
-        Me.DropButton.Size = New System.Drawing.Size(45, 35)
+        Me.DropButton.Size = New System.Drawing.Size(40, 37)
         Me.DropButton.TabIndex = 1
         Me.DropButton.Text = "-"
-        Me.DropButton.UseVisualStyleBackColor = False
+        Me.DropButton.UseVisualStyleBackColor = True
         '
         'CourseName
         '
-        Me.CourseName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CourseName.AutoSize = True
         Me.CourseName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CourseName.Location = New System.Drawing.Point(61, 23)
+        Me.CourseName.Location = New System.Drawing.Point(59, 52)
         Me.CourseName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CourseName.Name = "CourseName"
         Me.CourseName.Size = New System.Drawing.Size(105, 17)
@@ -69,11 +63,9 @@ Partial Class CourseObject
         '
         'CourseCode
         '
-        Me.CourseCode.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CourseCode.AutoSize = True
         Me.CourseCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CourseCode.Location = New System.Drawing.Point(63, 9)
+        Me.CourseCode.Location = New System.Drawing.Point(61, 22)
         Me.CourseCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CourseCode.Name = "CourseCode"
         Me.CourseCode.Size = New System.Drawing.Size(101, 17)
@@ -85,15 +77,13 @@ Partial Class CourseObject
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.CourseCode)
         Me.Controls.Add(Me.CourseName)
         Me.Controls.Add(Me.DropButton)
         Me.Controls.Add(Me.AddButton)
-        Me.Cursor = System.Windows.Forms.Cursors.Help
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CourseObject"
-        Me.Size = New System.Drawing.Size(225, 93)
+        Me.Size = New System.Drawing.Size(227, 92)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

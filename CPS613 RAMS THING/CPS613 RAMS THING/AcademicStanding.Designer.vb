@@ -144,7 +144,7 @@ Partial Class AcademicStanding
         Me.Grades_15_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Grades_15_Button.Location = New System.Drawing.Point(23, 117)
         Me.Grades_15_Button.Name = "Grades_15_Button"
-        Me.Grades_15_Button.Size = New System.Drawing.Size(1015, 36)
+        Me.Grades_15_Button.Size = New System.Drawing.Size(1015, 35)
         Me.Grades_15_Button.TabIndex = 2
         Me.Grades_15_Button.Text = "Class Grades - 2015"
         Me.Grades_15_Button.UseVisualStyleBackColor = True
@@ -159,7 +159,7 @@ Partial Class AcademicStanding
         Me.Grades_15_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
         Me.Grades_15_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190.0!))
         Me.Grades_15_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85.0!))
-        Me.Grades_15_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201.0!))
+        Me.Grades_15_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199.0!))
         Me.Grades_15_Panel.Controls.Add(Me.Label2, 1, 0)
         Me.Grades_15_Panel.Controls.Add(Me.Label1, 0, 0)
         Me.Grades_15_Panel.Controls.Add(Me.Label3, 2, 0)
@@ -246,7 +246,7 @@ Partial Class AcademicStanding
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(255, 5)
+        Me.Label2.Location = New System.Drawing.Point(256, 5)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(120, 25)
         Me.Label2.TabIndex = 1
@@ -268,7 +268,7 @@ Partial Class AcademicStanding
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(465, 5)
+        Me.Label3.Location = New System.Drawing.Point(467, 5)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(61, 25)
         Me.Label3.TabIndex = 2
@@ -279,7 +279,7 @@ Partial Class AcademicStanding
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(586, 5)
+        Me.Label4.Location = New System.Drawing.Point(588, 5)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(88, 25)
         Me.Label4.TabIndex = 3
@@ -290,7 +290,7 @@ Partial Class AcademicStanding
         Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(733, 5)
+        Me.Label5.Location = New System.Drawing.Point(735, 5)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 25)
         Me.Label5.TabIndex = 4
@@ -301,7 +301,7 @@ Partial Class AcademicStanding
         Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(844, 5)
+        Me.Label6.Location = New System.Drawing.Point(845, 5)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(137, 25)
         Me.Label6.TabIndex = 5
@@ -412,7 +412,7 @@ Partial Class AcademicStanding
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(227, 39)
+        Me.Label16.Location = New System.Drawing.Point(228, 39)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(176, 24)
         Me.Label16.TabIndex = 16
@@ -423,7 +423,7 @@ Partial Class AcademicStanding
         Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(225, 70)
+        Me.Label18.Location = New System.Drawing.Point(226, 70)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(180, 24)
         Me.Label18.TabIndex = 18
@@ -434,7 +434,7 @@ Partial Class AcademicStanding
         Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(209, 101)
+        Me.Label19.Location = New System.Drawing.Point(210, 101)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(213, 24)
         Me.Label19.TabIndex = 19
@@ -445,7 +445,7 @@ Partial Class AcademicStanding
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(207, 132)
+        Me.Label20.Location = New System.Drawing.Point(208, 132)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(217, 24)
         Me.Label20.TabIndex = 20
@@ -456,7 +456,7 @@ Partial Class AcademicStanding
         Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(183, 163)
+        Me.Label21.Location = New System.Drawing.Point(184, 163)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(264, 24)
         Me.Label21.TabIndex = 21
@@ -468,7 +468,7 @@ Partial Class AcademicStanding
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Red
-        Me.Label22.Location = New System.Drawing.Point(249, 194)
+        Me.Label22.Location = New System.Drawing.Point(250, 194)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(133, 24)
         Me.Label22.TabIndex = 22
@@ -479,7 +479,7 @@ Partial Class AcademicStanding
         Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(182, 225)
+        Me.Label23.Location = New System.Drawing.Point(183, 225)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(267, 24)
         Me.Label23.TabIndex = 23
@@ -490,7 +490,7 @@ Partial Class AcademicStanding
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(473, 39)
+        Me.Label17.Location = New System.Drawing.Point(475, 39)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(45, 24)
         Me.Label17.TabIndex = 24
@@ -501,7 +501,7 @@ Partial Class AcademicStanding
         Me.Label25.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(473, 70)
+        Me.Label25.Location = New System.Drawing.Point(475, 70)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(45, 24)
         Me.Label25.TabIndex = 26
@@ -512,7 +512,7 @@ Partial Class AcademicStanding
         Me.Label26.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(473, 101)
+        Me.Label26.Location = New System.Drawing.Point(475, 101)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(45, 24)
         Me.Label26.TabIndex = 27
@@ -523,7 +523,7 @@ Partial Class AcademicStanding
         Me.Label27.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(473, 132)
+        Me.Label27.Location = New System.Drawing.Point(475, 132)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(45, 24)
         Me.Label27.TabIndex = 28
@@ -534,7 +534,7 @@ Partial Class AcademicStanding
         Me.Label28.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(473, 163)
+        Me.Label28.Location = New System.Drawing.Point(475, 163)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(45, 24)
         Me.Label28.TabIndex = 29
@@ -546,7 +546,7 @@ Partial Class AcademicStanding
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label29.ForeColor = System.Drawing.Color.Red
-        Me.Label29.Location = New System.Drawing.Point(473, 194)
+        Me.Label29.Location = New System.Drawing.Point(475, 194)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(45, 24)
         Me.Label29.TabIndex = 30
@@ -557,7 +557,7 @@ Partial Class AcademicStanding
         Me.Label30.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(473, 225)
+        Me.Label30.Location = New System.Drawing.Point(475, 225)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(45, 24)
         Me.Label30.TabIndex = 31
@@ -568,7 +568,7 @@ Partial Class AcademicStanding
         Me.Label31.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(473, 256)
+        Me.Label31.Location = New System.Drawing.Point(475, 256)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(45, 24)
         Me.Label31.TabIndex = 32
@@ -579,7 +579,7 @@ Partial Class AcademicStanding
         Me.Label32.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(473, 287)
+        Me.Label32.Location = New System.Drawing.Point(475, 287)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(45, 24)
         Me.Label32.TabIndex = 33
@@ -590,7 +590,7 @@ Partial Class AcademicStanding
         Me.Label33.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label33.AutoSize = True
         Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.Location = New System.Drawing.Point(473, 318)
+        Me.Label33.Location = New System.Drawing.Point(475, 318)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(45, 24)
         Me.Label33.TabIndex = 34
@@ -601,7 +601,7 @@ Partial Class AcademicStanding
         Me.Label34.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(593, 39)
+        Me.Label34.Location = New System.Drawing.Point(595, 39)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(73, 24)
         Me.Label34.TabIndex = 35
@@ -612,7 +612,7 @@ Partial Class AcademicStanding
         Me.Label35.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(593, 70)
+        Me.Label35.Location = New System.Drawing.Point(595, 70)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(73, 24)
         Me.Label35.TabIndex = 36
@@ -623,7 +623,7 @@ Partial Class AcademicStanding
         Me.Label36.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label36.AutoSize = True
         Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(593, 101)
+        Me.Label36.Location = New System.Drawing.Point(595, 101)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(73, 24)
         Me.Label36.TabIndex = 37
@@ -634,7 +634,7 @@ Partial Class AcademicStanding
         Me.Label37.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(593, 132)
+        Me.Label37.Location = New System.Drawing.Point(595, 132)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(73, 24)
         Me.Label37.TabIndex = 38
@@ -645,7 +645,7 @@ Partial Class AcademicStanding
         Me.Label38.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(593, 163)
+        Me.Label38.Location = New System.Drawing.Point(595, 163)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(73, 24)
         Me.Label38.TabIndex = 39
@@ -657,7 +657,7 @@ Partial Class AcademicStanding
         Me.Label39.AutoSize = True
         Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label39.ForeColor = System.Drawing.Color.Red
-        Me.Label39.Location = New System.Drawing.Point(593, 194)
+        Me.Label39.Location = New System.Drawing.Point(595, 194)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(73, 24)
         Me.Label39.TabIndex = 40
@@ -668,7 +668,7 @@ Partial Class AcademicStanding
         Me.Label40.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label40.AutoSize = True
         Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(593, 225)
+        Me.Label40.Location = New System.Drawing.Point(595, 225)
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(73, 24)
         Me.Label40.TabIndex = 41
@@ -679,7 +679,7 @@ Partial Class AcademicStanding
         Me.Label41.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label41.AutoSize = True
         Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(593, 256)
+        Me.Label41.Location = New System.Drawing.Point(595, 256)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(73, 24)
         Me.Label41.TabIndex = 42
@@ -690,7 +690,7 @@ Partial Class AcademicStanding
         Me.Label42.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label42.AutoSize = True
         Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.Location = New System.Drawing.Point(593, 287)
+        Me.Label42.Location = New System.Drawing.Point(595, 287)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(73, 24)
         Me.Label42.TabIndex = 43
@@ -701,7 +701,7 @@ Partial Class AcademicStanding
         Me.Label43.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label43.AutoSize = True
         Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.Location = New System.Drawing.Point(593, 318)
+        Me.Label43.Location = New System.Drawing.Point(595, 318)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(73, 24)
         Me.Label43.TabIndex = 44
@@ -713,7 +713,7 @@ Partial Class AcademicStanding
         Me.Label45.AutoSize = True
         Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label45.ForeColor = System.Drawing.Color.Red
-        Me.Label45.Location = New System.Drawing.Point(890, 194)
+        Me.Label45.Location = New System.Drawing.Point(891, 194)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(45, 24)
         Me.Label45.TabIndex = 46
@@ -725,7 +725,7 @@ Partial Class AcademicStanding
         Me.Label44.AutoSize = True
         Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label44.ForeColor = System.Drawing.Color.Red
-        Me.Label44.Location = New System.Drawing.Point(757, 194)
+        Me.Label44.Location = New System.Drawing.Point(759, 194)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(22, 24)
         Me.Label44.TabIndex = 45
@@ -736,7 +736,7 @@ Partial Class AcademicStanding
         Me.Label46.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label46.AutoSize = True
         Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(757, 225)
+        Me.Label46.Location = New System.Drawing.Point(759, 225)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(22, 24)
         Me.Label46.TabIndex = 47
@@ -747,7 +747,7 @@ Partial Class AcademicStanding
         Me.Label47.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label47.AutoSize = True
         Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(890, 225)
+        Me.Label47.Location = New System.Drawing.Point(891, 225)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(45, 24)
         Me.Label47.TabIndex = 48
@@ -758,7 +758,7 @@ Partial Class AcademicStanding
         Me.Label48.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label48.AutoSize = True
         Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label48.Location = New System.Drawing.Point(890, 163)
+        Me.Label48.Location = New System.Drawing.Point(891, 163)
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(45, 24)
         Me.Label48.TabIndex = 49
@@ -769,7 +769,7 @@ Partial Class AcademicStanding
         Me.Label49.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label49.AutoSize = True
         Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.Location = New System.Drawing.Point(757, 163)
+        Me.Label49.Location = New System.Drawing.Point(759, 163)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(22, 24)
         Me.Label49.TabIndex = 50
@@ -780,7 +780,7 @@ Partial Class AcademicStanding
         Me.Label50.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label50.AutoSize = True
         Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label50.Location = New System.Drawing.Point(754, 132)
+        Me.Label50.Location = New System.Drawing.Point(756, 132)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(29, 24)
         Me.Label50.TabIndex = 51
@@ -791,7 +791,7 @@ Partial Class AcademicStanding
         Me.Label51.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label51.AutoSize = True
         Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.Location = New System.Drawing.Point(757, 101)
+        Me.Label51.Location = New System.Drawing.Point(759, 101)
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(22, 24)
         Me.Label51.TabIndex = 52
@@ -802,7 +802,7 @@ Partial Class AcademicStanding
         Me.Label52.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label52.AutoSize = True
         Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(754, 70)
+        Me.Label52.Location = New System.Drawing.Point(756, 70)
         Me.Label52.Name = "Label52"
         Me.Label52.Size = New System.Drawing.Size(28, 24)
         Me.Label52.TabIndex = 53
@@ -813,7 +813,7 @@ Partial Class AcademicStanding
         Me.Label53.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label53.AutoSize = True
         Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label53.Location = New System.Drawing.Point(757, 39)
+        Me.Label53.Location = New System.Drawing.Point(759, 39)
         Me.Label53.Name = "Label53"
         Me.Label53.Size = New System.Drawing.Size(22, 24)
         Me.Label53.TabIndex = 54
@@ -824,7 +824,7 @@ Partial Class AcademicStanding
         Me.Label54.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label54.AutoSize = True
         Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label54.Location = New System.Drawing.Point(757, 256)
+        Me.Label54.Location = New System.Drawing.Point(759, 256)
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(22, 24)
         Me.Label54.TabIndex = 55
@@ -835,7 +835,7 @@ Partial Class AcademicStanding
         Me.Label55.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label55.AutoSize = True
         Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.Location = New System.Drawing.Point(757, 287)
+        Me.Label55.Location = New System.Drawing.Point(759, 287)
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(23, 24)
         Me.Label55.TabIndex = 56
@@ -846,7 +846,7 @@ Partial Class AcademicStanding
         Me.Label56.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label56.AutoSize = True
         Me.Label56.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.Location = New System.Drawing.Point(752, 318)
+        Me.Label56.Location = New System.Drawing.Point(754, 318)
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(33, 24)
         Me.Label56.TabIndex = 57
@@ -857,7 +857,7 @@ Partial Class AcademicStanding
         Me.Label57.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label57.AutoSize = True
         Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label57.Location = New System.Drawing.Point(890, 39)
+        Me.Label57.Location = New System.Drawing.Point(891, 39)
         Me.Label57.Name = "Label57"
         Me.Label57.Size = New System.Drawing.Size(45, 24)
         Me.Label57.TabIndex = 58
@@ -868,7 +868,7 @@ Partial Class AcademicStanding
         Me.Label58.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label58.AutoSize = True
         Me.Label58.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label58.Location = New System.Drawing.Point(890, 70)
+        Me.Label58.Location = New System.Drawing.Point(891, 70)
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(45, 24)
         Me.Label58.TabIndex = 59
@@ -879,7 +879,7 @@ Partial Class AcademicStanding
         Me.Label59.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label59.AutoSize = True
         Me.Label59.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label59.Location = New System.Drawing.Point(890, 101)
+        Me.Label59.Location = New System.Drawing.Point(891, 101)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(45, 24)
         Me.Label59.TabIndex = 60
@@ -890,7 +890,7 @@ Partial Class AcademicStanding
         Me.Label60.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label60.AutoSize = True
         Me.Label60.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label60.Location = New System.Drawing.Point(890, 132)
+        Me.Label60.Location = New System.Drawing.Point(891, 132)
         Me.Label60.Name = "Label60"
         Me.Label60.Size = New System.Drawing.Size(45, 24)
         Me.Label60.TabIndex = 61
@@ -901,7 +901,7 @@ Partial Class AcademicStanding
         Me.Label61.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label61.AutoSize = True
         Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label61.Location = New System.Drawing.Point(890, 256)
+        Me.Label61.Location = New System.Drawing.Point(891, 256)
         Me.Label61.Name = "Label61"
         Me.Label61.Size = New System.Drawing.Size(45, 24)
         Me.Label61.TabIndex = 62
@@ -923,7 +923,7 @@ Partial Class AcademicStanding
         Me.Label62.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label62.AutoSize = True
         Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label62.Location = New System.Drawing.Point(890, 287)
+        Me.Label62.Location = New System.Drawing.Point(891, 287)
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(45, 24)
         Me.Label62.TabIndex = 63
@@ -934,7 +934,7 @@ Partial Class AcademicStanding
         Me.Label63.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label63.AutoSize = True
         Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.Location = New System.Drawing.Point(890, 318)
+        Me.Label63.Location = New System.Drawing.Point(891, 318)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(45, 24)
         Me.Label63.TabIndex = 64
@@ -945,7 +945,7 @@ Partial Class AcademicStanding
         Me.Label87.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label87.AutoSize = True
         Me.Label87.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label87.Location = New System.Drawing.Point(278, 256)
+        Me.Label87.Location = New System.Drawing.Point(279, 256)
         Me.Label87.Name = "Label87"
         Me.Label87.Size = New System.Drawing.Size(74, 24)
         Me.Label87.TabIndex = 65
@@ -958,7 +958,7 @@ Partial Class AcademicStanding
         Me.Term_Stats_Panel.ColumnCount = 3
         Me.Term_Stats_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.8125!))
         Me.Term_Stats_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.1875!))
-        Me.Term_Stats_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 264.0!))
+        Me.Term_Stats_Panel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 262.0!))
         Me.Term_Stats_Panel.Controls.Add(Me.Label86, 0, 12)
         Me.Term_Stats_Panel.Controls.Add(Me.Label76, 0, 12)
         Me.Term_Stats_Panel.Controls.Add(Me.Label64, 0, 0)
@@ -1006,7 +1006,7 @@ Partial Class AcademicStanding
         Me.Label86.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label86.AutoSize = True
         Me.Label86.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label86.Location = New System.Drawing.Point(446, 422)
+        Me.Label86.Location = New System.Drawing.Point(448, 422)
         Me.Label86.Name = "Label86"
         Me.Label86.Size = New System.Drawing.Size(55, 24)
         Me.Label86.TabIndex = 44
@@ -1039,7 +1039,7 @@ Partial Class AcademicStanding
         Me.Label65.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label65.AutoSize = True
         Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label65.Location = New System.Drawing.Point(313, 15)
+        Me.Label65.Location = New System.Drawing.Point(315, 15)
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(169, 25)
         Me.Label65.TabIndex = 2
@@ -1050,7 +1050,7 @@ Partial Class AcademicStanding
         Me.Label66.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label66.AutoSize = True
         Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label66.Location = New System.Drawing.Point(550, 15)
+        Me.Label66.Location = New System.Drawing.Point(551, 15)
         Me.Label66.Name = "Label66"
         Me.Label66.Size = New System.Drawing.Size(175, 25)
         Me.Label66.TabIndex = 3
@@ -1072,7 +1072,7 @@ Partial Class AcademicStanding
         Me.Label67.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label67.AutoSize = True
         Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label67.Location = New System.Drawing.Point(114, 92)
+        Me.Label67.Location = New System.Drawing.Point(115, 92)
         Me.Label67.Name = "Label67"
         Me.Label67.Size = New System.Drawing.Size(63, 24)
         Me.Label67.TabIndex = 26
@@ -1105,7 +1105,7 @@ Partial Class AcademicStanding
         Me.Label71.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label71.AutoSize = True
         Me.Label71.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label71.Location = New System.Drawing.Point(114, 224)
+        Me.Label71.Location = New System.Drawing.Point(115, 224)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(63, 24)
         Me.Label71.TabIndex = 29
@@ -1160,7 +1160,7 @@ Partial Class AcademicStanding
         Me.Label77.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label77.AutoSize = True
         Me.Label77.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label77.Location = New System.Drawing.Point(436, 92)
+        Me.Label77.Location = New System.Drawing.Point(438, 92)
         Me.Label77.Name = "Label77"
         Me.Label77.Size = New System.Drawing.Size(65, 24)
         Me.Label77.TabIndex = 35
@@ -1171,7 +1171,7 @@ Partial Class AcademicStanding
         Me.Label78.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label78.AutoSize = True
         Me.Label78.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label78.Location = New System.Drawing.Point(446, 125)
+        Me.Label78.Location = New System.Drawing.Point(448, 125)
         Me.Label78.Name = "Label78"
         Me.Label78.Size = New System.Drawing.Size(55, 24)
         Me.Label78.TabIndex = 36
@@ -1204,7 +1204,7 @@ Partial Class AcademicStanding
         Me.Label81.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label81.AutoSize = True
         Me.Label81.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label81.Location = New System.Drawing.Point(436, 389)
+        Me.Label81.Location = New System.Drawing.Point(438, 389)
         Me.Label81.Name = "Label81"
         Me.Label81.Size = New System.Drawing.Size(65, 24)
         Me.Label81.TabIndex = 39
@@ -1215,7 +1215,7 @@ Partial Class AcademicStanding
         Me.Label82.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label82.AutoSize = True
         Me.Label82.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label82.Location = New System.Drawing.Point(436, 356)
+        Me.Label82.Location = New System.Drawing.Point(438, 356)
         Me.Label82.Name = "Label82"
         Me.Label82.Size = New System.Drawing.Size(65, 24)
         Me.Label82.TabIndex = 40
