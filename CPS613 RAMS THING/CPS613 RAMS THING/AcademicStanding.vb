@@ -23,10 +23,6 @@
         End If
     End Sub
 
-    Private Sub Label44_Click(sender As Object, e As EventArgs) Handles Label44.Click
-
-    End Sub
-
     Private Sub Term_Stats_Button_Click(sender As Object, e As EventArgs) Handles Term_Stats_Button.Click
         If Term_Stats_Panel.Visible = False Then
             Term_Stats_Panel.Visible = True
@@ -34,4 +30,6 @@
             Term_Stats_Panel.Visible = False
         End If
     End Sub
+
+
 End Class

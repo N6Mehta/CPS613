@@ -1,9 +1,8 @@
 ﻿Public Class CourseObject
-    Private prevName As String
+    Private defName As String
+    Private defCode As String
     Private pre_rec As String
-
     Shared selectedCourse As CourseObject
-
     Private searchWindow As CourseSearch
     Private type As CourseType
     Public grade As Double
@@ -14,6 +13,7 @@
         Open_Elective
         Pro_Related
         No_Type
+        PSY
     End Enum
     Public Enum State
         open
@@ -27,27 +27,28 @@
 
     Private Sub CourseObject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.grade = 0.0
-        Me.prevName = Me.CourseName.Text
-
         Me.changeState(State.open)
+        Me.Course_Code = CourseCode.Text
+        Me.Course_Name = CourseName.Text
     End Sub
-    'Called my the main form class
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
-        searchWindow = New CourseSearch
-        searchWindow.connectCourse(Me)
-        searchWindow.Show()
-        Me.CourseName.Text = searchWindow.course.CourseName.Text
-        Me.changeState(State.enrolled)
+        If Me.type = CourseType.PSY Then
+            Me.changeState(State.enrolled)
+        Else
+            searchWindow = New CourseSearch
+            searchWindow.connectCourse(Me)
+            searchWindow.Show()
+
+            Course_Code = searchWindow.course.CourseCode.Text
+            Course_Name = searchWindow.course.CourseName.Text
+        End If
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
-        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Me.CourseName.Text + "?", "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        Dim msgResult As DialogResult = MessageBox.Show("Are you sure you want to drop " + Course_Code + ": " + Course_Name + "?", "Caution!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If msgResult = DialogResult.Yes Then
-            Me.changeState(State.open)
-            Me.CourseName.Text = prevName
-            Me.CourseCode.Text = "Course Course"
-            Me.grade = 0.0
+            Me.reset()
         End If
     End Sub
 
@@ -57,25 +58,35 @@
 
     Public Sub changeState(state As State)
         If state.Equals(State.open) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = True
             Me.DropButton.Enabled = False
             Me.BackColor = Color.SkyBlue
+            Me.AddButton.Cursor = Cursors.Hand
+            Me.DropButton.Cursor = Cursors.No
         ElseIf state.Equals(State.passed) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.LimeGreen
         ElseIf state.Equals(State.failed) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = False
             Me.BackColor = Color.IndianRed
         ElseIf state.Equals(State.closed) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
-            Me.DropButton.Enabled = False
+            Me.DropButton.Enabled = True
             Me.BackColor = Color.DarkGray
+            Me.DropButton.Cursor = Cursors.Hand
         ElseIf state.Equals(State.enrolled) Then
+            Me.Cursor = Cursors.Help
             Me.AddButton.Enabled = False
             Me.DropButton.Enabled = True
             Me.BackColor = Color.Gold
+            Me.AddButton.Cursor = Cursors.Hand
+            Me.DropButton.Cursor = Cursors.Hand
         Else
             MsgBox("Incorrect State")
             Me.BackColor = Color.DarkGray
@@ -127,6 +138,35 @@
         End Set
     End Property
 
+    Private Sub reset()
+        Me.changeState(State.open)
+        updateType()
+        Me.CourseCode.Text = defCode
+        Me.CourseName.Text = defName
+        Me.grade = 0.0
+        Me.pre_rec = ""
+    End Sub
+
+    Private Sub updateType()
+        If type.Equals(CourseType.Liberal) Then
+            Me.defCode = "Add Liberal"
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.Open_Elective) Then
+            Me.defCode = "Add Open Elective"
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.Mandatory) Then
+            Me.defCode = "Add Mandatory "
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.Pro_Related) Then
+            Me.defCode = "Add Pro-Related"
+            Me.defName = ""
+        ElseIf type.Equals(CourseType.No_Type) Then
+            Me.defCode = "Add Course"
+            Me.defName = ""
+
+        End If
+
+    End Sub
 
     Public Sub connectSearch(search As CourseSearch)
         Me.searchWindow = search
