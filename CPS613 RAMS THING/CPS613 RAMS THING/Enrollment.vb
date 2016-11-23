@@ -4,6 +4,7 @@
     Dim Year1Opened As Boolean = False
     Dim Year2Opened As Boolean = False
     Dim Year3Opened As Boolean = False
+    Dim Year4Opened As Boolean = False
     Private searchWindow As CourseSearch
 
     Private Sub Enrollment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -12,9 +13,8 @@
         LoadSecondYear()
         LoadThirdYear()
         Year2InitLoc = Y2BigPanel.Location
-        closeYear1()
-        closeYear2()
         closeYear3()
+        closeYear4()
     End Sub
 
     Sub LoadFirstYear()
@@ -212,6 +212,10 @@
         openYear3()
     End Sub
 
+    Private Sub Year4OpenButton_Click(sender As Object, e As EventArgs) Handles Year4OpenButton.Click
+        openYear4()
+    End Sub
+
     Private Sub CloseYear1Button_Click(sender As Object, e As EventArgs) Handles Year1CloseButton.Click
         closeYear1()
     End Sub
@@ -224,13 +228,18 @@
         closeYear3()
     End Sub
 
+    Private Sub Year4CloseButton_Click(sender As Object, e As EventArgs) Handles Year4CloseButton.Click
+        closeYear4()
+    End Sub
+
     Sub openYear1()
         Year1Opened = True
         Year1Panel.Visible = True
         Year1CloseButton.Visible = True
         Year1OpenButton.Visible = False
         Y2BigPanel.Location = Year2InitLoc
-        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y + break + Year1Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y + Year1Panel.Height)
+        Year4BigPanel.Location = New Point(Year4BigPanel.Location.X, Year4BigPanel.Location.Y + Year1Panel.Height)
     End Sub
 
     Sub openYear2()
@@ -238,7 +247,8 @@
         Year2Panel.Visible = True
         Year2CloseButton.Visible = True
         Year2OpenButton.Visible = False
-        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y + break + Year2Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y + Year2Panel.Height)
+        Year4BigPanel.Location = New Point(Year4BigPanel.Location.X, Year4BigPanel.Location.Y + Year2Panel.Height)
     End Sub
 
     Sub openYear3()
@@ -246,6 +256,14 @@
         Year3Panel.Visible = True
         Year3CloseButton.Visible = True
         Year3OpenButton.Visible = False
+        Year4BigPanel.Location = New Point(Year4BigPanel.Location.X, Year4BigPanel.Location.Y + Year3Panel.Height)
+    End Sub
+
+    Sub openYear4()
+        Year4Opened = True
+        Year4Panel.Visible = True
+        Year4CloseButton.Visible = True
+        Year4OpenButton.Visible = False
     End Sub
 
     Sub closeYear1()
@@ -254,7 +272,8 @@
         Year1OpenButton.Visible = True
         Year1CloseButton.Visible = False
         Y2BigPanel.Location = New Point(Y2BigPanel.Location.X, Year1Panel.Location.Y)
-        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y - break - Year1Panel.Height)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y - Year1Panel.Height)
+        Year4BigPanel.Location = New Point(Year4BigPanel.Location.X, Year4BigPanel.Location.Y - Year1Panel.Height)
     End Sub
 
     Sub closeYear2()
@@ -262,8 +281,10 @@
         Year2Panel.Visible = False
         Year2CloseButton.Visible = False
         Year2OpenButton.Visible = True
-        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y - Year2Panel.Height - break)
+        Year3BigPanel.Location = New Point(Year3BigPanel.Location.X, Year3BigPanel.Location.Y - Year2Panel.Height)
         Year3BigPanel.BringToFront()
+        Year4BigPanel.Location = New Point(Year4BigPanel.Location.X, Year4BigPanel.Location.Y - Year2Panel.Height)
+        Year4BigPanel.BringToFront()
     End Sub
 
     Sub closeYear3()
@@ -271,6 +292,15 @@
         Year3Panel.Visible = False
         Year3CloseButton.Visible = False
         Year3OpenButton.Visible = True
+        Year4BigPanel.Location = New Point(Year4BigPanel.Location.X, Year4BigPanel.Location.Y - Year3Panel.Height)
+        Year4BigPanel.BringToFront()
+    End Sub
+
+    Sub closeYear4()
+        Year4Opened = False
+        Year4Panel.Visible = False
+        Year4CloseButton.Visible = False
+        Year4OpenButton.Visible = True
     End Sub
 
     Private Sub Year1Label_Click(sender As Object, e As EventArgs) Handles Year1Label.Click
@@ -284,6 +314,20 @@
         If Year2Opened Then
             closeYear2()
         Else openYear2()
+        End If
+    End Sub
+
+    Private Sub Year3Label_Click(sender As Object, e As EventArgs) Handles Year3Label.Click
+        If Year3Opened Then
+            closeYear3()
+        Else openYear3()
+        End If
+    End Sub
+
+    Private Sub Year4Label_Click(sender As Object, e As EventArgs) Handles Year4Label.Click
+        If Year4Opened Then
+            closeYear4()
+        Else openYear4()
         End If
     End Sub
 

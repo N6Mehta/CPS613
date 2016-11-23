@@ -123,6 +123,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property fall2018label() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fall2018label", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property green_circle() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("green circle", resourceCulture)
@@ -206,6 +216,16 @@ Namespace My.Resources
         Friend ReadOnly Property winter2018label() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("winter2018label", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property winter2019label() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("winter2019label", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
