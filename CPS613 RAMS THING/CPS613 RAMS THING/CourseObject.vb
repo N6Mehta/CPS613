@@ -34,7 +34,7 @@
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         If Me.type = CourseType.PSY Then
-            'Add course enrollment stuff
+            Me.changeState(State.enrolled)
         Else
             searchWindow = New CourseSearch
             searchWindow.connectCourse(Me)

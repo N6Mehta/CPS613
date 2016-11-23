@@ -400,7 +400,7 @@ Partial Class Enrollment
         Me.OE1CO.Course_Code = "Course Code"
         Me.OE1CO.Course_Grade = 0R
         Me.OE1CO.Course_Name = "Course Name"
-        Me.OE1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
+        Me.OE1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.OE1CO.Cursor = System.Windows.Forms.Cursors.Help
         Me.OE1CO.Location = New System.Drawing.Point(1095, 4)
         Me.OE1CO.Margin = New System.Windows.Forms.Padding(4)
