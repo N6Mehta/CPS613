@@ -14,7 +14,7 @@
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         Dim home As New pageHome
-        ActiveForm.Close()
+        'ActiveForm.Close()
         home.nam = user
         home.MdiParent = Me
         home.Show()

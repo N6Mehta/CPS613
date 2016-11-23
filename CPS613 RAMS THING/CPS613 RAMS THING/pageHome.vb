@@ -74,7 +74,7 @@
         person = New Personal_Information
         'Me.Visible = False
         'Me.Close()
-        Me.WindowState = FormWindowState.Minimized
+        'Me.WindowState = FormWindowState.Minimized
         person.personalConnect(Me)
         person.Show()
     End Sub
@@ -88,8 +88,8 @@
         grades.MdiParent = MDI
         Me.Visible = False
         grades.Show()
-        'Me.Close()
-        Me.WindowState = FormWindowState.Minimized
+        Me.Close()
+        'Me.WindowState = FormWindowState.Minimized
 
         'Me.Visible = False
     End Sub
@@ -99,8 +99,8 @@
         view.MdiParent = MDI
         Me.Visible = False
         view.Show()
-        Me.WindowState = FormWindowState.Minimized
-        'Me.Close()
+        'Me.WindowState = FormWindowState.Minimized
+        Me.Close()
         ' Me.Visible = False
     End Sub
 

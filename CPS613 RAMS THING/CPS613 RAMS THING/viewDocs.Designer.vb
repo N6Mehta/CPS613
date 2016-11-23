@@ -48,9 +48,10 @@ Partial Class viewDocs
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(22, 54)
+        Me.LinkLabel1.Location = New System.Drawing.Point(33, 83)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(175, 20)
+        Me.LinkLabel1.Size = New System.Drawing.Size(254, 29)
         Me.LinkLabel1.TabIndex = 1
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Unofficial Transcript "
@@ -64,9 +65,11 @@ Partial Class viewDocs
         Me.GroupBox1.Controls.Add(Me.saveTax)
         Me.GroupBox1.Controls.Add(Me.Transcript)
         Me.GroupBox1.Controls.Add(Me.saveTrans)
-        Me.GroupBox1.Location = New System.Drawing.Point(339, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(508, 18)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(662, 677)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.GroupBox1.Size = New System.Drawing.Size(993, 1042)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Preview Box"
@@ -76,9 +79,10 @@ Partial Class viewDocs
         Me.Taxform.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Taxform.Location = New System.Drawing.Point(8, 29)
+        Me.Taxform.Location = New System.Drawing.Point(12, 45)
+        Me.Taxform.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Taxform.Name = "Taxform"
-        Me.Taxform.Size = New System.Drawing.Size(647, 642)
+        Me.Taxform.Size = New System.Drawing.Size(968, 986)
         Me.Taxform.TabIndex = 4
         Me.Taxform.Text = "This is your Tax information. " & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Taxform.Visible = False
@@ -88,9 +92,10 @@ Partial Class viewDocs
         Me.saveTax.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.saveTax.AutoSize = True
         Me.saveTax.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.saveTax.Location = New System.Drawing.Point(617, 11)
+        Me.saveTax.Location = New System.Drawing.Point(926, 17)
+        Me.saveTax.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.saveTax.Name = "saveTax"
-        Me.saveTax.Size = New System.Drawing.Size(38, 15)
+        Me.saveTax.Size = New System.Drawing.Size(55, 22)
         Me.saveTax.TabIndex = 3
         Me.saveTax.TabStop = True
         Me.saveTax.Text = "Save"
@@ -101,9 +106,10 @@ Partial Class viewDocs
         Me.Transcript.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Transcript.Location = New System.Drawing.Point(9, 29)
+        Me.Transcript.Location = New System.Drawing.Point(14, 45)
+        Me.Transcript.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Transcript.Name = "Transcript"
-        Me.Transcript.Size = New System.Drawing.Size(647, 642)
+        Me.Transcript.Size = New System.Drawing.Size(968, 986)
         Me.Transcript.TabIndex = 2
         Me.Transcript.Text = resources.GetString("Transcript.Text")
         Me.Transcript.Visible = False
@@ -113,9 +119,10 @@ Partial Class viewDocs
         Me.saveTrans.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.saveTrans.AutoSize = True
         Me.saveTrans.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.saveTrans.Location = New System.Drawing.Point(617, 11)
+        Me.saveTrans.Location = New System.Drawing.Point(926, 17)
+        Me.saveTrans.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.saveTrans.Name = "saveTrans"
-        Me.saveTrans.Size = New System.Drawing.Size(38, 15)
+        Me.saveTrans.Size = New System.Drawing.Size(55, 22)
         Me.saveTrans.TabIndex = 1
         Me.saveTrans.TabStop = True
         Me.saveTrans.Text = "Save"
@@ -125,23 +132,26 @@ Partial Class viewDocs
         '
         Me.TaxInformation.AutoSize = True
         Me.TaxInformation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TaxInformation.Location = New System.Drawing.Point(23, 149)
+        Me.TaxInformation.Location = New System.Drawing.Point(34, 229)
+        Me.TaxInformation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TaxInformation.Name = "TaxInformation"
-        Me.TaxInformation.Size = New System.Drawing.Size(134, 20)
+        Me.TaxInformation.Size = New System.Drawing.Size(193, 29)
         Me.TaxInformation.TabIndex = 3
         Me.TaxInformation.TabStop = True
         Me.TaxInformation.Text = "Tax Information"
         '
         'viewDocs
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1006, 731)
+        Me.ClientSize = New System.Drawing.Size(1509, 1038)
         Me.Controls.Add(Me.TaxInformation)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.LinkLabel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "viewDocs"
         Me.Text = "View Documents"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
