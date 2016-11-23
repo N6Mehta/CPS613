@@ -1,6 +1,7 @@
 ﻿Public Class CourseSearch
     Private courseName As String
     Private courseCode As String
+    'fuck
 
     Public course As CourseObject
     Public Sub New()
