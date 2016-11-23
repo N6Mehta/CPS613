@@ -31,7 +31,15 @@
         P4roomLabel.Visible = False
         P4unitLabel.Visible = False
         P4PictureBox.Visible = False
+
+        PSY209CB.Visible = False
+        P209Desc.Visible = False
+        P209Time.Visible = False
+        P209Room.Visible = False
+        P209Unit.Visible = False
+        P209Status.Visible = False
         searchTextBox.Select()
+
 
 
     End Sub
@@ -45,11 +53,12 @@
     Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
         course.CourseCode.Text = courseCode
         course.CourseName.Text = courseName
+        course.changeState(CourseObject.State.enrolled)
         Me.Close()
     End Sub
 
     Private Sub searchButton_Click(sender As Object, e As EventArgs) Handles searchButton.Click
-        If searchTextBox.Text.ToUpper = "MTH110" Or searchTextBox.Text.ToUpper = "MTH 110" Then
+        If searchTextBox.Text.ToUpper = "MTH110" Or searchTextBox.Text.ToUpper = "MTH 110" Or searchTextBox.Text.ToUpper = "MTH" Then
             MCheckBox.Visible = True
             MdesLabel.Visible = True
             MtimeLabel.Visible = True
@@ -84,6 +93,60 @@
             P4roomLabel.Visible = True
             P4unitLabel.Visible = True
             P4PictureBox.Visible = True
+
+            PSY209CB.Visible = True
+            P209Desc.Visible = True
+            P209Time.Visible = True
+            P209Room.Visible = True
+            P209Unit.Visible = True
+            P209Status.Visible = True
+        Else
+            MCheckBox.Visible = True
+            MdesLabel.Visible = True
+            MtimeLabel.Visible = True
+            MroomLabel.Visible = True
+            MunitLabel.Visible = True
+            MPictureBox.Visible = True
+            CheckBox4.Checked = True
+
+            P2CheckBox.Visible = True
+            P2desLabel.Visible = True
+            P2timeLabel.Visible = True
+            P2roomLabel.Visible = True
+            P2unitLabel.Visible = True
+            P2PictureBox.Visible = True
+
+            P4CheckBox.Visible = True
+            P4desLabel.Visible = True
+            P4timeLabel.Visible = True
+            P4roomLabel.Visible = True
+            P4unitLabel.Visible = True
+            P4PictureBox.Visible = True
+
+            P2CheckBox.Visible = True
+            P2desLabel.Visible = True
+            P2timeLabel.Visible = True
+            P2roomLabel.Visible = True
+            P2unitLabel.Visible = True
+            P2PictureBox.Visible = True
+            P4CheckBox.Visible = True
+            P4desLabel.Visible = True
+            P4timeLabel.Visible = True
+            P4roomLabel.Visible = True
+            P4unitLabel.Visible = True
+            P4PictureBox.Visible = True
+
+            PSY209CB.Visible = True
+            P209Desc.Visible = True
+            P209Time.Visible = True
+            P209Room.Visible = True
+            P209Unit.Visible = True
+            P209Status.Visible = True
+
+
+
+
+
         End If
     End Sub
 
@@ -94,10 +157,14 @@
     End Sub
     Private Sub P2CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles P2CheckBox.CheckedChanged
         courseCode = P2CheckBox.Text
+        courseName = P2desLabel.Text
+
     End Sub
 
     Private Sub P4CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles P4CheckBox.CheckedChanged
         courseCode = P4CheckBox.Text
+        courseName = P4desLabel.Text
+
     End Sub
 
     Private Sub cancelButton_Click(sender As Object, e As EventArgs) Handles cancelButton.Click
@@ -114,5 +181,8 @@
         End If
     End Sub
 
-
+    Private Sub PSY209CB_CheckedChanged(sender As Object, e As EventArgs) Handles PSY209CB.CheckedChanged
+        courseCode = PSY209CB.Text
+        courseName = P209Desc.Text
+    End Sub
 End Class
