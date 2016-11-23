@@ -308,4 +308,8 @@
         Y2S26thCO.Location = New Point(Y2S2AddButton.Location.X, OE2CO.Location.Y)
         Y2S2AddButton.Visible = False
     End Sub
+
+    Private Sub MinorsButton_Click(sender As Object, e As EventArgs) Handles MinorsButton.Click
+        Minors.Show()
+    End Sub
 End Class

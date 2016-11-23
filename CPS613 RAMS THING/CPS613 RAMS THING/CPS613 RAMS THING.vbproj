@@ -119,6 +119,12 @@
     <Compile Include="CourseSearch.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Minors.Designer.vb">
+      <DependentUpon>Minors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Minors.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -140,6 +146,12 @@
     <Compile Include="pageHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PsyCourses.Designer.vb">
+      <DependentUpon>PsyCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PsyCourses.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CourseInfoObject.resx">
@@ -157,6 +169,9 @@
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Minors.resx">
+      <DependentUpon>Minors.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -165,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pageHome.resx">
       <DependentUpon>pageHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PsyCourses.resx">
+      <DependentUpon>PsyCourses.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

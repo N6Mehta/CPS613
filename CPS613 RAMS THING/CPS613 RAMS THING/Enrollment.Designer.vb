@@ -91,6 +91,7 @@ Partial Class EnrollementForm
         Me.CPS633CO = New CPS613_RAMS_THING.CourseObject()
         Me.CPS706CO = New CPS613_RAMS_THING.CourseObject()
         Me.Y3S1PRCO = New CPS613_RAMS_THING.CourseObject()
+        Me.MinorsButton = New System.Windows.Forms.Button()
         Me.Year1Panel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1003,12 +1004,23 @@ Partial Class EnrollementForm
         Me.Y3S1PRCO.Size = New System.Drawing.Size(340, 144)
         Me.Y3S1PRCO.TabIndex = 9
         '
+        'MinorsButton
+        '
+        Me.MinorsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MinorsButton.Location = New System.Drawing.Point(2607, 1098)
+        Me.MinorsButton.Name = "MinorsButton"
+        Me.MinorsButton.Size = New System.Drawing.Size(248, 79)
+        Me.MinorsButton.TabIndex = 34
+        Me.MinorsButton.Text = "Manage Minors"
+        Me.MinorsButton.UseVisualStyleBackColor = True
+        '
         'EnrollementForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(2867, 1189)
+        Me.Controls.Add(Me.MinorsButton)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Year1CloseButton)
@@ -1113,4 +1125,5 @@ Partial Class EnrollementForm
     Friend WithEvents CPS633CO As CourseObject
     Friend WithEvents CPS706CO As CourseObject
     Friend WithEvents Y3S1PRCO As CourseObject
+    Friend WithEvents MinorsButton As Button
 End Class
