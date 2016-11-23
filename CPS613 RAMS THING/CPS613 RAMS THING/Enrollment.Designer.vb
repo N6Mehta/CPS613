@@ -671,24 +671,24 @@ Partial Class EnrollementForm
         'CPS209CO
         '
         Me.CPS209CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS209CO.Course_Code = "Course Code"
-        Me.CPS209CO.Course_Grade = 0R
-        Me.CPS209CO.Course_Name = "Course Name"
-        Me.CPS209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS209CO.Course_Code = "CPS209"
+        Me.CPS209CO.Course_Grade = 4.0R
+        Me.CPS209CO.Course_Name = "Computer Science II"
+        Me.CPS209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS209CO.Location = New System.Drawing.Point(807, 162)
         Me.CPS209CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.CPS209CO.Name = "CPS209CO"
-        Me.CPS209CO.Pre_Requisite = Nothing
+        Me.CPS209CO.Pre_Requisite = "CPS109"
         Me.CPS209CO.Size = New System.Drawing.Size(340, 144)
         Me.CPS209CO.TabIndex = 18
         '
         'CPS109CO
         '
         Me.CPS109CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS109CO.Course_Code = "Course Code"
-        Me.CPS109CO.Course_Grade = 0R
-        Me.CPS109CO.Course_Name = "Course Name"
-        Me.CPS109CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS109CO.Course_Code = "CPS109"
+        Me.CPS109CO.Course_Grade = 4.0R
+        Me.CPS109CO.Course_Name = "Computer Science I"
+        Me.CPS109CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS109CO.Location = New System.Drawing.Point(807, 6)
         Me.CPS109CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.CPS109CO.Name = "CPS109CO"
@@ -699,10 +699,10 @@ Partial Class EnrollementForm
         'MTH207CO
         '
         Me.MTH207CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.MTH207CO.Course_Code = "Course Code"
-        Me.MTH207CO.Course_Grade = 0R
-        Me.MTH207CO.Course_Name = "Course Name"
-        Me.MTH207CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.MTH207CO.Course_Code = "MTH207"
+        Me.MTH207CO.Course_Grade = 3.67R
+        Me.MTH207CO.Course_Name = "Calc and Comp Methods I"
+        Me.MTH207CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.MTH207CO.Location = New System.Drawing.Point(65, 162)
         Me.MTH207CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.MTH207CO.Name = "MTH207CO"
@@ -713,10 +713,10 @@ Partial Class EnrollementForm
         'PCS110CO
         '
         Me.PCS110CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PCS110CO.Course_Code = "Course Code"
-        Me.PCS110CO.Course_Grade = 0R
-        Me.PCS110CO.Course_Name = "Course Name"
-        Me.PCS110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PCS110CO.Course_Code = "PCS110"
+        Me.PCS110CO.Course_Grade = 2.67R
+        Me.PCS110CO.Course_Name = "Physics"
+        Me.PCS110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.PCS110CO.Location = New System.Drawing.Point(436, 6)
         Me.PCS110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.PCS110CO.Name = "PCS110CO"
@@ -727,10 +727,10 @@ Partial Class EnrollementForm
         'LL1CO
         '
         Me.LL1CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.LL1CO.Course_Code = "Course Code"
-        Me.LL1CO.Course_Grade = 0R
-        Me.LL1CO.Course_Name = "Course Name"
-        Me.LL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.LL1CO.Course_Code = "PSY105"
+        Me.LL1CO.Course_Grade = 3.33R
+        Me.LL1CO.Course_Name = "Psy of Gender"
+        Me.LL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.LL1CO.Location = New System.Drawing.Point(1549, 2)
         Me.LL1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.LL1CO.Name = "LL1CO"
@@ -741,10 +741,10 @@ Partial Class EnrollementForm
         'LL2CO
         '
         Me.LL2CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.LL2CO.Course_Code = "Course Code"
-        Me.LL2CO.Course_Grade = 0R
-        Me.LL2CO.Course_Name = "Course Name"
-        Me.LL2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.LL2CO.Course_Code = "PSY304"
+        Me.LL2CO.Course_Grade = 3.67R
+        Me.LL2CO.Course_Name = "Persp. in Psy"
+        Me.LL2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.LL2CO.Location = New System.Drawing.Point(1549, 162)
         Me.LL2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.LL2CO.Name = "LL2CO"
@@ -755,10 +755,10 @@ Partial Class EnrollementForm
         'CPS412CO
         '
         Me.CPS412CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS412CO.Course_Code = "Course Code"
-        Me.CPS412CO.Course_Grade = 0R
-        Me.CPS412CO.Course_Name = "Course Name"
-        Me.CPS412CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS412CO.Course_Code = "CPS412"
+        Me.CPS412CO.Course_Grade = 3.0R
+        Me.CPS412CO.Course_Name = "Social Issues..."
+        Me.CPS412CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS412CO.Location = New System.Drawing.Point(436, 162)
         Me.CPS412CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.CPS412CO.Name = "CPS412CO"
@@ -769,10 +769,10 @@ Partial Class EnrollementForm
         'CPS213CO
         '
         Me.CPS213CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS213CO.Course_Code = "Course Code"
-        Me.CPS213CO.Course_Grade = 0R
-        Me.CPS213CO.Course_Name = "Course Name"
-        Me.CPS213CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS213CO.Course_Code = "CPS213"
+        Me.CPS213CO.Course_Grade = 4.0R
+        Me.CPS213CO.Course_Name = "Comp Org I"
+        Me.CPS213CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS213CO.Location = New System.Drawing.Point(1178, 6)
         Me.CPS213CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.CPS213CO.Name = "CPS213CO"
@@ -783,23 +783,23 @@ Partial Class EnrollementForm
         'CPS310CO
         '
         Me.CPS310CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.CPS310CO.Course_Code = "Course Code"
-        Me.CPS310CO.Course_Grade = 0R
-        Me.CPS310CO.Course_Name = "Course Name"
-        Me.CPS310CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.CPS310CO.Course_Code = "CPS310"
+        Me.CPS310CO.Course_Grade = 3.67R
+        Me.CPS310CO.Course_Name = "Comp Org II"
+        Me.CPS310CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS310CO.Location = New System.Drawing.Point(1178, 162)
         Me.CPS310CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.CPS310CO.Name = "CPS310CO"
-        Me.CPS310CO.Pre_Requisite = Nothing
+        Me.CPS310CO.Pre_Requisite = "CPS213"
         Me.CPS310CO.Size = New System.Drawing.Size(340, 144)
         Me.CPS310CO.TabIndex = 10
         '
         'MTH110CO
         '
         Me.MTH110CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.MTH110CO.Course_Code = "Course Code"
-        Me.MTH110CO.Course_Grade = 0R
-        Me.MTH110CO.Course_Name = "Course Name"
+        Me.MTH110CO.Course_Code = "MTH110"
+        Me.MTH110CO.Course_Grade = 1.67R
+        Me.MTH110CO.Course_Name = "Discrete Math I"
         Me.MTH110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.MTH110CO.Location = New System.Drawing.Point(65, 6)
         Me.MTH110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
@@ -1264,7 +1264,7 @@ Partial Class EnrollementForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(2867, 1189)
+        Me.ClientSize = New System.Drawing.Size(2901, 1189)
         Me.Controls.Add(Me.MinorsButton)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Year1CloseButton)

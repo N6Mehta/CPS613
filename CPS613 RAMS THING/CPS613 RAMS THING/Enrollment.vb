@@ -18,28 +18,6 @@
     End Sub
 
     Sub LoadFirstYear()
-        MTH110CO.Course_Code = "MTH110"
-        MTH207CO.Course_Code = "MTH207"
-        CPS209CO.Course_Code = "CPS209"
-        CPS213CO.Course_Code = "CPS213"
-        CPS310CO.Course_Code = "CPS310"
-        CPS412CO.Course_Code = "CPS412"
-        CPS109CO.Course_Code = "CPS109"
-        LL1CO.Course_Code = "PSY105"
-        LL2CO.Course_Code = "PSY304"
-        PCS110CO.Course_Code = "PCS110"
-
-
-        MTH110CO.Course_Name = "Discrete Math I"
-        MTH207CO.Course_Name = "Calc and Comp." + vbCrLf + "Methods I"
-        CPS412CO.Course_Name = "Social Issues," + vbCrLf + "Ethics..."
-        CPS310CO.Course_Name = "Computer Org II"
-        CPS213CO.Course_Name = "Computer Org I"
-        CPS209CO.Course_Name = "Computer" + vbCrLf + "Science II"
-        CPS109CO.Course_Name = "Computer" + vbCrLf + "Science I"
-        LL2CO.Course_Name = "Perspectives in" + vbCrLf + "Psychology"
-        LL1CO.Course_Name = "Psychology of" + vbCrLf + "Gender"
-        PCS110CO.Course_Name = "Physics"
 
         MTH110CO.changeState(CourseObject.State.failed)
         MTH207CO.changeState(CourseObject.State.passed)
@@ -52,17 +30,6 @@
         LL2CO.changeState(CourseObject.State.passed)
         PCS110CO.changeState(CourseObject.State.passed)
 
-        MTH110CO.Course_Type = CourseObject.CourseType.Mandatory
-        MTH207CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS109CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS209CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS213CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS310CO.Course_Type = CourseObject.CourseType.Mandatory
-        CPS412CO.Course_Type = CourseObject.CourseType.Mandatory
-        PCS110CO.Course_Type = CourseObject.CourseType.Mandatory
-        LL1CO.Course_Type = CourseObject.CourseType.Liberal
-        LL2CO.Course_Type = CourseObject.CourseType.Liberal
-
         MTH207CO.Course_Grade = 3.27
         CPS109CO.Course_Grade = 3.0
         CPS209CO.Course_Grade = 2.67
@@ -73,9 +40,6 @@
         LL1CO.Course_Grade = 2.27
         LL2CO.Course_Grade = 3.33
         MTH110CO.Course_Grade = 1.27
-
-        CPS209CO.Pre_Requisite = "CPS109"
-        CPS310CO.Pre_Requisite = "CPS213"
 
     End Sub
 
