@@ -45,6 +45,7 @@
     Private Sub doneButton_Click(sender As Object, e As EventArgs) Handles doneButton.Click
         course.CourseCode.Text = courseCode
         course.CourseName.Text = courseName
+        course.changeState(CourseObject.State.enrolled)
         Me.Close()
     End Sub
 

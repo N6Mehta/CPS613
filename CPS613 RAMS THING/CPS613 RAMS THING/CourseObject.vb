@@ -16,6 +16,7 @@
         Open_Elective
         Pro_Related
         No_Type
+        PSY
     End Enum
     Public Enum State
         open
@@ -35,14 +36,16 @@
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
-        searchWindow = New CourseSearch
-        searchWindow.connectCourse(Me)
-        searchWindow.Show()
-        Me.changeState(State.enrolled)
-        Course_Code = searchWindow.course.CourseCode.Text
-        Course_Name = searchWindow.course.CourseName.Text
+        If Me.type = CourseType.PSY Then
+            'Add course enrollment stuff
+        Else
+            searchWindow = New CourseSearch
+            searchWindow.connectCourse(Me)
+            searchWindow.Show()
 
-
+            Course_Code = searchWindow.course.CourseCode.Text
+            Course_Name = searchWindow.course.CourseName.Text
+        End If
     End Sub
 
     Private Sub DropButton_Click(sender As Object, e As EventArgs) Handles DropButton.Click
