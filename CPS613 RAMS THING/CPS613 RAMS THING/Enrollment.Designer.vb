@@ -135,9 +135,10 @@ Partial Class EnrollementForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1237, 9)
+        Me.Label1.Location = New System.Drawing.Point(928, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(393, 51)
+        Me.Label1.Size = New System.Drawing.Size(302, 38)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Computer Science"
         '
@@ -145,9 +146,10 @@ Partial Class EnrollementForm
         '
         Me.Year1Label.AutoSize = True
         Me.Year1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year1Label.Location = New System.Drawing.Point(152, 56)
+        Me.Year1Label.Location = New System.Drawing.Point(114, 45)
+        Me.Year1Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Year1Label.Name = "Year1Label"
-        Me.Year1Label.Size = New System.Drawing.Size(179, 42)
+        Me.Year1Label.Size = New System.Drawing.Size(137, 32)
         Me.Year1Label.TabIndex = 5
         Me.Year1Label.Text = "First Year"
         '
@@ -155,9 +157,10 @@ Partial Class EnrollementForm
         '
         Me.Year2Label.AutoSize = True
         Me.Year2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year2Label.Location = New System.Drawing.Point(140, 10)
+        Me.Year2Label.Location = New System.Drawing.Point(105, 8)
+        Me.Year2Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Year2Label.Name = "Year2Label"
-        Me.Year2Label.Size = New System.Drawing.Size(235, 42)
+        Me.Year2Label.Size = New System.Drawing.Size(179, 32)
         Me.Year2Label.TabIndex = 8
         Me.Year2Label.Text = "Second Year"
         '
@@ -176,17 +179,19 @@ Partial Class EnrollementForm
         Me.Year1Panel.Controls.Add(Me.CPS213CO)
         Me.Year1Panel.Controls.Add(Me.CPS310CO)
         Me.Year1Panel.Controls.Add(Me.MTH110CO)
-        Me.Year1Panel.Location = New System.Drawing.Point(35, 101)
+        Me.Year1Panel.Location = New System.Drawing.Point(26, 81)
+        Me.Year1Panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Year1Panel.Name = "Year1Panel"
-        Me.Year1Panel.Size = New System.Drawing.Size(1900, 313)
+        Me.Year1Panel.Size = New System.Drawing.Size(1425, 250)
         Me.Year1Panel.TabIndex = 10
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(3, 156)
+        Me.PictureBox2.Location = New System.Drawing.Point(2, 125)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(59, 153)
+        Me.PictureBox2.Size = New System.Drawing.Size(44, 122)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 23
         Me.PictureBox2.TabStop = False
@@ -194,9 +199,10 @@ Partial Class EnrollementForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 6)
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 5)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox1.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
@@ -220,17 +226,19 @@ Partial Class EnrollementForm
         Me.Year2Panel.Controls.Add(Me.CPS393CO)
         Me.Year2Panel.Controls.Add(Me.CPS590CO)
         Me.Year2Panel.Controls.Add(Me.MTH108CO)
-        Me.Year2Panel.Location = New System.Drawing.Point(23, 55)
+        Me.Year2Panel.Location = New System.Drawing.Point(17, 44)
+        Me.Year2Panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Year2Panel.Name = "Year2Panel"
-        Me.Year2Panel.Size = New System.Drawing.Size(2305, 315)
+        Me.Year2Panel.Size = New System.Drawing.Size(1729, 252)
         Me.Year2Panel.TabIndex = 12
         '
         'Y2S2AddButton
         '
         Me.Y2S2AddButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Y2S2AddButton.Location = New System.Drawing.Point(1925, 190)
+        Me.Y2S2AddButton.Location = New System.Drawing.Point(1444, 152)
+        Me.Y2S2AddButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Y2S2AddButton.Name = "Y2S2AddButton"
-        Me.Y2S2AddButton.Size = New System.Drawing.Size(75, 74)
+        Me.Y2S2AddButton.Size = New System.Drawing.Size(56, 59)
         Me.Y2S2AddButton.TabIndex = 27
         Me.Y2S2AddButton.Text = "+"
         Me.Y2S2AddButton.UseVisualStyleBackColor = True
@@ -238,9 +246,10 @@ Partial Class EnrollementForm
         'Y2S1AddButton
         '
         Me.Y2S1AddButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Y2S1AddButton.Location = New System.Drawing.Point(1925, 46)
+        Me.Y2S1AddButton.Location = New System.Drawing.Point(1444, 37)
+        Me.Y2S1AddButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Y2S1AddButton.Name = "Y2S1AddButton"
-        Me.Y2S1AddButton.Size = New System.Drawing.Size(75, 74)
+        Me.Y2S1AddButton.Size = New System.Drawing.Size(56, 59)
         Me.Y2S1AddButton.TabIndex = 26
         Me.Y2S1AddButton.Text = "+"
         Me.Y2S1AddButton.UseVisualStyleBackColor = True
@@ -248,9 +257,10 @@ Partial Class EnrollementForm
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(6, 159)
+        Me.PictureBox3.Location = New System.Drawing.Point(4, 127)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox3.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 24
         Me.PictureBox3.TabStop = False
@@ -258,9 +268,10 @@ Partial Class EnrollementForm
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(6, 3)
+        Me.PictureBox4.Location = New System.Drawing.Point(4, 2)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox4.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 25
         Me.PictureBox4.TabStop = False
@@ -272,9 +283,10 @@ Partial Class EnrollementForm
         Me.Y2BigPanel.Controls.Add(Me.Year2OpenButton)
         Me.Y2BigPanel.Controls.Add(Me.Year2Label)
         Me.Y2BigPanel.Controls.Add(Me.Year2Panel)
-        Me.Y2BigPanel.Location = New System.Drawing.Point(12, 416)
+        Me.Y2BigPanel.Location = New System.Drawing.Point(9, 333)
+        Me.Y2BigPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Y2BigPanel.Name = "Y2BigPanel"
-        Me.Y2BigPanel.Size = New System.Drawing.Size(2354, 372)
+        Me.Y2BigPanel.Size = New System.Drawing.Size(1766, 298)
         Me.Y2BigPanel.TabIndex = 21
         '
         'Year2CloseButton
@@ -284,11 +296,11 @@ Partial Class EnrollementForm
         Me.Year2CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year2CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year2CloseButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year2CloseButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year2CloseButton.Location = New System.Drawing.Point(68, 10)
         Me.Year2CloseButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year2CloseButton.Name = "Year2CloseButton"
         Me.Year2CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year2CloseButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year2CloseButton.Size = New System.Drawing.Size(35, 31)
         Me.Year2CloseButton.TabIndex = 16
         Me.Year2CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year2CloseButton.UseVisualStyleBackColor = False
@@ -300,11 +312,11 @@ Partial Class EnrollementForm
         Me.Year2OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year2OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year2OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year2OpenButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year2OpenButton.Location = New System.Drawing.Point(68, 10)
         Me.Year2OpenButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year2OpenButton.Name = "Year2OpenButton"
         Me.Year2OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year2OpenButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year2OpenButton.Size = New System.Drawing.Size(35, 31)
         Me.Year2OpenButton.TabIndex = 14
         Me.Year2OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year2OpenButton.UseVisualStyleBackColor = False
@@ -313,9 +325,10 @@ Partial Class EnrollementForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(90, 166)
+        Me.Label8.Location = New System.Drawing.Point(68, 133)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(113, 31)
+        Me.Label8.Size = New System.Drawing.Size(91, 25)
         Me.Label8.TabIndex = 27
         Me.Label8.Text = "Enrolled"
         '
@@ -323,9 +336,10 @@ Partial Class EnrollementForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(90, 110)
+        Me.Label6.Location = New System.Drawing.Point(68, 88)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(88, 31)
+        Me.Label6.Size = New System.Drawing.Size(71, 25)
         Me.Label6.TabIndex = 25
         Me.Label6.Text = "Failed"
         '
@@ -333,9 +347,10 @@ Partial Class EnrollementForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(90, 54)
+        Me.Label2.Location = New System.Drawing.Point(68, 43)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 31)
+        Me.Label2.Size = New System.Drawing.Size(84, 25)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Passed"
         '
@@ -343,9 +358,10 @@ Partial Class EnrollementForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(90, 275)
+        Me.Label5.Location = New System.Drawing.Point(68, 220)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(141, 31)
+        Me.Label5.Size = New System.Drawing.Size(113, 25)
         Me.Label5.TabIndex = 31
         Me.Label5.Text = "Unavailble"
         '
@@ -353,9 +369,10 @@ Partial Class EnrollementForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(90, 222)
+        Me.Label4.Location = New System.Drawing.Point(68, 178)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 31)
+        Me.Label4.Size = New System.Drawing.Size(64, 25)
         Me.Label4.TabIndex = 30
         Me.Label4.Text = "Open"
         '
@@ -363,9 +380,10 @@ Partial Class EnrollementForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(9, -2)
+        Me.Label10.Location = New System.Drawing.Point(7, -2)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(161, 42)
+        Me.Label10.Size = New System.Drawing.Size(126, 32)
         Me.Label10.TabIndex = 32
         Me.Label10.Text = "Legend:"
         '
@@ -383,18 +401,20 @@ Partial Class EnrollementForm
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Location = New System.Drawing.Point(2620, 230)
+        Me.Panel1.Location = New System.Drawing.Point(1965, 184)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(234, 331)
+        Me.Panel1.Size = New System.Drawing.Size(176, 266)
         Me.Panel1.TabIndex = 33
         '
         'PassedPictureBox
         '
         Me.PassedPictureBox.BackColor = System.Drawing.Color.LimeGreen
         Me.PassedPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PassedPictureBox.Location = New System.Drawing.Point(3, 45)
+        Me.PassedPictureBox.Location = New System.Drawing.Point(2, 36)
+        Me.PassedPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PassedPictureBox.Name = "PassedPictureBox"
-        Me.PassedPictureBox.Size = New System.Drawing.Size(46, 40)
+        Me.PassedPictureBox.Size = New System.Drawing.Size(36, 33)
         Me.PassedPictureBox.TabIndex = 22
         Me.PassedPictureBox.TabStop = False
         '
@@ -402,9 +422,10 @@ Partial Class EnrollementForm
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.DarkGray
         Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox8.Location = New System.Drawing.Point(3, 269)
+        Me.PictureBox8.Location = New System.Drawing.Point(2, 215)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(46, 40)
+        Me.PictureBox8.Size = New System.Drawing.Size(36, 33)
         Me.PictureBox8.TabIndex = 28
         Me.PictureBox8.TabStop = False
         '
@@ -412,9 +433,10 @@ Partial Class EnrollementForm
         '
         Me.PictureBox7.BackColor = System.Drawing.Color.SkyBlue
         Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox7.Location = New System.Drawing.Point(3, 213)
+        Me.PictureBox7.Location = New System.Drawing.Point(2, 170)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(46, 40)
+        Me.PictureBox7.Size = New System.Drawing.Size(36, 33)
         Me.PictureBox7.TabIndex = 29
         Me.PictureBox7.TabStop = False
         '
@@ -422,9 +444,10 @@ Partial Class EnrollementForm
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.IndianRed
         Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox6.Location = New System.Drawing.Point(3, 101)
+        Me.PictureBox6.Location = New System.Drawing.Point(2, 81)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(46, 40)
+        Me.PictureBox6.Size = New System.Drawing.Size(36, 33)
         Me.PictureBox6.TabIndex = 23
         Me.PictureBox6.TabStop = False
         '
@@ -432,9 +455,10 @@ Partial Class EnrollementForm
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Gold
         Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox5.Location = New System.Drawing.Point(3, 157)
+        Me.PictureBox5.Location = New System.Drawing.Point(2, 126)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(46, 40)
+        Me.PictureBox5.Size = New System.Drawing.Size(36, 33)
         Me.PictureBox5.TabIndex = 26
         Me.PictureBox5.TabStop = False
         '
@@ -442,9 +466,10 @@ Partial Class EnrollementForm
         '
         Me.Year3Label.AutoSize = True
         Me.Year3Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year3Label.Location = New System.Drawing.Point(140, 13)
+        Me.Year3Label.Location = New System.Drawing.Point(105, 10)
+        Me.Year3Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Year3Label.Name = "Year3Label"
-        Me.Year3Label.Size = New System.Drawing.Size(192, 42)
+        Me.Year3Label.Size = New System.Drawing.Size(147, 32)
         Me.Year3Label.TabIndex = 22
         Me.Year3Label.Text = "Third Year"
         '
@@ -452,9 +477,10 @@ Partial Class EnrollementForm
         '
         Me.Year4Label.AutoSize = True
         Me.Year4Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year4Label.Location = New System.Drawing.Point(140, 10)
+        Me.Year4Label.Location = New System.Drawing.Point(105, 8)
+        Me.Year4Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Year4Label.Name = "Year4Label"
-        Me.Year4Label.Size = New System.Drawing.Size(215, 42)
+        Me.Year4Label.Size = New System.Drawing.Size(164, 32)
         Me.Year4Label.TabIndex = 22
         Me.Year4Label.Text = "Fourth Year"
         '
@@ -465,9 +491,10 @@ Partial Class EnrollementForm
         Me.Year3BigPanel.Controls.Add(Me.Year3OpenButton)
         Me.Year3BigPanel.Controls.Add(Me.Year3Label)
         Me.Year3BigPanel.Controls.Add(Me.Year3Panel)
-        Me.Year3BigPanel.Location = New System.Drawing.Point(12, 794)
+        Me.Year3BigPanel.Location = New System.Drawing.Point(9, 635)
+        Me.Year3BigPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Year3BigPanel.Name = "Year3BigPanel"
-        Me.Year3BigPanel.Size = New System.Drawing.Size(1965, 358)
+        Me.Year3BigPanel.Size = New System.Drawing.Size(1474, 286)
         Me.Year3BigPanel.TabIndex = 22
         '
         'Year3CloseButton
@@ -477,11 +504,11 @@ Partial Class EnrollementForm
         Me.Year3CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year3CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year3CloseButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year3CloseButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year3CloseButton.Location = New System.Drawing.Point(68, 10)
         Me.Year3CloseButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year3CloseButton.Name = "Year3CloseButton"
         Me.Year3CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year3CloseButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year3CloseButton.Size = New System.Drawing.Size(35, 31)
         Me.Year3CloseButton.TabIndex = 16
         Me.Year3CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year3CloseButton.UseVisualStyleBackColor = False
@@ -493,11 +520,11 @@ Partial Class EnrollementForm
         Me.Year3OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year3OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year3OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year3OpenButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year3OpenButton.Location = New System.Drawing.Point(68, 10)
         Me.Year3OpenButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year3OpenButton.Name = "Year3OpenButton"
         Me.Year3OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year3OpenButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year3OpenButton.Size = New System.Drawing.Size(35, 31)
         Me.Year3OpenButton.TabIndex = 14
         Me.Year3OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year3OpenButton.UseVisualStyleBackColor = False
@@ -517,17 +544,19 @@ Partial Class EnrollementForm
         Me.Year3Panel.Controls.Add(Me.CPS633CO)
         Me.Year3Panel.Controls.Add(Me.CPS706CO)
         Me.Year3Panel.Controls.Add(Me.Y3S1PRCO)
-        Me.Year3Panel.Location = New System.Drawing.Point(23, 55)
+        Me.Year3Panel.Location = New System.Drawing.Point(17, 44)
+        Me.Year3Panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Year3Panel.Name = "Year3Panel"
-        Me.Year3Panel.Size = New System.Drawing.Size(1919, 315)
+        Me.Year3Panel.Size = New System.Drawing.Size(1439, 252)
         Me.Year3Panel.TabIndex = 12
         '
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.winter2018label
-        Me.PictureBox9.Location = New System.Drawing.Point(6, 159)
+        Me.PictureBox9.Location = New System.Drawing.Point(4, 127)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox9.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox9.TabIndex = 24
         Me.PictureBox9.TabStop = False
@@ -535,9 +564,10 @@ Partial Class EnrollementForm
         'PictureBox10
         '
         Me.PictureBox10.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.fall2017label
-        Me.PictureBox10.Location = New System.Drawing.Point(6, 3)
+        Me.PictureBox10.Location = New System.Drawing.Point(4, 2)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox10.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox10.TabIndex = 25
         Me.PictureBox10.TabStop = False
@@ -545,9 +575,10 @@ Partial Class EnrollementForm
         'MinorsButton
         '
         Me.MinorsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MinorsButton.Location = New System.Drawing.Point(2508, 103)
+        Me.MinorsButton.Location = New System.Drawing.Point(1881, 82)
+        Me.MinorsButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MinorsButton.Name = "MinorsButton"
-        Me.MinorsButton.Size = New System.Drawing.Size(346, 105)
+        Me.MinorsButton.Size = New System.Drawing.Size(260, 84)
         Me.MinorsButton.TabIndex = 34
         Me.MinorsButton.Text = "Manage Minors"
         Me.MinorsButton.UseVisualStyleBackColor = True
@@ -559,9 +590,10 @@ Partial Class EnrollementForm
         Me.Year4BigPanel.Controls.Add(Me.Year4OpenButton)
         Me.Year4BigPanel.Controls.Add(Me.Year4Label)
         Me.Year4BigPanel.Controls.Add(Me.Year4Panel)
-        Me.Year4BigPanel.Location = New System.Drawing.Point(12, 1161)
+        Me.Year4BigPanel.Location = New System.Drawing.Point(9, 929)
+        Me.Year4BigPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Year4BigPanel.Name = "Year4BigPanel"
-        Me.Year4BigPanel.Size = New System.Drawing.Size(1965, 391)
+        Me.Year4BigPanel.Size = New System.Drawing.Size(1474, 313)
         Me.Year4BigPanel.TabIndex = 23
         '
         'Year4CloseButton
@@ -571,11 +603,11 @@ Partial Class EnrollementForm
         Me.Year4CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year4CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year4CloseButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year4CloseButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year4CloseButton.Location = New System.Drawing.Point(68, 10)
         Me.Year4CloseButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year4CloseButton.Name = "Year4CloseButton"
         Me.Year4CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year4CloseButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year4CloseButton.Size = New System.Drawing.Size(35, 31)
         Me.Year4CloseButton.TabIndex = 16
         Me.Year4CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year4CloseButton.UseVisualStyleBackColor = False
@@ -587,11 +619,11 @@ Partial Class EnrollementForm
         Me.Year4OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year4OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year4OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year4OpenButton.Location = New System.Drawing.Point(90, 13)
+        Me.Year4OpenButton.Location = New System.Drawing.Point(68, 10)
         Me.Year4OpenButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year4OpenButton.Name = "Year4OpenButton"
         Me.Year4OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year4OpenButton.Size = New System.Drawing.Size(47, 39)
+        Me.Year4OpenButton.Size = New System.Drawing.Size(35, 31)
         Me.Year4OpenButton.TabIndex = 14
         Me.Year4OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year4OpenButton.UseVisualStyleBackColor = False
@@ -611,17 +643,19 @@ Partial Class EnrollementForm
         Me.Year4Panel.Controls.Add(Me.Y4S1OLCO)
         Me.Year4Panel.Controls.Add(Me.Y4S2OLCO)
         Me.Year4Panel.Controls.Add(Me.Y4S1PR1CO)
-        Me.Year4Panel.Location = New System.Drawing.Point(23, 55)
+        Me.Year4Panel.Location = New System.Drawing.Point(17, 44)
+        Me.Year4Panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Year4Panel.Name = "Year4Panel"
-        Me.Year4Panel.Size = New System.Drawing.Size(1919, 315)
+        Me.Year4Panel.Size = New System.Drawing.Size(1439, 252)
         Me.Year4Panel.TabIndex = 12
         '
         'PictureBox11
         '
         Me.PictureBox11.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.winter2019label
-        Me.PictureBox11.Location = New System.Drawing.Point(6, 159)
+        Me.PictureBox11.Location = New System.Drawing.Point(4, 127)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox11.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox11.TabIndex = 24
         Me.PictureBox11.TabStop = False
@@ -629,9 +663,10 @@ Partial Class EnrollementForm
         'PictureBox12
         '
         Me.PictureBox12.Image = Global.CPS613_RAMS_THING.My.Resources.Resources.fall2018label
-        Me.PictureBox12.Location = New System.Drawing.Point(6, 3)
+        Me.PictureBox12.Location = New System.Drawing.Point(4, 2)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(56, 144)
+        Me.PictureBox12.Size = New System.Drawing.Size(42, 115)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 25
         Me.PictureBox12.TabStop = False
@@ -643,11 +678,11 @@ Partial Class EnrollementForm
         Me.Year1CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year1CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year1CloseButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year1CloseButton.Location = New System.Drawing.Point(102, 62)
+        Me.Year1CloseButton.Location = New System.Drawing.Point(76, 50)
         Me.Year1CloseButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year1CloseButton.Name = "Year1CloseButton"
         Me.Year1CloseButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year1CloseButton.Size = New System.Drawing.Size(47, 36)
+        Me.Year1CloseButton.Size = New System.Drawing.Size(35, 29)
         Me.Year1CloseButton.TabIndex = 15
         Me.Year1CloseButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year1CloseButton.UseVisualStyleBackColor = False
@@ -659,11 +694,11 @@ Partial Class EnrollementForm
         Me.Year1OpenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Year1OpenButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year1OpenButton.ForeColor = System.Drawing.Color.DimGray
-        Me.Year1OpenButton.Location = New System.Drawing.Point(102, 62)
+        Me.Year1OpenButton.Location = New System.Drawing.Point(76, 50)
         Me.Year1OpenButton.Margin = New System.Windows.Forms.Padding(0)
         Me.Year1OpenButton.Name = "Year1OpenButton"
         Me.Year1OpenButton.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Year1OpenButton.Size = New System.Drawing.Size(47, 36)
+        Me.Year1OpenButton.Size = New System.Drawing.Size(35, 29)
         Me.Year1OpenButton.TabIndex = 13
         Me.Year1OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year1OpenButton.UseVisualStyleBackColor = False
@@ -675,13 +710,14 @@ Partial Class EnrollementForm
         Me.CPS209CO.Course_Code = "CPS209"
         Me.CPS209CO.Course_Grade = 0R
         Me.CPS209CO.Course_Name = "Computer Science II"
+        Me.CPS209CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS209CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS209CO.Location = New System.Drawing.Point(807, 162)
-        Me.CPS209CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS209CO.Location = New System.Drawing.Point(605, 130)
+        Me.CPS209CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS209CO.Name = "CPS209CO"
         Me.CPS209CO.Pre_Requisite = "CPS109"
-        Me.CPS209CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS209CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS209CO.TabIndex = 18
         '
         'CPS109CO
@@ -691,13 +727,14 @@ Partial Class EnrollementForm
         Me.CPS109CO.Course_Code = "CPS109"
         Me.CPS109CO.Course_Grade = 0R
         Me.CPS109CO.Course_Name = "Computer Science I"
+        Me.CPS109CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS109CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS109CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS109CO.Location = New System.Drawing.Point(807, 6)
-        Me.CPS109CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS109CO.Location = New System.Drawing.Point(605, 5)
+        Me.CPS109CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS109CO.Name = "CPS109CO"
         Me.CPS109CO.Pre_Requisite = Nothing
-        Me.CPS109CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS109CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS109CO.TabIndex = 17
         '
         'MTH207CO
@@ -707,13 +744,14 @@ Partial Class EnrollementForm
         Me.MTH207CO.Course_Code = "MTH207"
         Me.MTH207CO.Course_Grade = 0R
         Me.MTH207CO.Course_Name = "Calc and Comp Methods I"
+        Me.MTH207CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.MTH207CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.MTH207CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.MTH207CO.Location = New System.Drawing.Point(65, 162)
-        Me.MTH207CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MTH207CO.Location = New System.Drawing.Point(49, 130)
+        Me.MTH207CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MTH207CO.Name = "MTH207CO"
         Me.MTH207CO.Pre_Requisite = Nothing
-        Me.MTH207CO.Size = New System.Drawing.Size(340, 144)
+        Me.MTH207CO.Size = New System.Drawing.Size(256, 116)
         Me.MTH207CO.TabIndex = 16
         '
         'PCS110CO
@@ -723,13 +761,14 @@ Partial Class EnrollementForm
         Me.PCS110CO.Course_Code = "PCS110"
         Me.PCS110CO.Course_Grade = 0R
         Me.PCS110CO.Course_Name = "Physics"
+        Me.PCS110CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.PCS110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.PCS110CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PCS110CO.Location = New System.Drawing.Point(436, 6)
-        Me.PCS110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PCS110CO.Location = New System.Drawing.Point(327, 5)
+        Me.PCS110CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PCS110CO.Name = "PCS110CO"
         Me.PCS110CO.Pre_Requisite = Nothing
-        Me.PCS110CO.Size = New System.Drawing.Size(340, 144)
+        Me.PCS110CO.Size = New System.Drawing.Size(256, 116)
         Me.PCS110CO.TabIndex = 15
         '
         'LL1CO
@@ -739,13 +778,14 @@ Partial Class EnrollementForm
         Me.LL1CO.Course_Code = "PSY105"
         Me.LL1CO.Course_Grade = 0R
         Me.LL1CO.Course_Name = "Psy of Gender"
+        Me.LL1CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.LL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.LL1CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.LL1CO.Location = New System.Drawing.Point(1549, 2)
-        Me.LL1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LL1CO.Location = New System.Drawing.Point(1162, 2)
+        Me.LL1CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.LL1CO.Name = "LL1CO"
         Me.LL1CO.Pre_Requisite = Nothing
-        Me.LL1CO.Size = New System.Drawing.Size(340, 144)
+        Me.LL1CO.Size = New System.Drawing.Size(256, 116)
         Me.LL1CO.TabIndex = 14
         '
         'LL2CO
@@ -755,13 +795,14 @@ Partial Class EnrollementForm
         Me.LL2CO.Course_Code = "PSY304"
         Me.LL2CO.Course_Grade = 0R
         Me.LL2CO.Course_Name = "Persp. in Psy"
+        Me.LL2CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.LL2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.LL2CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.LL2CO.Location = New System.Drawing.Point(1549, 162)
-        Me.LL2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LL2CO.Location = New System.Drawing.Point(1162, 130)
+        Me.LL2CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.LL2CO.Name = "LL2CO"
         Me.LL2CO.Pre_Requisite = Nothing
-        Me.LL2CO.Size = New System.Drawing.Size(340, 144)
+        Me.LL2CO.Size = New System.Drawing.Size(256, 116)
         Me.LL2CO.TabIndex = 13
         '
         'CPS412CO
@@ -771,13 +812,14 @@ Partial Class EnrollementForm
         Me.CPS412CO.Course_Code = "CPS412"
         Me.CPS412CO.Course_Grade = 0R
         Me.CPS412CO.Course_Name = "Social Issues..."
+        Me.CPS412CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS412CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS412CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS412CO.Location = New System.Drawing.Point(436, 162)
-        Me.CPS412CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS412CO.Location = New System.Drawing.Point(327, 130)
+        Me.CPS412CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS412CO.Name = "CPS412CO"
         Me.CPS412CO.Pre_Requisite = Nothing
-        Me.CPS412CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS412CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS412CO.TabIndex = 12
         '
         'CPS213CO
@@ -787,13 +829,14 @@ Partial Class EnrollementForm
         Me.CPS213CO.Course_Code = "CPS213"
         Me.CPS213CO.Course_Grade = 0R
         Me.CPS213CO.Course_Name = "Comp Org I"
+        Me.CPS213CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS213CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS213CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS213CO.Location = New System.Drawing.Point(1178, 6)
-        Me.CPS213CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS213CO.Location = New System.Drawing.Point(884, 5)
+        Me.CPS213CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS213CO.Name = "CPS213CO"
         Me.CPS213CO.Pre_Requisite = Nothing
-        Me.CPS213CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS213CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS213CO.TabIndex = 11
         '
         'CPS310CO
@@ -803,13 +846,14 @@ Partial Class EnrollementForm
         Me.CPS310CO.Course_Code = "CPS310"
         Me.CPS310CO.Course_Grade = 0R
         Me.CPS310CO.Course_Name = "Comp Org II"
+        Me.CPS310CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS310CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS310CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS310CO.Location = New System.Drawing.Point(1178, 162)
-        Me.CPS310CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS310CO.Location = New System.Drawing.Point(884, 130)
+        Me.CPS310CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS310CO.Name = "CPS310CO"
         Me.CPS310CO.Pre_Requisite = "CPS213"
-        Me.CPS310CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS310CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS310CO.TabIndex = 10
         '
         'MTH110CO
@@ -819,13 +863,14 @@ Partial Class EnrollementForm
         Me.MTH110CO.Course_Code = "MTH110"
         Me.MTH110CO.Course_Grade = 0R
         Me.MTH110CO.Course_Name = "Discrete Math I"
+        Me.MTH110CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.MTH110CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.MTH110CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.MTH110CO.Location = New System.Drawing.Point(65, 6)
-        Me.MTH110CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MTH110CO.Location = New System.Drawing.Point(49, 5)
+        Me.MTH110CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MTH110CO.Name = "MTH110CO"
         Me.MTH110CO.Pre_Requisite = Nothing
-        Me.MTH110CO.Size = New System.Drawing.Size(340, 144)
+        Me.MTH110CO.Size = New System.Drawing.Size(256, 116)
         Me.MTH110CO.TabIndex = 9
         '
         'Y2S26thCO
@@ -835,13 +880,14 @@ Partial Class EnrollementForm
         Me.Y2S26thCO.Course_Code = "Course Code"
         Me.Y2S26thCO.Course_Grade = 0R
         Me.Y2S26thCO.Course_Name = "Course Name"
+        Me.Y2S26thCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y2S26thCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y2S26thCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y2S26thCO.Location = New System.Drawing.Point(1925, 159)
-        Me.Y2S26thCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y2S26thCO.Location = New System.Drawing.Point(1444, 127)
+        Me.Y2S26thCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y2S26thCO.Name = "Y2S26thCO"
         Me.Y2S26thCO.Pre_Requisite = Nothing
-        Me.Y2S26thCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y2S26thCO.Size = New System.Drawing.Size(256, 116)
         Me.Y2S26thCO.TabIndex = 29
         Me.Y2S26thCO.Visible = False
         '
@@ -852,13 +898,14 @@ Partial Class EnrollementForm
         Me.Y2S16thCO.Course_Code = "Course Code"
         Me.Y2S16thCO.Course_Grade = 0R
         Me.Y2S16thCO.Course_Name = "Course Name"
+        Me.Y2S16thCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y2S16thCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y2S16thCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y2S16thCO.Location = New System.Drawing.Point(1925, 6)
-        Me.Y2S16thCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y2S16thCO.Location = New System.Drawing.Point(1444, 5)
+        Me.Y2S16thCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y2S16thCO.Name = "Y2S16thCO"
         Me.Y2S16thCO.Pre_Requisite = Nothing
-        Me.Y2S16thCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y2S16thCO.Size = New System.Drawing.Size(256, 116)
         Me.Y2S16thCO.TabIndex = 28
         Me.Y2S16thCO.Visible = False
         '
@@ -869,13 +916,14 @@ Partial Class EnrollementForm
         Me.CPS506CO.Course_Code = "CPS506"
         Me.CPS506CO.Course_Grade = 0R
         Me.CPS506CO.Course_Name = "Comparative Prog"
+        Me.CPS506CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS506CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS506CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS506CO.Location = New System.Drawing.Point(807, 159)
-        Me.CPS506CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS506CO.Location = New System.Drawing.Point(605, 127)
+        Me.CPS506CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS506CO.Name = "CPS506CO"
         Me.CPS506CO.Pre_Requisite = "CPS209"
-        Me.CPS506CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS506CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS506CO.TabIndex = 18
         '
         'CPS305CO
@@ -885,13 +933,14 @@ Partial Class EnrollementForm
         Me.CPS305CO.Course_Code = "CPS305"
         Me.CPS305CO.Course_Grade = 0R
         Me.CPS305CO.Course_Name = "Data Structures"
+        Me.CPS305CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS305CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS305CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS305CO.Location = New System.Drawing.Point(807, 3)
-        Me.CPS305CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS305CO.Location = New System.Drawing.Point(605, 2)
+        Me.CPS305CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS305CO.Name = "CPS305CO"
         Me.CPS305CO.Pre_Requisite = "CPS209"
-        Me.CPS305CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS305CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS305CO.TabIndex = 17
         '
         'CPS420CO
@@ -901,13 +950,14 @@ Partial Class EnrollementForm
         Me.CPS420CO.Course_Code = "CPS420"
         Me.CPS420CO.Course_Grade = 0R
         Me.CPS420CO.Course_Name = "Discrete Structures"
+        Me.CPS420CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS420CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS420CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS420CO.Location = New System.Drawing.Point(65, 159)
-        Me.CPS420CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS420CO.Location = New System.Drawing.Point(49, 127)
+        Me.CPS420CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS420CO.Name = "CPS420CO"
         Me.CPS420CO.Pre_Requisite = "MTH110"
-        Me.CPS420CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS420CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS420CO.TabIndex = 16
         '
         'CMN300CO
@@ -917,45 +967,48 @@ Partial Class EnrollementForm
         Me.CMN300CO.Course_Code = "CMN300"
         Me.CMN300CO.Course_Grade = 0R
         Me.CMN300CO.Course_Name = "Cmn in Comp Ind"
+        Me.CMN300CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CMN300CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CMN300CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CMN300CO.Location = New System.Drawing.Point(436, 3)
-        Me.CMN300CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CMN300CO.Location = New System.Drawing.Point(327, 2)
+        Me.CMN300CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CMN300CO.Name = "CMN300CO"
         Me.CMN300CO.Pre_Requisite = Nothing
-        Me.CMN300CO.Size = New System.Drawing.Size(340, 144)
+        Me.CMN300CO.Size = New System.Drawing.Size(256, 116)
         Me.CMN300CO.TabIndex = 15
         '
         'OE1CO
         '
         Me.OE1CO.BackColor = System.Drawing.Color.SkyBlue
         Me.OE1CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.OE1CO.Course_Code = "Course Code"
+        Me.OE1CO.Course_Code = "Open"
         Me.OE1CO.Course_Grade = 0R
-        Me.OE1CO.Course_Name = "Course Name"
+        Me.OE1CO.Course_Name = "Elective"
+        Me.OE1CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.OE1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.OE1CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.OE1CO.Location = New System.Drawing.Point(1549, 6)
-        Me.OE1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.OE1CO.Location = New System.Drawing.Point(1162, 5)
+        Me.OE1CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.OE1CO.Name = "OE1CO"
         Me.OE1CO.Pre_Requisite = Nothing
-        Me.OE1CO.Size = New System.Drawing.Size(340, 144)
+        Me.OE1CO.Size = New System.Drawing.Size(256, 116)
         Me.OE1CO.TabIndex = 14
         '
         'OE2CO
         '
         Me.OE2CO.BackColor = System.Drawing.Color.SkyBlue
         Me.OE2CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.OE2CO.Course_Code = "Course Code"
+        Me.OE2CO.Course_Code = "Open"
         Me.OE2CO.Course_Grade = 0R
-        Me.OE2CO.Course_Name = "Course Name"
+        Me.OE2CO.Course_Name = "Elective"
+        Me.OE2CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.OE2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.OE2CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.OE2CO.Location = New System.Drawing.Point(1549, 159)
-        Me.OE2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.OE2CO.Location = New System.Drawing.Point(1162, 127)
+        Me.OE2CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.OE2CO.Name = "OE2CO"
         Me.OE2CO.Pre_Requisite = Nothing
-        Me.OE2CO.Size = New System.Drawing.Size(340, 144)
+        Me.OE2CO.Size = New System.Drawing.Size(256, 116)
         Me.OE2CO.TabIndex = 13
         '
         'CPS406CO
@@ -965,13 +1018,14 @@ Partial Class EnrollementForm
         Me.CPS406CO.Course_Code = "CPS406"
         Me.CPS406CO.Course_Grade = 0R
         Me.CPS406CO.Course_Name = "Software Eng"
+        Me.CPS406CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS406CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS406CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS406CO.Location = New System.Drawing.Point(436, 159)
-        Me.CPS406CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS406CO.Location = New System.Drawing.Point(327, 127)
+        Me.CPS406CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS406CO.Name = "CPS406CO"
         Me.CPS406CO.Pre_Requisite = "CPS209"
-        Me.CPS406CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS406CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS406CO.TabIndex = 12
         '
         'CPS393CO
@@ -981,13 +1035,14 @@ Partial Class EnrollementForm
         Me.CPS393CO.Course_Code = "CPS393"
         Me.CPS393CO.Course_Grade = 0R
         Me.CPS393CO.Course_Name = "C and UNIX"
+        Me.CPS393CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS393CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS393CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS393CO.Location = New System.Drawing.Point(1178, 3)
-        Me.CPS393CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS393CO.Location = New System.Drawing.Point(884, 2)
+        Me.CPS393CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS393CO.Name = "CPS393CO"
         Me.CPS393CO.Pre_Requisite = "CPS109"
-        Me.CPS393CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS393CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS393CO.TabIndex = 11
         '
         'CPS590CO
@@ -997,13 +1052,14 @@ Partial Class EnrollementForm
         Me.CPS590CO.Course_Code = "CPS590"
         Me.CPS590CO.Course_Grade = 0R
         Me.CPS590CO.Course_Name = "Op Systems I"
+        Me.CPS590CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS590CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS590CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS590CO.Location = New System.Drawing.Point(1178, 159)
-        Me.CPS590CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS590CO.Location = New System.Drawing.Point(884, 127)
+        Me.CPS590CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS590CO.Name = "CPS590CO"
         Me.CPS590CO.Pre_Requisite = "CPS393, CPS305"
-        Me.CPS590CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS590CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS590CO.TabIndex = 10
         '
         'MTH108CO
@@ -1013,13 +1069,14 @@ Partial Class EnrollementForm
         Me.MTH108CO.Course_Code = "MTH108"
         Me.MTH108CO.Course_Grade = 0R
         Me.MTH108CO.Course_Name = "Linear Algebra"
+        Me.MTH108CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.MTH108CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.MTH108CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.MTH108CO.Location = New System.Drawing.Point(65, 3)
-        Me.MTH108CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MTH108CO.Location = New System.Drawing.Point(49, 2)
+        Me.MTH108CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MTH108CO.Name = "MTH108CO"
         Me.MTH108CO.Pre_Requisite = Nothing
-        Me.MTH108CO.Size = New System.Drawing.Size(340, 144)
+        Me.MTH108CO.Size = New System.Drawing.Size(256, 116)
         Me.MTH108CO.TabIndex = 9
         '
         'CPS616CO
@@ -1029,13 +1086,14 @@ Partial Class EnrollementForm
         Me.CPS616CO.Course_Code = "CPS616"
         Me.CPS616CO.Course_Grade = 0R
         Me.CPS616CO.Course_Name = "Algorithms"
+        Me.CPS616CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS616CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS616CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS616CO.Location = New System.Drawing.Point(807, 159)
-        Me.CPS616CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS616CO.Location = New System.Drawing.Point(605, 127)
+        Me.CPS616CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS616CO.Name = "CPS616CO"
         Me.CPS616CO.Pre_Requisite = "CPS420, CPS305"
-        Me.CPS616CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS616CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS616CO.TabIndex = 18
         '
         'CPS510CO
@@ -1045,29 +1103,31 @@ Partial Class EnrollementForm
         Me.CPS510CO.Course_Code = "CPS510"
         Me.CPS510CO.Course_Grade = 0R
         Me.CPS510CO.Course_Name = "Databases I"
+        Me.CPS510CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS510CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS510CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS510CO.Location = New System.Drawing.Point(807, 3)
-        Me.CPS510CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS510CO.Location = New System.Drawing.Point(605, 2)
+        Me.CPS510CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS510CO.Name = "CPS510CO"
         Me.CPS510CO.Pre_Requisite = "CPS305"
-        Me.CPS510CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS510CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS510CO.TabIndex = 17
         '
         'Y3S2PR1CO
         '
         Me.Y3S2PR1CO.BackColor = System.Drawing.Color.SkyBlue
         Me.Y3S2PR1CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Y3S2PR1CO.Course_Code = "Course Code"
+        Me.Y3S2PR1CO.Course_Code = "Professionally"
         Me.Y3S2PR1CO.Course_Grade = 0R
-        Me.Y3S2PR1CO.Course_Name = "Course Name"
+        Me.Y3S2PR1CO.Course_Name = "Related"
+        Me.Y3S2PR1CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y3S2PR1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y3S2PR1CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y3S2PR1CO.Location = New System.Drawing.Point(65, 159)
-        Me.Y3S2PR1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y3S2PR1CO.Location = New System.Drawing.Point(49, 127)
+        Me.Y3S2PR1CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y3S2PR1CO.Name = "Y3S2PR1CO"
         Me.Y3S2PR1CO.Pre_Requisite = Nothing
-        Me.Y3S2PR1CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y3S2PR1CO.Size = New System.Drawing.Size(256, 116)
         Me.Y3S2PR1CO.TabIndex = 16
         '
         'CPS721CO
@@ -1077,61 +1137,65 @@ Partial Class EnrollementForm
         Me.CPS721CO.Course_Code = "CPS721"
         Me.CPS721CO.Course_Grade = 0R
         Me.CPS721CO.Course_Name = "Artificial Intel"
+        Me.CPS721CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS721CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS721CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS721CO.Location = New System.Drawing.Point(436, 3)
-        Me.CPS721CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS721CO.Location = New System.Drawing.Point(327, 2)
+        Me.CPS721CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS721CO.Name = "CPS721CO"
         Me.CPS721CO.Pre_Requisite = "CPS420, CPS305"
-        Me.CPS721CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS721CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS721CO.TabIndex = 15
         '
         'LL3CO
         '
         Me.LL3CO.BackColor = System.Drawing.Color.SkyBlue
         Me.LL3CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LL3CO.Course_Code = "Course Code"
+        Me.LL3CO.Course_Code = "Lower"
         Me.LL3CO.Course_Grade = 0R
-        Me.LL3CO.Course_Name = "Course Name"
+        Me.LL3CO.Course_Name = "Liberal"
+        Me.LL3CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.LL3CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.LL3CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.LL3CO.Location = New System.Drawing.Point(1549, 6)
-        Me.LL3CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LL3CO.Location = New System.Drawing.Point(1162, 5)
+        Me.LL3CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.LL3CO.Name = "LL3CO"
         Me.LL3CO.Pre_Requisite = Nothing
-        Me.LL3CO.Size = New System.Drawing.Size(340, 144)
+        Me.LL3CO.Size = New System.Drawing.Size(256, 116)
         Me.LL3CO.TabIndex = 14
         '
         'UL1CO
         '
         Me.UL1CO.BackColor = System.Drawing.Color.SkyBlue
         Me.UL1CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.UL1CO.Course_Code = "Course Code"
+        Me.UL1CO.Course_Code = "Upper"
         Me.UL1CO.Course_Grade = 0R
-        Me.UL1CO.Course_Name = "Course Name"
+        Me.UL1CO.Course_Name = "Liberal"
+        Me.UL1CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.UL1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.UL1CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.UL1CO.Location = New System.Drawing.Point(1549, 159)
-        Me.UL1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.UL1CO.Location = New System.Drawing.Point(1162, 127)
+        Me.UL1CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.UL1CO.Name = "UL1CO"
         Me.UL1CO.Pre_Requisite = Nothing
-        Me.UL1CO.Size = New System.Drawing.Size(340, 144)
+        Me.UL1CO.Size = New System.Drawing.Size(256, 116)
         Me.UL1CO.TabIndex = 13
         '
         'Y3S2PR2CO
         '
         Me.Y3S2PR2CO.BackColor = System.Drawing.Color.SkyBlue
         Me.Y3S2PR2CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Y3S2PR2CO.Course_Code = "Course Code"
+        Me.Y3S2PR2CO.Course_Code = "Professionally"
         Me.Y3S2PR2CO.Course_Grade = 0R
-        Me.Y3S2PR2CO.Course_Name = "Course Name"
+        Me.Y3S2PR2CO.Course_Name = "Related"
+        Me.Y3S2PR2CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y3S2PR2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y3S2PR2CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y3S2PR2CO.Location = New System.Drawing.Point(436, 159)
-        Me.Y3S2PR2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y3S2PR2CO.Location = New System.Drawing.Point(327, 127)
+        Me.Y3S2PR2CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y3S2PR2CO.Name = "Y3S2PR2CO"
         Me.Y3S2PR2CO.Pre_Requisite = Nothing
-        Me.Y3S2PR2CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y3S2PR2CO.Size = New System.Drawing.Size(256, 116)
         Me.Y3S2PR2CO.TabIndex = 12
         '
         'CPS633CO
@@ -1141,13 +1205,14 @@ Partial Class EnrollementForm
         Me.CPS633CO.Course_Code = "CPS633"
         Me.CPS633CO.Course_Grade = 0R
         Me.CPS633CO.Course_Name = "Computer Security"
+        Me.CPS633CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS633CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS633CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS633CO.Location = New System.Drawing.Point(1178, 3)
-        Me.CPS633CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS633CO.Location = New System.Drawing.Point(884, 2)
+        Me.CPS633CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS633CO.Name = "CPS633CO"
         Me.CPS633CO.Pre_Requisite = "CPS393"
-        Me.CPS633CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS633CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS633CO.TabIndex = 11
         '
         'CPS706CO
@@ -1157,29 +1222,31 @@ Partial Class EnrollementForm
         Me.CPS706CO.Course_Code = "CPS706"
         Me.CPS706CO.Course_Grade = 0R
         Me.CPS706CO.Course_Name = "Networks I"
+        Me.CPS706CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.CPS706CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Mandatory
         Me.CPS706CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.CPS706CO.Location = New System.Drawing.Point(1178, 159)
-        Me.CPS706CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CPS706CO.Location = New System.Drawing.Point(884, 127)
+        Me.CPS706CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CPS706CO.Name = "CPS706CO"
         Me.CPS706CO.Pre_Requisite = Nothing
-        Me.CPS706CO.Size = New System.Drawing.Size(340, 144)
+        Me.CPS706CO.Size = New System.Drawing.Size(256, 116)
         Me.CPS706CO.TabIndex = 10
         '
         'Y3S1PRCO
         '
         Me.Y3S1PRCO.BackColor = System.Drawing.Color.SkyBlue
         Me.Y3S1PRCO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Y3S1PRCO.Course_Code = "Course Code"
+        Me.Y3S1PRCO.Course_Code = "Professionally"
         Me.Y3S1PRCO.Course_Grade = 0R
-        Me.Y3S1PRCO.Course_Name = "Course Name"
+        Me.Y3S1PRCO.Course_Name = "Related"
+        Me.Y3S1PRCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y3S1PRCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y3S1PRCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y3S1PRCO.Location = New System.Drawing.Point(65, 3)
-        Me.Y3S1PRCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y3S1PRCO.Location = New System.Drawing.Point(49, 2)
+        Me.Y3S1PRCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y3S1PRCO.Name = "Y3S1PRCO"
         Me.Y3S1PRCO.Pre_Requisite = Nothing
-        Me.Y3S1PRCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y3S1PRCO.Size = New System.Drawing.Size(256, 116)
         Me.Y3S1PRCO.TabIndex = 9
         '
         'Y4S2PR3CO
@@ -1189,13 +1256,14 @@ Partial Class EnrollementForm
         Me.Y4S2PR3CO.Course_Code = "Professionally"
         Me.Y4S2PR3CO.Course_Grade = 0R
         Me.Y4S2PR3CO.Course_Name = "Related"
+        Me.Y4S2PR3CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S2PR3CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Pro_Related
         Me.Y4S2PR3CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S2PR3CO.Location = New System.Drawing.Point(807, 159)
-        Me.Y4S2PR3CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S2PR3CO.Location = New System.Drawing.Point(605, 127)
+        Me.Y4S2PR3CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S2PR3CO.Name = "Y4S2PR3CO"
         Me.Y4S2PR3CO.Pre_Requisite = Nothing
-        Me.Y4S2PR3CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S2PR3CO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S2PR3CO.TabIndex = 18
         '
         'Y4S1PR3CO
@@ -1205,13 +1273,14 @@ Partial Class EnrollementForm
         Me.Y4S1PR3CO.Course_Code = "Professionally"
         Me.Y4S1PR3CO.Course_Grade = 0R
         Me.Y4S1PR3CO.Course_Name = "Related"
+        Me.Y4S1PR3CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S1PR3CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Pro_Related
         Me.Y4S1PR3CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S1PR3CO.Location = New System.Drawing.Point(807, 3)
-        Me.Y4S1PR3CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S1PR3CO.Location = New System.Drawing.Point(605, 2)
+        Me.Y4S1PR3CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S1PR3CO.Name = "Y4S1PR3CO"
         Me.Y4S1PR3CO.Pre_Requisite = Nothing
-        Me.Y4S1PR3CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S1PR3CO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S1PR3CO.TabIndex = 17
         '
         'Y4S2PR1CO
@@ -1221,13 +1290,14 @@ Partial Class EnrollementForm
         Me.Y4S2PR1CO.Course_Code = "Professionally"
         Me.Y4S2PR1CO.Course_Grade = 0R
         Me.Y4S2PR1CO.Course_Name = "Related"
+        Me.Y4S2PR1CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S2PR1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Pro_Related
         Me.Y4S2PR1CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S2PR1CO.Location = New System.Drawing.Point(65, 159)
-        Me.Y4S2PR1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S2PR1CO.Location = New System.Drawing.Point(49, 127)
+        Me.Y4S2PR1CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S2PR1CO.Name = "Y4S2PR1CO"
         Me.Y4S2PR1CO.Pre_Requisite = Nothing
-        Me.Y4S2PR1CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S2PR1CO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S2PR1CO.TabIndex = 16
         '
         'Y4S1PR2CO
@@ -1237,13 +1307,14 @@ Partial Class EnrollementForm
         Me.Y4S1PR2CO.Course_Code = "Professionally"
         Me.Y4S1PR2CO.Course_Grade = 0R
         Me.Y4S1PR2CO.Course_Name = "Related"
+        Me.Y4S1PR2CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S1PR2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Pro_Related
         Me.Y4S1PR2CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S1PR2CO.Location = New System.Drawing.Point(436, 3)
-        Me.Y4S1PR2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S1PR2CO.Location = New System.Drawing.Point(327, 2)
+        Me.Y4S1PR2CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S1PR2CO.Name = "Y4S1PR2CO"
         Me.Y4S1PR2CO.Pre_Requisite = Nothing
-        Me.Y4S1PR2CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S1PR2CO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S1PR2CO.TabIndex = 15
         '
         'Y4S1ULCO
@@ -1253,13 +1324,14 @@ Partial Class EnrollementForm
         Me.Y4S1ULCO.Course_Code = "Upper"
         Me.Y4S1ULCO.Course_Grade = 0R
         Me.Y4S1ULCO.Course_Name = "Liberal"
+        Me.Y4S1ULCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S1ULCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y4S1ULCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S1ULCO.Location = New System.Drawing.Point(1549, 6)
-        Me.Y4S1ULCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S1ULCO.Location = New System.Drawing.Point(1162, 5)
+        Me.Y4S1ULCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S1ULCO.Name = "Y4S1ULCO"
         Me.Y4S1ULCO.Pre_Requisite = Nothing
-        Me.Y4S1ULCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S1ULCO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S1ULCO.TabIndex = 14
         '
         'Y4S2ULCO
@@ -1269,13 +1341,14 @@ Partial Class EnrollementForm
         Me.Y4S2ULCO.Course_Code = "Upper"
         Me.Y4S2ULCO.Course_Grade = 0R
         Me.Y4S2ULCO.Course_Name = "Liberal"
+        Me.Y4S2ULCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S2ULCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
         Me.Y4S2ULCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S2ULCO.Location = New System.Drawing.Point(1549, 159)
-        Me.Y4S2ULCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S2ULCO.Location = New System.Drawing.Point(1162, 127)
+        Me.Y4S2ULCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S2ULCO.Name = "Y4S2ULCO"
         Me.Y4S2ULCO.Pre_Requisite = Nothing
-        Me.Y4S2ULCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S2ULCO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S2ULCO.TabIndex = 13
         '
         'Y4S2PR2CO
@@ -1285,13 +1358,14 @@ Partial Class EnrollementForm
         Me.Y4S2PR2CO.Course_Code = "Professionally"
         Me.Y4S2PR2CO.Course_Grade = 0R
         Me.Y4S2PR2CO.Course_Name = "Related"
+        Me.Y4S2PR2CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S2PR2CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Pro_Related
         Me.Y4S2PR2CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S2PR2CO.Location = New System.Drawing.Point(436, 159)
-        Me.Y4S2PR2CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S2PR2CO.Location = New System.Drawing.Point(327, 127)
+        Me.Y4S2PR2CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S2PR2CO.Name = "Y4S2PR2CO"
         Me.Y4S2PR2CO.Pre_Requisite = Nothing
-        Me.Y4S2PR2CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S2PR2CO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S2PR2CO.TabIndex = 12
         '
         'Y4S1OLCO
@@ -1301,13 +1375,14 @@ Partial Class EnrollementForm
         Me.Y4S1OLCO.Course_Code = "Open"
         Me.Y4S1OLCO.Course_Grade = 0R
         Me.Y4S1OLCO.Course_Name = "Elective"
+        Me.Y4S1OLCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S1OLCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.Y4S1OLCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S1OLCO.Location = New System.Drawing.Point(1178, 3)
-        Me.Y4S1OLCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S1OLCO.Location = New System.Drawing.Point(884, 2)
+        Me.Y4S1OLCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S1OLCO.Name = "Y4S1OLCO"
         Me.Y4S1OLCO.Pre_Requisite = Nothing
-        Me.Y4S1OLCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S1OLCO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S1OLCO.TabIndex = 11
         '
         'Y4S2OLCO
@@ -1317,13 +1392,14 @@ Partial Class EnrollementForm
         Me.Y4S2OLCO.Course_Code = "Open"
         Me.Y4S2OLCO.Course_Grade = 0R
         Me.Y4S2OLCO.Course_Name = "Elective"
+        Me.Y4S2OLCO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S2OLCO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
         Me.Y4S2OLCO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S2OLCO.Location = New System.Drawing.Point(1178, 159)
-        Me.Y4S2OLCO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S2OLCO.Location = New System.Drawing.Point(884, 127)
+        Me.Y4S2OLCO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S2OLCO.Name = "Y4S2OLCO"
         Me.Y4S2OLCO.Pre_Requisite = Nothing
-        Me.Y4S2OLCO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S2OLCO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S2OLCO.TabIndex = 10
         '
         'Y4S1PR1CO
@@ -1333,22 +1409,23 @@ Partial Class EnrollementForm
         Me.Y4S1PR1CO.Course_Code = "Professionally"
         Me.Y4S1PR1CO.Course_Grade = 0R
         Me.Y4S1PR1CO.Course_Name = "Related"
+        Me.Y4S1PR1CO.Course_State = CPS613_RAMS_THING.CourseObject.State.open
         Me.Y4S1PR1CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Pro_Related
         Me.Y4S1PR1CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Y4S1PR1CO.Location = New System.Drawing.Point(65, 3)
-        Me.Y4S1PR1CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Y4S1PR1CO.Location = New System.Drawing.Point(49, 2)
+        Me.Y4S1PR1CO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Y4S1PR1CO.Name = "Y4S1PR1CO"
         Me.Y4S1PR1CO.Pre_Requisite = Nothing
-        Me.Y4S1PR1CO.Size = New System.Drawing.Size(340, 144)
+        Me.Y4S1PR1CO.Size = New System.Drawing.Size(256, 116)
         Me.Y4S1PR1CO.TabIndex = 9
         '
         'EnrollementForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(3188, 1189)
+        Me.ClientSize = New System.Drawing.Size(1460, 856)
         Me.Controls.Add(Me.MinorsButton)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Year1CloseButton)
@@ -1360,6 +1437,7 @@ Partial Class EnrollementForm
         Me.Controls.Add(Me.Year3BigPanel)
         Me.Controls.Add(Me.Year4BigPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "EnrollementForm"
         Me.Text = "Compupter Science Program"
         Me.Year1Panel.ResumeLayout(False)

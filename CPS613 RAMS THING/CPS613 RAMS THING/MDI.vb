@@ -20,7 +20,7 @@
             enroll.Visible = False
             view.Visible = False
             grades.Visible = False
-            ' home.Visible = True
+            'home.Visible = True
         End If
 
     End Sub
