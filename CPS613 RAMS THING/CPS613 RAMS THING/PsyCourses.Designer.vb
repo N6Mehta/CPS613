@@ -25,19 +25,19 @@ Partial Class PsyCourses
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PsyCourses))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PSY105CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY202CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY209CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY504CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY217CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY124CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY325CO = New CPS613_RAMS_THING.CourseObject()
-        Me.PSY304CO = New CPS613_RAMS_THING.CourseObject()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DoneMinorButton = New System.Windows.Forms.Button()
         Me.CancelMinorButton = New System.Windows.Forms.Button()
+        Me.PSY304CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY325CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY124CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY217CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY504CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY209CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY202CO = New CPS613_RAMS_THING.CourseObject()
+        Me.PSY105CO = New CPS613_RAMS_THING.CourseObject()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,134 +62,6 @@ Partial Class PsyCourses
         Me.Label2.Size = New System.Drawing.Size(397, 37)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Plus four (4) courses from:"
-        '
-        'PSY105CO
-        '
-        Me.PSY105CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY105CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY105CO.Course_Code = "PSY105"
-        Me.PSY105CO.Course_Grade = 0R
-        Me.PSY105CO.Course_Name = "Perspect in Psy"
-        Me.PSY105CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
-        Me.PSY105CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY105CO.Location = New System.Drawing.Point(95, 81)
-        Me.PSY105CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY105CO.Name = "PSY105CO"
-        Me.PSY105CO.Pre_Requisite = Nothing
-        Me.PSY105CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY105CO.TabIndex = 2
-        '
-        'PSY202CO
-        '
-        Me.PSY202CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY202CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY202CO.Course_Code = "PSY202"
-        Me.PSY202CO.Course_Grade = 0R
-        Me.PSY202CO.Course_Name = "Intro to Psy II"
-        Me.PSY202CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
-        Me.PSY202CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY202CO.Location = New System.Drawing.Point(544, 79)
-        Me.PSY202CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY202CO.Name = "PSY202CO"
-        Me.PSY202CO.Pre_Requisite = Nothing
-        Me.PSY202CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY202CO.TabIndex = 3
-        '
-        'PSY209CO
-        '
-        Me.PSY209CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY209CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY209CO.Course_Code = "PSY209"
-        Me.PSY209CO.Course_Grade = 0R
-        Me.PSY209CO.Course_Name = "Industrial Psy"
-        Me.PSY209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
-        Me.PSY209CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY209CO.Location = New System.Drawing.Point(544, 497)
-        Me.PSY209CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY209CO.Name = "PSY209CO"
-        Me.PSY209CO.Pre_Requisite = Nothing
-        Me.PSY209CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY209CO.TabIndex = 5
-        '
-        'PSY504CO
-        '
-        Me.PSY504CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY504CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY504CO.Course_Code = "PSY504"
-        Me.PSY504CO.Course_Grade = 0R
-        Me.PSY504CO.Course_Name = "Social Psy"
-        Me.PSY504CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
-        Me.PSY504CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY504CO.Location = New System.Drawing.Point(993, 321)
-        Me.PSY504CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY504CO.Name = "PSY504CO"
-        Me.PSY504CO.Pre_Requisite = Nothing
-        Me.PSY504CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY504CO.TabIndex = 6
-        '
-        'PSY217CO
-        '
-        Me.PSY217CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY217CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY217CO.Course_Code = "PSY217"
-        Me.PSY217CO.Course_Grade = 0R
-        Me.PSY217CO.Course_Name = "Psy and Design"
-        Me.PSY217CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
-        Me.PSY217CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY217CO.Location = New System.Drawing.Point(993, 497)
-        Me.PSY217CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY217CO.Name = "PSY217CO"
-        Me.PSY217CO.Pre_Requisite = Nothing
-        Me.PSY217CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY217CO.TabIndex = 7
-        '
-        'PSY124CO
-        '
-        Me.PSY124CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY124CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY124CO.Course_Code = "PSY124"
-        Me.PSY124CO.Course_Grade = 0R
-        Me.PSY124CO.Course_Name = "Social Psycology"
-        Me.PSY124CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
-        Me.PSY124CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY124CO.Location = New System.Drawing.Point(95, 321)
-        Me.PSY124CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY124CO.Name = "PSY124CO"
-        Me.PSY124CO.Pre_Requisite = Nothing
-        Me.PSY124CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY124CO.TabIndex = 8
-        '
-        'PSY325CO
-        '
-        Me.PSY325CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY325CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY325CO.Course_Code = "PSY325"
-        Me.PSY325CO.Course_Grade = 0R
-        Me.PSY325CO.Course_Name = "Psy Disorders"
-        Me.PSY325CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.PSY
-        Me.PSY325CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY325CO.Location = New System.Drawing.Point(544, 321)
-        Me.PSY325CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY325CO.Name = "PSY325CO"
-        Me.PSY325CO.Pre_Requisite = Nothing
-        Me.PSY325CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY325CO.TabIndex = 9
-        '
-        'PSY304CO
-        '
-        Me.PSY304CO.BackColor = System.Drawing.Color.SkyBlue
-        Me.PSY304CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PSY304CO.Course_Code = "PSY304"
-        Me.PSY304CO.Course_Grade = 0R
-        Me.PSY304CO.Course_Name = "Psy of Gender"
-        Me.PSY304CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
-        Me.PSY304CO.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PSY304CO.Location = New System.Drawing.Point(95, 497)
-        Me.PSY304CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.PSY304CO.Name = "PSY304CO"
-        Me.PSY304CO.Pre_Requisite = Nothing
-        Me.PSY304CO.Size = New System.Drawing.Size(340, 144)
-        Me.PSY304CO.TabIndex = 10
         '
         'PictureBox4
         '
@@ -240,6 +112,134 @@ Partial Class PsyCourses
         Me.CancelMinorButton.TabIndex = 39
         Me.CancelMinorButton.Text = "Cancel"
         Me.CancelMinorButton.UseVisualStyleBackColor = True
+        '
+        'PSY304CO
+        '
+        Me.PSY304CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY304CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY304CO.Course_Code = "PSY304"
+        Me.PSY304CO.Course_Grade = 0R
+        Me.PSY304CO.Course_Name = "Psy of Gender"
+        Me.PSY304CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
+        Me.PSY304CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY304CO.Location = New System.Drawing.Point(95, 497)
+        Me.PSY304CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY304CO.Name = "PSY304CO"
+        Me.PSY304CO.Pre_Requisite = "PSY105"
+        Me.PSY304CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY304CO.TabIndex = 10
+        '
+        'PSY325CO
+        '
+        Me.PSY325CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY325CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY325CO.Course_Code = "PSY325"
+        Me.PSY325CO.Course_Grade = 0R
+        Me.PSY325CO.Course_Name = "Psy Disorders"
+        Me.PSY325CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PSY325CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY325CO.Location = New System.Drawing.Point(544, 321)
+        Me.PSY325CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY325CO.Name = "PSY325CO"
+        Me.PSY325CO.Pre_Requisite = "PSY105"
+        Me.PSY325CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY325CO.TabIndex = 9
+        '
+        'PSY124CO
+        '
+        Me.PSY124CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY124CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY124CO.Course_Code = "PSY124"
+        Me.PSY124CO.Course_Grade = 0R
+        Me.PSY124CO.Course_Name = "Social Psycology"
+        Me.PSY124CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PSY124CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY124CO.Location = New System.Drawing.Point(95, 321)
+        Me.PSY124CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY124CO.Name = "PSY124CO"
+        Me.PSY124CO.Pre_Requisite = "PSY105"
+        Me.PSY124CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY124CO.TabIndex = 8
+        '
+        'PSY217CO
+        '
+        Me.PSY217CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY217CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY217CO.Course_Code = "PSY217"
+        Me.PSY217CO.Course_Grade = 0R
+        Me.PSY217CO.Course_Name = "Psy and Design"
+        Me.PSY217CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PSY217CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY217CO.Location = New System.Drawing.Point(993, 497)
+        Me.PSY217CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY217CO.Name = "PSY217CO"
+        Me.PSY217CO.Pre_Requisite = Nothing
+        Me.PSY217CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY217CO.TabIndex = 7
+        '
+        'PSY504CO
+        '
+        Me.PSY504CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY504CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY504CO.Course_Code = "PSY504"
+        Me.PSY504CO.Course_Grade = 0R
+        Me.PSY504CO.Course_Name = "Social Psy"
+        Me.PSY504CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PSY504CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY504CO.Location = New System.Drawing.Point(993, 321)
+        Me.PSY504CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY504CO.Name = "PSY504CO"
+        Me.PSY504CO.Pre_Requisite = "PSY105"
+        Me.PSY504CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY504CO.TabIndex = 6
+        '
+        'PSY209CO
+        '
+        Me.PSY209CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY209CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY209CO.Course_Code = "PSY209"
+        Me.PSY209CO.Course_Grade = 0R
+        Me.PSY209CO.Course_Name = "Industrial Psy"
+        Me.PSY209CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PSY209CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY209CO.Location = New System.Drawing.Point(544, 497)
+        Me.PSY209CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY209CO.Name = "PSY209CO"
+        Me.PSY209CO.Pre_Requisite = Nothing
+        Me.PSY209CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY209CO.TabIndex = 5
+        '
+        'PSY202CO
+        '
+        Me.PSY202CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY202CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY202CO.Course_Code = "PSY202"
+        Me.PSY202CO.Course_Grade = 0R
+        Me.PSY202CO.Course_Name = "Intro to Psy II"
+        Me.PSY202CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Liberal
+        Me.PSY202CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY202CO.Location = New System.Drawing.Point(544, 79)
+        Me.PSY202CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY202CO.Name = "PSY202CO"
+        Me.PSY202CO.Pre_Requisite = "PSY105"
+        Me.PSY202CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY202CO.TabIndex = 3
+        '
+        'PSY105CO
+        '
+        Me.PSY105CO.BackColor = System.Drawing.Color.SkyBlue
+        Me.PSY105CO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PSY105CO.Course_Code = "PSY105"
+        Me.PSY105CO.Course_Grade = 0R
+        Me.PSY105CO.Course_Name = "Perspect in Psy"
+        Me.PSY105CO.Course_Type = CPS613_RAMS_THING.CourseObject.CourseType.Open_Elective
+        Me.PSY105CO.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PSY105CO.Location = New System.Drawing.Point(95, 81)
+        Me.PSY105CO.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PSY105CO.Name = "PSY105CO"
+        Me.PSY105CO.Pre_Requisite = Nothing
+        Me.PSY105CO.Size = New System.Drawing.Size(340, 144)
+        Me.PSY105CO.TabIndex = 2
         '
         'PsyCourses
         '

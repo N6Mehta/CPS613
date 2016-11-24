@@ -28,7 +28,8 @@
             myEnroll.OE1CO.Course_Name = PSY504CO.Course_Name
             myEnroll.OE1CO.Course_Code = PSY504CO.Course_Code
             myEnroll.OE1CO.changeState(CourseObject.State.enrolled)
-        ElseIf (PSY209CO.courseState.Equals(CourseObject.State.enrolled)) Then
+        End If
+        If (PSY209CO.courseState.Equals(CourseObject.State.enrolled)) Then
             myEnroll.OE2CO.Course_Name = PSY209CO.Course_Name
             myEnroll.OE2CO.Course_Code = PSY209CO.Course_Code
             myEnroll.OE2CO.changeState(CourseObject.State.enrolled)
@@ -36,7 +37,6 @@
             myEnroll.OE2CO.Course_Name = PSY217CO.Course_Name
             myEnroll.OE2CO.Course_Code = PSY217CO.Course_Code
             myEnroll.OE2CO.changeState(CourseObject.State.enrolled)
-        Else Minors.Show()
         End If
         Me.Hide()
     End Sub
