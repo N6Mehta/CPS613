@@ -9,9 +9,12 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim login As New login2
+        'home.windows
+        home.MdiParent = Me
+        home.Visible = True
+        'Dim login As New login2
         Me.WindowState = FormWindowState.Maximized
-        login.ShowDialog()
+        'login.ShowDialog()
 
     End Sub
 
