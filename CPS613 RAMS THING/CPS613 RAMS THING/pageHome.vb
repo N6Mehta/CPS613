@@ -18,7 +18,7 @@
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Dim enroll As New Enrollment
-        'Me.Close()
+        Me.Close()
         Me.WindowState = FormWindowState.Minimized
         'Me.Visible = False
         enroll.MdiParent = MDI
