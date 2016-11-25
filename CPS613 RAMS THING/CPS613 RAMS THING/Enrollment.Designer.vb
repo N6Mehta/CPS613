@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class EnrollementForm
+Partial Class Enrollment
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class EnrollementForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EnrollementForm))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Enrollment))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Year1Label = New System.Windows.Forms.Label()
         Me.Year2Label = New System.Windows.Forms.Label()
@@ -1342,7 +1342,7 @@ Partial Class EnrollementForm
         Me.Year1OpenButton.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Year1OpenButton.UseVisualStyleBackColor = False
         '
-        'EnrollementForm
+        'Enrollment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1360,7 +1360,7 @@ Partial Class EnrollementForm
         Me.Controls.Add(Me.Year3BigPanel)
         Me.Controls.Add(Me.Year4BigPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "EnrollementForm"
+        Me.Name = "Enrollment"
         Me.Text = "Compupter Science Program"
         Me.Year1Panel.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,5 +1,5 @@
 ﻿Public Class PsyCourses
-    Private myEnroll As EnrollementForm
+    Private myEnroll As Enrollment
     Private Sub PsyCourses_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         myEnroll.connectToPSYMinor(Me)
         PSY105CO.changeState(CourseObject.State.passed)
@@ -41,7 +41,7 @@
         Me.Hide()
     End Sub
 
-    Public Sub connectToEnroll(page As EnrollementForm)
+    Public Sub connectToEnroll(page As Enrollment)
         Me.myEnroll = page
     End Sub
 End Class

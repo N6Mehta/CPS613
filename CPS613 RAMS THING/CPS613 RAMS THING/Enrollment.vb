@@ -1,4 +1,4 @@
-﻿Public Class EnrollementForm
+﻿Public Class Enrollment
     Dim Year2InitLoc As Point
     Dim break = 5
     Dim Year1Opened As Boolean = False
