@@ -148,15 +148,6 @@
         End Set
     End Property
 
-    Public Property Course_State As State
-        Get
-            Return Me.courseState
-        End Get
-        Set(value As State)
-            Me.courseState = value
-        End Set
-    End Property
-
     Private Sub reset()
         Me.changeState(State.open)
         updateType()

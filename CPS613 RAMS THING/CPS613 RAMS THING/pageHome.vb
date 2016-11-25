@@ -21,7 +21,7 @@
         'Me.Close()
         'MDI.enroll
         'Me.WindowState = FormWindowState.Minimized
-        '.Visible = False
+        'Me.Visible = False
         MDI.home.Visible = False
         MDI.enroll.MdiParent = MDI
         MDI.enroll.Visible = True
