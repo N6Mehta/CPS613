@@ -1,19 +1,38 @@
 ﻿Public Class pageHome
     Public nam As String
+    Public homeStreet As String = "100 Random Street"
+    Public homeProvince As String = "Ontario"
+    Public homeCity As String = "Toronto"
+    Public homeCode As String = "M5V 123"
 
+
+    Public mailStreet As String = "100 Random Street"
+    Public mailProvince As String = "Ontario"
+    Public mailCity As String = "Toronto"
+    Public mailCode As String = "M5V 123"
+    Private person As Personal_Information
     Private Sub TableLayoutPanel1_Paint_1(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
 
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Dim enroll As New Enrollment
-        Me.Close()
-        enroll.MdiParent = MDI
-        enroll.Show()
+        'Dim enroll As New Enrollment
+        'Me.Close()
+        'MDI.enroll
+        'Me.WindowState = FormWindowState.Minimized
+        'Me.Visible = False
+        MDI.home.Visible = False
+        MDI.enroll.MdiParent = MDI
+        MDI.enroll.Visible = True
+
     End Sub
 
     Private Sub pageHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.Address.Text = homeStreet & vbNewLine & homeCity & Space(1) & homeProvince & Space(1) & homeCode
+        Me.mail.Text = mailStreet & vbNewLine & mailCity & Space(1) & mailProvince & Space(1) & mailCode
+
         Username.Text = "Welcome, " & nam
     End Sub
 
@@ -53,8 +72,42 @@
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Dim edit As New Personal_Information
-        edit.ShowDialog()
+        ' Dim edit As New Personal_Information
+        person = New Personal_Information
+        'Me.Visible = False
+        'Me.Close()
+        'Me.WindowState = FormWindowState.Minimized
+        person.personalConnect(Me)
+        person.Show()
+    End Sub
 
+    Public Sub homeConnect(personal As Personal_Information)
+        Me.person = personal
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        'Dim grades As New AcademicStanding
+        MDI.grades.MdiParent = MDI
+        MDI.home.Visible = False
+        MDI.grades.Visible = True
+        'Me.Close()
+        'Me.WindowState = FormWindowState.Minimized
+
+        'Me.Visible = False
+    End Sub
+
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+        'Dim view As New viewDocs
+        MDI.view.MdiParent = MDI
+        MDI.home.Visible = False
+        MDI.view.Visible = True
+        'Me.WindowState = FormWindowState.Minimized
+        'Me.Close()
+        ' Me.Visible = False
+    End Sub
+
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        Dim dialog As New gradDialog
+        dialog.ShowDialog()
     End Sub
 End Class

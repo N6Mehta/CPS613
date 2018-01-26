@@ -118,6 +118,12 @@
     <Compile Include="erro2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="gradDialog.Designer.vb">
+      <DependentUpon>gradDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gradDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login2.0.Designer.vb">
       <DependentUpon>login2.0.vb</DependentUpon>
     </Compile>
@@ -141,6 +147,12 @@
       <DependentUpon>Help.vb</DependentUpon>
     </Compile>
     <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Minors.designer.vb">
+      <DependentUpon>Minors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Minors.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -170,6 +182,16 @@
     <Compile Include="Personal Information.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PsyCourses.designer.vb">
+      <DependentUpon>PsyCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PsyCourses.vb" />
+    <Compile Include="viewDocs.Designer.vb">
+      <DependentUpon>viewDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AcademicStanding.resx">
@@ -190,6 +212,9 @@
     <EmbeddedResource Include="erro2.resx">
       <DependentUpon>erro2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gradDialog.resx">
+      <DependentUpon>gradDialog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.vb</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Minors.resx">
+      <DependentUpon>Minors.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -210,6 +238,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personal Information.resx">
       <DependentUpon>Personal Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PsyCourses.resx">
+      <DependentUpon>PsyCourses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewDocs.resx">
+      <DependentUpon>viewDocs.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -256,6 +290,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yellow circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\collapse_arrow16001.png" />
+    <EmbeddedResource Include="Resources\fall2015label.png" />
+    <Content Include="Resources\fall2016label.png" />
+    <EmbeddedResource Include="Resources\fall2017label.png" />
+    <Content Include="Resources\fall2018label.png" />
+    <Content Include="Resources\inactive.png" />
+    <Content Include="Resources\open-button.png" />
+    <Content Include="Resources\winter2016label.png" />
+    <Content Include="Resources\winter2017label.png" />
+    <EmbeddedResource Include="Resources\winter2018label.png" />
+    <Content Include="Resources\winter2019label.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

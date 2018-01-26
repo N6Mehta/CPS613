@@ -31,7 +31,11 @@ Namespace My.Resources
         Private resourceMan As Global.System.Resources.ResourceManager
         
         Private resourceCulture As Global.System.Globalization.CultureInfo
-        
+        Friend winter2018label As Image
+        Friend fall2017label As Image
+        Friend winter2019label As Image
+        Friend fall2018label As Image
+
         '''<summary>
         '''  Returns the cached ResourceManager instance used by this class.
         '''</summary>

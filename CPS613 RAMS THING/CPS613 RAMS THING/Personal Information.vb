@@ -1,15 +1,30 @@
 ﻿Public Class Personal_Information
+    Private home As pageHome
+    Public hStreet As String
+    Public hProvince As String
+    Public hCity As String
+    Public hCode As String
+
+    Public mStreet As String
+    Public mProvince As String
+    Public mCity As String
+    Public mCode As String
+
+    Public emaily As String
+    Public phony As String
     Private Sub Personal_Information_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.homeStreet.Text = pageHome.Hstreet.Text
-        Me.homeProvince.Text = pageHome.Hprovince.Text
-        Me.homeCity.Text = pageHome.Hcity.Text
-        Me.homeCode.Text = pageHome.Hcode.Text
+        'home = New pageHome
+        home.homeConnect(Me)
+        Me.homeStreet.Text = pageHome.homeStreet
+        Me.homeProvince.Text = pageHome.homeProvince
+        Me.homeCity.Text = pageHome.homeCity
+        Me.homeCode.Text = pageHome.homeCode
 
 
-        Me.mailStreet.Text = pageHome.Mstreet.Text
-        Me.mailProvince.Text = pageHome.Mprovince.Text
-        Me.mailCity.Text = pageHome.Mcity.Text
-        Me.mailCode.Text = pageHome.Mcode.Text
+        Me.mailStreet.Text = pageHome.mailStreet
+        Me.mailProvince.Text = pageHome.mailProvince
+        Me.mailCity.Text = pageHome.mailCity
+        Me.mailCode.Text = pageHome.mailCode
 
 
         Me.phone.Text = pageHome.Phone.Text
@@ -20,24 +35,34 @@
         Me.Close()
     End Sub
 
+    Public Sub personalConnect(homepage As pageHome)
+        Me.home = homepage
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim home As New pageHome
-        pageHome.Close()
-        home.Hstreet.Text = Me.homeStreet.Text
-        home.Hprovince.Text = Me.homeProvince.Text
-        home.Hcity.Text = Me.homeCity.Text
-        home.Hcode.Text = Me.homeCode.Text
+        'Dim home As New pageHome
+        'pageHome.Close()
+        hStreet = Me.homeStreet.Text
+        hProvince = Me.homeProvince.Text
+        hCity = Me.homeCity.Text
+        hCode = Me.homeCode.Text
 
 
-        home.Mstreet.Text = Me.mailStreet.Text
-        home.Mprovince.Text = Me.mailProvince.Text
-        home.Mcity.Text = Me.mailCity.Text
-        home.Mcode.Text = Me.mailCode.Text
+        mStreet = Me.mailStreet.Text
+        mProvince = Me.mailProvince.Text
+        mCity = Me.mailCity.Text
+        mCode = Me.mailCode.Text
+
+        phony = Me.phone.Text
+        emaily = Me.email.Text
+
+        home.Address.Text = hStreet & vbNewLine & hCity & Space(1) & hProvince & Space(1) & hCode
+        home.mail.Text = mStreet & vbNewLine & mCity & Space(1) & mProvince & Space(1) & mCode
 
 
+        home.Phone.Text = phony
+        home.Email.Text = emaily
 
-        home.Phone.Text = Me.phone.Text
-        home.Email.Text = Me.email.Text
         home.Show()
 
         Me.Close()
